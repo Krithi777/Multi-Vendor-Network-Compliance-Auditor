@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__rtf-prefix-lists.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__rtf-prefix-lists.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "0b6092caf8b903d5c5609fa80ad6cc269c2d26976e07b91ba1ab9d37bf1745dd",
+  "sha256_sanitized": "0b6092caf8b903d5c5609fa80ad6cc269c2d26976e07b91ba1ab9d37bf1745dd",
+  "redactions": [],
+  "clean": true
+}

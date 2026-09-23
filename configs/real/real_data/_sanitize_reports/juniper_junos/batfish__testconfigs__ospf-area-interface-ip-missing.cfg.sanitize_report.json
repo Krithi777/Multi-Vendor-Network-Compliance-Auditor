@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ospf-area-interface-ip-missing.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ospf-area-interface-ip-missing.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "2ba8fe41eb937eaaeba3635f25abcc920f29d6161fbeb04c43a9263b2aa33c76",
+  "sha256_sanitized": "22c17db7203f686c352c0898a9bb368c36d2420448bd20730ab42dfc3287bdd9",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

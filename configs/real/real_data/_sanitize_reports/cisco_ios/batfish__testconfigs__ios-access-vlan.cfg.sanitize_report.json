@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-access-vlan.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-access-vlan.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "88e747d6ba750c7a88ec96a0624c4a2b3a87973637e67e054da64c8c9484a494",
+  "sha256_sanitized": "b36092b5daad682c6b55676f0ea4a5d64069f2c231ac85672a30ab1df8459bf1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

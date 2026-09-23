@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ospf-intervals.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ospf-intervals.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "35f9bc45cd843085f46af62f1fa457bf3592535ea08ec246441a3aeb9a9a88e1",
+  "sha256_sanitized": "35f9bc45cd843085f46af62f1fa457bf3592535ea08ec246441a3aeb9a9a88e1",
+  "redactions": [],
+  "clean": true
+}

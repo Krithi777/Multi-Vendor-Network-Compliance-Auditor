@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ospf-default-originate__configs__ios-area-1-nssa.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ospf-default-originate__configs__ios-area-1-nssa.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "a5fe19493f387adba122bb2400fa64fad78a32971f5ee7a3b43dacd1c5b57698",
+  "sha256_sanitized": "63209a45c8169a35683f4a6b1febea1dc38f22862ba469305d00ada42f0bdee3",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

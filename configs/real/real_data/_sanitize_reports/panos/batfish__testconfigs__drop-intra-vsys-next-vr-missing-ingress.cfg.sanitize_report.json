@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__drop-intra-vsys-next-vr-missing-ingress.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__drop-intra-vsys-next-vr-missing-ingress.cfg",
+  "vendor": "panos",
+  "sha256_original": "64429d6f2305f10b61d999fbc175dc6d8fe01c070e1ff0dfbda1b41bbc2577ee",
+  "sha256_sanitized": "52c08647603a88fb8cb499757fdb206a7c598e21ae94c9a900309914f68a2c9d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

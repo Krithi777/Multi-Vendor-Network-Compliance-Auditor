@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ospf-area-interface-all-crash.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ospf-area-interface-all-crash.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "eafb2dd9638e4cdece64a846e455cc7eecc907164244c265f8a2ae8f8ff38cec",
+  "sha256_sanitized": "eafb2dd9638e4cdece64a846e455cc7eecc907164244c265f8a2ae8f8ff38cec",
+  "redactions": [],
+  "clean": true
+}

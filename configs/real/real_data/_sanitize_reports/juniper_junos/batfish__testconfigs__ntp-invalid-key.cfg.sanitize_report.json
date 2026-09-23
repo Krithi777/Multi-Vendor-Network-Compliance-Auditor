@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ntp-invalid-key.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ntp-invalid-key.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "081712424e616cf34004932116747f97c914f7c08d58a51267a469e6863b0574",
+  "sha256_sanitized": "5a338c9545122a2e03314b6de99bbbbcde470976eef1117796fdd1305ac60c04",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

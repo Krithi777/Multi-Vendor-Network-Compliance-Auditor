@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-evpn-vxlan-encap.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-evpn-vxlan-encap.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "a2a945b141299e31aa29422de5434ea2ef5e581effc97b1dec2a6ade0cbadeba",
+  "sha256_sanitized": "a2a945b141299e31aa29422de5434ea2ef5e581effc97b1dec2a6ade0cbadeba",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__drop-same-zone-explicit.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__drop-same-zone-explicit.cfg",
+  "vendor": "panos",
+  "sha256_original": "a5575c7110d6ef98e47ea4204e8fd72750b8dc3ed6509d31bd9f235471fa1a5d",
+  "sha256_sanitized": "98a71d4a596a0434c1fe7bd1ae220bc6f45c99a45a9705a7cf9d72ce5457383d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

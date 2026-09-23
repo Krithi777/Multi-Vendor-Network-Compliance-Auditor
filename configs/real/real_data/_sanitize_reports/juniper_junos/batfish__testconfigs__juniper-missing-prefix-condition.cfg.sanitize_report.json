@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-missing-prefix-condition.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-missing-prefix-condition.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "b233ebdcb3c4bcb06ec5eae24fb3d8d91db4367dcee555d19b5fa79ee8e17ee3",
+  "sha256_sanitized": "0b260a7a0342e0e45b1315b95b706a26fb3d27bb2faed939509e65406fd42695",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

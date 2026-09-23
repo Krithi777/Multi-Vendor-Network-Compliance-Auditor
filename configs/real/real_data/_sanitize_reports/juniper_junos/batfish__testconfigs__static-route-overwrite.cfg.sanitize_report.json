@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__static-route-overwrite.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__static-route-overwrite.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "fa07a9d487e888005b44856cd7f19989b638b39698efd0c00557ef49bf26b467",
+  "sha256_sanitized": "c2f890f637c77d4d707bf71af26752195565e04e96b967ac922e0dabfae70e50",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

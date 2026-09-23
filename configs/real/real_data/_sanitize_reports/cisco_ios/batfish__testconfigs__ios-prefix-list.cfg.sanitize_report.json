@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-prefix-list.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-prefix-list.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "1405cd47bb2fb7a3f6316f7bde9400062b1dac6250a3ba54640859cfa7b1aabe",
+  "sha256_sanitized": "0efaf39224fbee12fc69fcddb9ad357e2b1dd6f47ac872d23eef701c6da2bb6a",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

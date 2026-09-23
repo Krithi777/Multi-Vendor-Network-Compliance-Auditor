@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__allow-inter-sg.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__allow-inter-sg.cfg",
+  "vendor": "panos",
+  "sha256_original": "a387b51cf122c4abbe51331ce83693a659e4402a99d641cb03c9f0b01e91cfe8",
+  "sha256_sanitized": "77e1a13bc7d514c361584d3a27f609e00c5687f923905d94f98d67e716b373bb",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

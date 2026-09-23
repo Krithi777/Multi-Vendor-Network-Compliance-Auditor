@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-nat-add-route.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-nat-add-route.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "4001b4c4fe42cd415caa423a60780053443ed3daafad148d15a27be6e79092a2",
+  "sha256_sanitized": "bf369c609bf5c6f4516a5c785816889f2519c9ec39aa03386bf6d7e0e985b5b3",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 8
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,87 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+.Python
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# === Virtual environments ===
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# === Environment / secrets ===
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+config/local.py
+
+# === Postgres / DB ===
+*.sql.bak
+pgdata/
+db/*.dump
+db/backups/
+
+# === Docker ===
+docker-compose.override.yml
+*.pid
+
+# === Jupyter (if used for EDA on the corpus) ===
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# === OS / editor cruft ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# === Logs ===
+*.log
+logs/
+
+# === Test / coverage ===
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+
+# === Project-specific ===
+# configs/real/ and configs/synthetic/ are INTENTIONALLY NOT ignored: Phase 5's own
+# load_config_corpus.py, and Phase 6/7 (split + model training) after it, need the actual
+# config text on disk, not just the DB metadata rows. 1,098 short sanitized/synthetic config
+# files is small enough to commit directly — this is a hackathon repo meant to be
+# clone-and-run by teammates and judges, not a data-lake-backed production system.
+# If the corpus later grows much larger or picks up anything sensitive, switch to Git LFS
+# or an external store instead of ignoring it outright.
+
+# Generated PDF compliance reports (Phase 4/11 output, not source)
+reports/*.pdf
+output/*.pdf
+
+# pgvector / embedding caches
+*.faiss
+*.index
+embeddings_cache/
+
+# Node (if the training-loop GUI frontend lives in this repo)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+dist/
+.next/

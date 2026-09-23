@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-interface-ospf-network.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-interface-ospf-network.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "eabe125ca80506127e7f2aaa65e32935d6871f930a8ee3bcfeb93f9750a70403",
+  "sha256_sanitized": "eabe125ca80506127e7f2aaa65e32935d6871f930a8ee3bcfeb93f9750a70403",
+  "redactions": [],
+  "clean": true
+}

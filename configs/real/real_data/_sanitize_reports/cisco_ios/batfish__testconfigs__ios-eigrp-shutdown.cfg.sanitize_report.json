@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-eigrp-shutdown.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-eigrp-shutdown.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "81a883c089771622d82b27211f00ae6bf73962efc3154d7a8b19b8da8fa63b39",
+  "sha256_sanitized": "b6898a7dd404c52782d4ad3e2fce9e6c17dfcffe4ae3381a09fca558a8f06223",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

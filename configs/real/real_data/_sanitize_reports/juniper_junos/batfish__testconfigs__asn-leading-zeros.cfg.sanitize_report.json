@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__asn-leading-zeros.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__asn-leading-zeros.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "a0993b2e0c6c03432d72955e6f1301e509cb48da8beac9d7354da4a1533c5aae",
+  "sha256_sanitized": "a0993b2e0c6c03432d72955e6f1301e509cb48da8beac9d7354da4a1533c5aae",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

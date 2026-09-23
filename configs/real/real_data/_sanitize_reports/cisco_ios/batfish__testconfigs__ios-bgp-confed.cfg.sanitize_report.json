@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-confed.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-confed.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "1476f87360c5bd75d8e88eef9c8090d1871da74cbcd0fefa4adcc4d4b22783d2",
+  "sha256_sanitized": "5860e95972ffbb658360c7de9ac8da1331949f277178629fd3068a18600f6a05",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

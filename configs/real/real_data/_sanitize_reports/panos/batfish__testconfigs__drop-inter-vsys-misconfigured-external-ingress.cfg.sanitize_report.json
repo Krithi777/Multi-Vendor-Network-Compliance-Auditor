@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__drop-inter-vsys-misconfigured-external-ingress.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__drop-inter-vsys-misconfigured-external-ingress.cfg",
+  "vendor": "panos",
+  "sha256_original": "5ccfe9629ce328687506a59d2f934bd2583227761191ec40c29c8f5558f806bf",
+  "sha256_sanitized": "9aee16c9825e4d2003d32be574c89c73f19b4aa20638b62a9acfbf87c9a64011",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

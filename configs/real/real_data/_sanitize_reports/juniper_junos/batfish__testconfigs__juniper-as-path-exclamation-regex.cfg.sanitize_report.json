@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-as-path-exclamation-regex.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-as-path-exclamation-regex.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "a1b3f6bd0a72616f053ac1f81175b225076c1dd077b454d06efe43f40d8b73d0",
+  "sha256_sanitized": "a1b3f6bd0a72616f053ac1f81175b225076c1dd077b454d06efe43f40d8b73d0",
+  "redactions": [],
+  "clean": true
+}

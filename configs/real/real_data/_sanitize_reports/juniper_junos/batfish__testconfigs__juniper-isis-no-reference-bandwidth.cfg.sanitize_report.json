@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-isis-no-reference-bandwidth.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-isis-no-reference-bandwidth.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "4787fbca5ad9358037283431bef79fb046aaaac3a02608415f0fca71587cee07",
+  "sha256_sanitized": "4787fbca5ad9358037283431bef79fb046aaaac3a02608415f0fca71587cee07",
+  "redactions": [],
+  "clean": true
+}

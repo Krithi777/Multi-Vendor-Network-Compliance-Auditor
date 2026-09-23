@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__iosOspfCostDefaults.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__iosOspfCostDefaults.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "cf746ab97d0e2d4563b5ae25976a404d3f3c41dac09f841a4e6ec3e62b6e3db1",
+  "sha256_sanitized": "3d2632d7fa2598d8c5feedf4d6e8b694098dcabfd4af8207fb2d46a62146c3b7",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

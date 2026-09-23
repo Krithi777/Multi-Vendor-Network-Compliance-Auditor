@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__mpls_references.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__mpls_references.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "bbf6b909abe15a206a5e5e8953eb41fc79132b251599699e60420a11bb140678",
+  "sha256_sanitized": "bbf6b909abe15a206a5e5e8953eb41fc79132b251599699e60420a11bb140678",
+  "redactions": [],
+  "clean": true
+}

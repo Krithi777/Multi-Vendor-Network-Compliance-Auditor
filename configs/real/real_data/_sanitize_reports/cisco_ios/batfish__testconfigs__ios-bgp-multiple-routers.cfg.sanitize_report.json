@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-multiple-routers.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-multiple-routers.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "4b09c28b1f0d445bac856bf861641d75edda56141b536eebe5181ebae3dff66d",
+  "sha256_sanitized": "4b09c28b1f0d445bac856bf861641d75edda56141b536eebe5181ebae3dff66d",
+  "redactions": [],
+  "clean": true
+}

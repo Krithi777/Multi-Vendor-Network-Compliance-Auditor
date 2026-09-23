@@ -1,0 +1,26 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\github__ciscoconfparse__sample_03.ios",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\github__ciscoconfparse__sample_03.ios",
+  "vendor": "cisco_ios",
+  "sha256_original": "afe7ed03a38f0b8aa793073012619200c4c25a78f3e0c3a0e1c4b37693fe9aaf",
+  "sha256_sanitized": "f4f8d7c135b676cbe6338f5c4ae42379dc9cdbe5bf7c2d5e5513476e41fcf5c4",
+  "redactions": [
+    {
+      "type": "enable_secret",
+      "count": 1
+    },
+    {
+      "type": "username_password",
+      "count": 1
+    },
+    {
+      "type": "snmp_community",
+      "count": 6
+    },
+    {
+      "type": "ip_address",
+      "count": 12
+    }
+  ],
+  "clean": false
+}

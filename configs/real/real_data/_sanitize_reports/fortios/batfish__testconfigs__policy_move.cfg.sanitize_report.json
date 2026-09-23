@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__policy_move.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__policy_move.cfg",
+  "vendor": "fortios",
+  "sha256_original": "075faad1c5b1e2f5886ffdb5965348df0b88d077bcb744e953d37b7d5c171965",
+  "sha256_sanitized": "075faad1c5b1e2f5886ffdb5965348df0b88d077bcb744e953d37b7d5c171965",
+  "redactions": [],
+  "clean": true
+}

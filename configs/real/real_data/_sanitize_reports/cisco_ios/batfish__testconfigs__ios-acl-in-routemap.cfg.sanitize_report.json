@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-acl-in-routemap.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-acl-in-routemap.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "8f80a586cfe1b9fabd1d6e45e82cc016ffade789b3ecaf6a8d2c14c1df21774e",
+  "sha256_sanitized": "9624a9a37f7dac50a5bcf5452ecee37cf740579fd6e86e33392885b02a2d6bba",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__risky-terminal-actions.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__risky-terminal-actions.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "deb66cacb2d7110fc1a31b0ccd18ce494f7aedf516a662f3a0a791744d3e2109",
+  "sha256_sanitized": "deb66cacb2d7110fc1a31b0ccd18ce494f7aedf516a662f3a0a791744d3e2109",
+  "redactions": [],
+  "clean": true
+}

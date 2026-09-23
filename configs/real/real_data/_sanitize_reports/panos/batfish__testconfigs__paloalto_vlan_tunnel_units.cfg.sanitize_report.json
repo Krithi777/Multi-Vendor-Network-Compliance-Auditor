@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__paloalto_vlan_tunnel_units.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__paloalto_vlan_tunnel_units.cfg",
+  "vendor": "panos",
+  "sha256_original": "c0ed34bee5764bf85ff7d19b417cf553b2e58b29d41b1b373c232cc0d4936c9a",
+  "sha256_sanitized": "8e786f8b2d2ec5037306a23b319b74fc4d94cf54be9dcc8da5fa8f848c110a1f",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

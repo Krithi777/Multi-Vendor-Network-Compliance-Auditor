@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__flatten-delete-replace.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__flatten-delete-replace.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "e702d26d29c9d6f967d916334c48d156bbe8304fe449db4e44b31e6814fe3627",
+  "sha256_sanitized": "e702d26d29c9d6f967d916334c48d156bbe8304fe449db4e44b31e6814fe3627",
+  "redactions": [],
+  "clean": true
+}

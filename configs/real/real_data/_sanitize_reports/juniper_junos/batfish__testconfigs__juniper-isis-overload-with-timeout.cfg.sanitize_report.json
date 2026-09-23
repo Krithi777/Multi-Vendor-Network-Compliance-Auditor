@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-isis-overload-with-timeout.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-isis-overload-with-timeout.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "eea82376a648e18ef766e7b437432df7e50390f108362669be4767193f0843d6",
+  "sha256_sanitized": "eea82376a648e18ef766e7b437432df7e50390f108362669be4767193f0843d6",
+  "redactions": [],
+  "clean": true
+}

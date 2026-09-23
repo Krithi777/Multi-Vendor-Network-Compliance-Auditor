@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__junos-group-wildcard-quoted.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__junos-group-wildcard-quoted.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "a82748dfe248dba6ac0e724248350bde5f7faae6a96810a7390163252df7a4ed",
+  "sha256_sanitized": "23837194ca17cacc478903ccd6e2df79ea381ca0cb0baa3fba8201a0580acc69",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

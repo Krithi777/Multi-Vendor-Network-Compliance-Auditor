@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-eigrp-classic-routerid.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-eigrp-classic-routerid.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "0029197d24393a7ba62fd010bdf9c914cdd02e48de41c3a892044c249405f443",
+  "sha256_sanitized": "55cc9c456674a8803853beca63a68cc090b8886833ee68ef834c57653fd4020b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

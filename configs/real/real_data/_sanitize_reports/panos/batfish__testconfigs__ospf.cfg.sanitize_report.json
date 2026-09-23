@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__ospf.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__ospf.cfg",
+  "vendor": "panos",
+  "sha256_original": "fa0909f434f70e19d294527b9ab895f44e01ba3e90eb5d6e79599c5cc18264d6",
+  "sha256_sanitized": "7b5668b8aa6982da80a658378aa2290c6e6f85bba624c50793d36106fb9de9bc",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

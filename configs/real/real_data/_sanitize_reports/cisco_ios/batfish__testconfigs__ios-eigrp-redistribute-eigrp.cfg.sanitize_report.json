@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-eigrp-redistribute-eigrp.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-eigrp-redistribute-eigrp.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "5a5101b7206b9ec93821f9e1b5000eb2856b6955560b4d1164fcffb8d9c11c21",
+  "sha256_sanitized": "50b00c5095cdb336e851ac125fe6308439c9be061edd813412f954761c26417f",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

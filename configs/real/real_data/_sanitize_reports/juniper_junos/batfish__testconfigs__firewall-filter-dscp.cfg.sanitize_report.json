@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__firewall-filter-dscp.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__firewall-filter-dscp.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "c3168cce8042f3b0733ac44eafa051949c8e9474d78a27f3c9899dad70d81328",
+  "sha256_sanitized": "c3168cce8042f3b0733ac44eafa051949c8e9474d78a27f3c9899dad70d81328",
+  "redactions": [],
+  "clean": true
+}

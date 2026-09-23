@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__forwarding-table-export-default-accept.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__forwarding-table-export-default-accept.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "5c889098be899690a1400abd36e90fd4879d405a5277b6c6c9e4fbb7df7f8b1e",
+  "sha256_sanitized": "6cb7f1409193494565e7ae0c88f89f057149abb0b49a1bbc647e128526d733c2",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

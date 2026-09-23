@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-encapsulation-vlan.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-encapsulation-vlan.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "cdf7ae819e54db610162d4c89ffe92a6dfcaa063f00d7030996de7f2516112ed",
+  "sha256_sanitized": "5d4460c2ffeda936d0435f9447ff0866d1fce7337bf9e3de56c1347553dab4c3",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

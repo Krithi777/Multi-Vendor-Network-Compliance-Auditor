@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-advertise-inactive.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-advertise-inactive.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "280606e28cf251f0fb22a9a46d0fe5b02993cc3ef6d249b2182dcf503875fea3",
+  "sha256_sanitized": "f34d63294d97115ec0ad272d96d34e79ccbc7799612eac2a36326ad81383742d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

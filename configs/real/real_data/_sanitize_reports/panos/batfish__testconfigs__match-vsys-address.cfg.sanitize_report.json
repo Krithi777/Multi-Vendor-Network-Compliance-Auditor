@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__match-vsys-address.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__match-vsys-address.cfg",
+  "vendor": "panos",
+  "sha256_original": "69ee967c72e2e96f9375212feb66834ff7dbccac72d09f6e8f6b7c7e94853055",
+  "sha256_sanitized": "e1c57608146cf0bc8ec25309c36144b702ce31bd7b9ca0f9e9cd503d5ebd7435",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

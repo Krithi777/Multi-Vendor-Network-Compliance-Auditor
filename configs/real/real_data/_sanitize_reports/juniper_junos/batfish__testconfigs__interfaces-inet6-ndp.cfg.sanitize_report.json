@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interfaces-inet6-ndp.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interfaces-inet6-ndp.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "2b9e4ff04e81218d146729e6cdda77d26da7b194a5c4a58b8c7addde6c88acd3",
+  "sha256_sanitized": "2b9e4ff04e81218d146729e6cdda77d26da7b194a5c4a58b8c7addde6c88acd3",
+  "redactions": [],
+  "clean": true
+}

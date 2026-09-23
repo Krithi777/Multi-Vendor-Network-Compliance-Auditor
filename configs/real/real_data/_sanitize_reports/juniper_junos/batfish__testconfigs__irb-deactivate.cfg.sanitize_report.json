@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__irb-deactivate.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__irb-deactivate.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "3a20296b01b676a7e09b88af27a0f08f6036b2638b05019fc87571a24e1bc21e",
+  "sha256_sanitized": "abcfbf8a857b1b81af3c7d3d97c3a2e23ae46beec5a86b4f52a5fdf9dbff81ca",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

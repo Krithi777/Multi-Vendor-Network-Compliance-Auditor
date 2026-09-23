@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\github__arista_eos_automation_with_eapi__switch1.txt",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\github__arista_eos_automation_with_eapi__switch1.txt",
+  "vendor": "arista_eos",
+  "sha256_original": "23bfec2c0e6eaf59efffd3624d426611271658b94cf279c2b0471741f64bf4ec",
+  "sha256_sanitized": "b745f7ec0376e5712b4350a0168b572117a34abb4c8b47d88c72ad1597b70739",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

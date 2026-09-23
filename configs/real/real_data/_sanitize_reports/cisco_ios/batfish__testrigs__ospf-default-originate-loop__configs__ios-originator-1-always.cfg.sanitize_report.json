@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ospf-default-originate-loop__configs__ios-originator-1-always.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ospf-default-originate-loop__configs__ios-originator-1-always.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "70eb6c3b6d3c9329899b1552cad651f20eb58e2c24b5362a58b7f0e2ed2edd4b",
+  "sha256_sanitized": "b0bc372eeb2ea2ebbfb1f2b3935e16141fa8912a32f3851052bf682d6166f082",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

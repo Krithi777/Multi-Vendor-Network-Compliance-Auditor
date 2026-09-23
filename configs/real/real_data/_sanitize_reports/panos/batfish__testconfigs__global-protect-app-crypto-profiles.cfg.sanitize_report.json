@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__global-protect-app-crypto-profiles.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__global-protect-app-crypto-profiles.cfg",
+  "vendor": "panos",
+  "sha256_original": "cf25b1a5b5d1e8af7071adc682827786437d5a769d2163ad31787f9623a135ca",
+  "sha256_sanitized": "cf25b1a5b5d1e8af7071adc682827786437d5a769d2163ad31787f9623a135ca",
+  "redactions": [],
+  "clean": true
+}

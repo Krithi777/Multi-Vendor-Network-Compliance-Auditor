@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__interface-bad-loopback-addr.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__interface-bad-loopback-addr.cfg",
+  "vendor": "panos",
+  "sha256_original": "005e94f185f12ac2e9d7f07d755085b2724c70d3f05dffc42638392ed2b7a81b",
+  "sha256_sanitized": "23c56219caa8e19ba8ffb5ec800a7c3f0806344680d33e1155ee1adb0e2dc0a6",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__junos-vlans-mac-move-limit.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__junos-vlans-mac-move-limit.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "53a4cbfdeb6727d9fcaf7a589e7d2ab1fa5224a4517bc1385d13dfac134ce680",
+  "sha256_sanitized": "53a4cbfdeb6727d9fcaf7a589e7d2ab1fa5224a4517bc1385d13dfac134ce680",
+  "redactions": [],
+  "clean": true
+}

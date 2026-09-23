@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__internet_service_name.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__internet_service_name.cfg",
+  "vendor": "fortios",
+  "sha256_original": "0e91e25df54fa286b75adab5589f24b674cc5a813fa62d2b28f3c9cf01e98d98",
+  "sha256_sanitized": "0e91e25df54fa286b75adab5589f24b674cc5a813fa62d2b28f3c9cf01e98d98",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-nat-malformed-pool.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-nat-malformed-pool.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "891b641540f0bbdb3eb6431272cdd10d4f5b310c21124ee5fc3227b7daaf626f",
+  "sha256_sanitized": "1aa8c88e7862c3f610ba944f878d63dcef0f7ef085c70241d227fa619c2cdb1b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

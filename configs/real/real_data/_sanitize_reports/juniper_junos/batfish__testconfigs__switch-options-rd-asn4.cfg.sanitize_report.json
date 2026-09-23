@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__switch-options-rd-asn4.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__switch-options-rd-asn4.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "8aad318ffa35279d3fe91994aa508420fc8b608fab44f88d5fbe740e07ad5022",
+  "sha256_sanitized": "8aad318ffa35279d3fe91994aa508420fc8b608fab44f88d5fbe740e07ad5022",
+  "redactions": [],
+  "clean": true
+}

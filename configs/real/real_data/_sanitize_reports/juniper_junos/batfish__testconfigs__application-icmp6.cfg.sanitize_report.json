@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__application-icmp6.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__application-icmp6.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "1febab96d53d07a68808667c945ad2afd6e5ff1966943818a818ce75acf02d22",
+  "sha256_sanitized": "1febab96d53d07a68808667c945ad2afd6e5ff1966943818a818ce75acf02d22",
+  "redactions": [],
+  "clean": true
+}

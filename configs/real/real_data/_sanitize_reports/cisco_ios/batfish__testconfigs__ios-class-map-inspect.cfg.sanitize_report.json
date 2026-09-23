@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-class-map-inspect.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-class-map-inspect.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "e19cdef228645a279bf06c0c7cdd1d1df7a440a29cdb597ecb0a907e31008985",
+  "sha256_sanitized": "e19cdef228645a279bf06c0c7cdd1d1df7a440a29cdb597ecb0a907e31008985",
+  "redactions": [],
+  "clean": true
+}

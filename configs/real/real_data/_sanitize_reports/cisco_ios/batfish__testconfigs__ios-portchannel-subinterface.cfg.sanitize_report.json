@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-portchannel-subinterface.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-portchannel-subinterface.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "bb6f544ea7256b29b34814afab9504db2e868884c428d741a9526daae83339e9",
+  "sha256_sanitized": "bb6f544ea7256b29b34814afab9504db2e868884c428d741a9526daae83339e9",
+  "redactions": [],
+  "clean": true
+}

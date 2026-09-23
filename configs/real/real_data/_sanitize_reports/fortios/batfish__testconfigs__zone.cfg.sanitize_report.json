@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__zone.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__zone.cfg",
+  "vendor": "fortios",
+  "sha256_original": "4e06ab2e5091e80fe18efdbe2e4377aaf9363ab948768e59837df0d19bed9739",
+  "sha256_sanitized": "459a86303d9a53ea61cd5c85481cf7ee8caeb9daef931463e821ac443743255c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

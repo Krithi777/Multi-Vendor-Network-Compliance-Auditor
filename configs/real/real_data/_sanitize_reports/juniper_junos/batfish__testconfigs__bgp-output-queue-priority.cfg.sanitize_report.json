@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-output-queue-priority.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-output-queue-priority.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "657a364e9220d455eaa0624f9cd208ca53bcb248b46c5b1fe2ab2aa7e003edd4",
+  "sha256_sanitized": "657a364e9220d455eaa0624f9cd208ca53bcb248b46c5b1fe2ab2aa7e003edd4",
+  "redactions": [],
+  "clean": true
+}

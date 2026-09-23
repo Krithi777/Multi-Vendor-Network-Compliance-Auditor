@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interface-vtnet.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interface-vtnet.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "736c03908339b529f93f6c19addd31a409a20d4e72b28e07ab7d14c354556ad2",
+  "sha256_sanitized": "b81390d4db49efbeff08258f27bb53431d2ded9f47a2d89c4c7feded213fe286",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

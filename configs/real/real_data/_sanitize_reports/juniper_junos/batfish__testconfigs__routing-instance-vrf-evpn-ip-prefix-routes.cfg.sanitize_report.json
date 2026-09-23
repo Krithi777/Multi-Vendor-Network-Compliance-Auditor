@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__routing-instance-vrf-evpn-ip-prefix-routes.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__routing-instance-vrf-evpn-ip-prefix-routes.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "656d4a1d5326cb5ad9102c101dabf70f52e6348124f6a43adef7fdb7e1fe6183",
+  "sha256_sanitized": "656d4a1d5326cb5ad9102c101dabf70f52e6348124f6a43adef7fdb7e1fe6183",
+  "redactions": [],
+  "clean": true
+}

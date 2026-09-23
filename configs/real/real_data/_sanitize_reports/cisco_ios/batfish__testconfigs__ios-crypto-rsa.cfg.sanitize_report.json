@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-crypto-rsa.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-crypto-rsa.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "81f8c173251293aebb92d02bd62cfa2631d87b461c71f7bb6eadbe5ced0ce34e",
+  "sha256_sanitized": "6a5100c7ad607dbec208929773fec1ac76ceb8050fe1f8736eb349244f7d3378",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

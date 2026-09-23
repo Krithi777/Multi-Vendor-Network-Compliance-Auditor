@@ -1,0 +1,18 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\github__ciscoconfparse__HP_Procurve.conf",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\github__ciscoconfparse__HP_Procurve.conf",
+  "vendor": "cisco_ios",
+  "sha256_original": "4bb35aa975becdfc990e0d452769babb9a156ad1754a56eed3b552d945854d0d",
+  "sha256_sanitized": "831a7add81ccae2e90b03ac4fcdeb2f2eaaf717c2fdfbd21e7b2983a952366b9",
+  "redactions": [
+    {
+      "type": "line_password",
+      "count": 1
+    },
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

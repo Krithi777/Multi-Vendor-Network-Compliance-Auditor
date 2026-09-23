@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-redistribute-ospf-match-internal.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-redistribute-ospf-match-internal.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "5eb0cdc830866b517368a63a08699cc07de415d53494a02d570b8bd7a212c5c6",
+  "sha256_sanitized": "5eb0cdc830866b517368a63a08699cc07de415d53494a02d570b8bd7a212c5c6",
+  "redactions": [],
+  "clean": true
+}

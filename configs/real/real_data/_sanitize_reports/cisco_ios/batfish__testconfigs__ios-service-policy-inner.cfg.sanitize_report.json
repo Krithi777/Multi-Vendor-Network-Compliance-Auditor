@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-service-policy-inner.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-service-policy-inner.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "98530b99d2e5939c3338c4da66dcc05382884c61672f1c55b6379596c98125ad",
+  "sha256_sanitized": "98530b99d2e5939c3338c4da66dcc05382884c61672f1c55b6379596c98125ad",
+  "redactions": [],
+  "clean": true
+}

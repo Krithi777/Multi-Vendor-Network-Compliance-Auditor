@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__wildcard-nesting.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__wildcard-nesting.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "998f68595685841ca05b585bfdd05ea56c524a8c4a89d07a95f3251754b81137",
+  "sha256_sanitized": "72f4e8421f54b6c7e705df8fd12ca6513990416c1b38fa16426f86c3a8dd9ee7",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

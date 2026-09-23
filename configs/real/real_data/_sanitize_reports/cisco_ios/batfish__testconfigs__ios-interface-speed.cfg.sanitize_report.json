@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-interface-speed.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-interface-speed.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "7028531f5601b40638718a34b910e9997345f408a1209f6de2c30588b08f8937",
+  "sha256_sanitized": "7028531f5601b40638718a34b910e9997345f408a1209f6de2c30588b08f8937",
+  "redactions": [],
+  "clean": true
+}

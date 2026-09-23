@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__application-override-tracing.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__application-override-tracing.cfg",
+  "vendor": "panos",
+  "sha256_original": "199bb65fce028570ecd6596a52ab9d77c687cc315c6646fcd7f4ce818b247c60",
+  "sha256_sanitized": "f0bbc26e5e64324dd683cb527fd171553cc86586f2042701a8fb5e5f7dfbe8d9",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-isis.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-isis.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "769c5e91ac56aa9724dd7ad49675add0522c7f5114511d9a0687daecc10a5d9a",
+  "sha256_sanitized": "4c8e9f8ed8e5ff2a28b0507d1e506746210e8606f14c9fdc5a1bd993f6a7b664",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

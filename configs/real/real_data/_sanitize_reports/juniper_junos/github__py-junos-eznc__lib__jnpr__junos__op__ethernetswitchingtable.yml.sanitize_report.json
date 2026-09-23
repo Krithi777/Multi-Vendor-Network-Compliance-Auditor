@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__op__ethernetswitchingtable.yml",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__op__ethernetswitchingtable.yml",
+  "vendor": "juniper_junos",
+  "sha256_original": "5b9f0356cef7170548c19fd6cfba797351c5481e1a3d6a59a37c8c5cf023222a",
+  "sha256_sanitized": "5b9f0356cef7170548c19fd6cfba797351c5481e1a3d6a59a37c8c5cf023222a",
+  "redactions": [],
+  "clean": true
+}

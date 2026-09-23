@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__ignored-lines.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__ignored-lines.cfg",
+  "vendor": "panos",
+  "sha256_original": "0ce58308c5bab5f46b8e2ad9da0f3cfbe75d193a7634b3943454f82d9ddf2309",
+  "sha256_sanitized": "9baa158f942a3d46ca8101085957202a07dc92695736f5ef4581e43aa0a8edd1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

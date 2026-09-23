@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__static-route-convert-warnings.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__static-route-convert-warnings.cfg",
+  "vendor": "panos",
+  "sha256_original": "2b522aa72691841df29cf88b4b9fe739916ad0988e258da1337a70ef3e5a3390",
+  "sha256_sanitized": "58f234f2d4e10bd37d9cacdc2276dcf69f707dad0187905dc4b337dc590c4479",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ospf-default-originate__configs__originator-static-route.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ospf-default-originate__configs__originator-static-route.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "23c839e5fca72da5f77fa895e977e0f53a071ab21b9587b04a649b7051dfe9e3",
+  "sha256_sanitized": "0774cfd97f43c250dde4a891128855a01f46d60a37fb9113c13223ba69104269",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

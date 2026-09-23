@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-interface-unshut.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-interface-unshut.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "f1322df27a09afaa28d3aad14d2ed112a9fc1b7d2aee19075be3232bfcd15b87",
+  "sha256_sanitized": "f1322df27a09afaa28d3aad14d2ed112a9fc1b7d2aee19075be3232bfcd15b87",
+  "redactions": [],
+  "clean": true
+}

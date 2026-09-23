@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__isis-ignore-attached-bit.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__isis-ignore-attached-bit.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "072fc297cbdb06f162a2381621be9dd60e02ddbf6bb0dff12f3bb7f8fd285588",
+  "sha256_sanitized": "072fc297cbdb06f162a2381621be9dd60e02ddbf6bb0dff12f3bb7f8fd285588",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interfaces-ethernet-switch-profile.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interfaces-ethernet-switch-profile.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "f03e18b7d184f6c074cbd0b79659abe9fe648b8391140bbb5628a915c1c19772",
+  "sha256_sanitized": "f03e18b7d184f6c074cbd0b79659abe9fe648b8391140bbb5628a915c1c19772",
+  "redactions": [],
+  "clean": true
+}

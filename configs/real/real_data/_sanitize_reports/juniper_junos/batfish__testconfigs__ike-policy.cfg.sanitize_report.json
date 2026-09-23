@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ike-policy.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ike-policy.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ffb6f12fed288d12b977f0161507ce4b82c58aae7f644a88f103c6c7aaa8111d",
+  "sha256_sanitized": "ffb6f12fed288d12b977f0161507ce4b82c58aae7f644a88f103c6c7aaa8111d",
+  "redactions": [],
+  "clean": true
+}

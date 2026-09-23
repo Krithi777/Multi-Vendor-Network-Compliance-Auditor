@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bfd-template.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bfd-template.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "65c91cc056efeb8212e6f043eb5c4f64485b4f60710b4f0853546e92fad250b3",
+  "sha256_sanitized": "65c91cc056efeb8212e6f043eb5c4f64485b4f60710b4f0853546e92fad250b3",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interfaces-family-bridge-switching.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interfaces-family-bridge-switching.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "a55a8ba74c3e2c6f794291a2c2c11bfe1799a4c019a750ec7a33a06546c7e618",
+  "sha256_sanitized": "a55a8ba74c3e2c6f794291a2c2c11bfe1799a4c019a750ec7a33a06546c7e618",
+  "redactions": [],
+  "clean": true
+}

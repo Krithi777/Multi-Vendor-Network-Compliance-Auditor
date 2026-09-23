@@ -1,0 +1,218 @@
+[
+  {
+    "field_a": "management.aaa.enabled",
+    "relation_type": "requires",
+    "field_b": "management.password.strong_policy_enabled",
+    "rationale": "AAA auth is meaningless without a strong password policy backing it"
+  },
+  {
+    "field_a": "management.https.enabled",
+    "relation_type": "conflicts_with",
+    "field_b": "management.http.enabled",
+    "rationale": "disabling HTTP before HTTPS is confirmed reachable risks admin lockout"
+  },
+  {
+    "field_a": "management.logging.remote_syslog_configured",
+    "relation_type": "requires",
+    "field_b": "management.ntp.configured",
+    "rationale": "syslog timestamps are meaningless without synced clock"
+  },
+  {
+    "field_a": "management.ntp.authentication_enabled",
+    "relation_type": "requires",
+    "field_b": "management.ntp.configured",
+    "rationale": "can't authenticate NTP that isn't configured"
+  },
+  {
+    "field_a": "management.snmp.secure_configuration",
+    "relation_type": "requires",
+    "field_b": "management.acl.configured",
+    "rationale": "SNMP hardening assumes an ACL restricts who can query it"
+  },
+  {
+    "field_a": "interfaces.unused_ports_disabled",
+    "relation_type": "conflicts_with",
+    "field_b": "management.admin_access.restricted",
+    "rationale": "disabling the wrong port can cut the active management path"
+  },
+  {
+    "field_a": "management.ssh.version",
+    "relation_type": "shares_path_with",
+    "field_b": "management.admin_access.restricted",
+    "rationale": "both gate the same management access path"
+  },
+  {
+    "field_a": "management.session.idle_timeout_minutes",
+    "relation_type": "enables",
+    "field_b": "management.login.max_failed_attempts",
+    "rationale": "session controls jointly enforce access hygiene"
+  },
+  {
+    "field_a": "management.crypto.weak_algorithms_disabled",
+    "relation_type": "conflicts_with",
+    "field_b": "management.ssh.version",
+    "rationale": "disabling legacy ciphers can break an SSH session already using them"
+  },
+  {
+    "field_a": "management.protocols.insecure_disabled",
+    "relation_type": "requires",
+    "field_b": "management.https.enabled",
+    "rationale": "don't disable insecure mgmt protocols until a secure one is confirmed up"
+  },
+  {
+    "field_a": "management.protocols.insecure_disabled",
+    "relation_type": "requires",
+    "field_b": "management.ssh.version",
+    "rationale": "disabling Telnet/legacy protocols requires SSHv2 to be confirmed as the fallback management channel"
+  },
+  {
+    "field_a": "management.telnet.enabled",
+    "relation_type": "requires",
+    "field_b": "management.ssh.version",
+    "rationale": "Telnet must only be disabled after SSHv2 access is verified, or the device becomes unreachable"
+  },
+  {
+    "field_a": "management.telnet.enabled",
+    "relation_type": "shares_path_with",
+    "field_b": "management.admin_access.restricted",
+    "rationale": "Telnet is a management access channel governed by the same access restrictions"
+  },
+  {
+    "field_a": "management.http.enabled",
+    "relation_type": "shares_path_with",
+    "field_b": "management.admin_access.restricted",
+    "rationale": "the HTTP management service is gated by the same admin access restrictions"
+  },
+  {
+    "field_a": "management.https.enabled",
+    "relation_type": "shares_path_with",
+    "field_b": "management.admin_access.restricted",
+    "rationale": "the HTTPS management service is gated by the same admin access restrictions"
+  },
+  {
+    "field_a": "management.acl.configured",
+    "relation_type": "shares_path_with",
+    "field_b": "management.admin_access.restricted",
+    "rationale": "the management ACL is the mechanism that implements admin access restriction"
+  },
+  {
+    "field_a": "management.acl.configured",
+    "relation_type": "shares_path_with",
+    "field_b": "management.ssh.version",
+    "rationale": "a management ACL filters the same inbound path SSH sessions arrive on"
+  },
+  {
+    "field_a": "management.acl.configured",
+    "relation_type": "shares_path_with",
+    "field_b": "management.https.enabled",
+    "rationale": "a management ACL filters the same inbound path HTTPS sessions arrive on"
+  },
+  {
+    "field_a": "management.acl.configured",
+    "relation_type": "conflicts_with",
+    "field_b": "management.telnet.enabled",
+    "rationale": "applying a management ACL while Telnet is still the active session can lock out the operator"
+  },
+  {
+    "field_a": "management.admin_access.restricted",
+    "relation_type": "requires",
+    "field_b": "management.acl.configured",
+    "rationale": "admin access restriction is enforced through the management ACL"
+  },
+  {
+    "field_a": "management.admin_access.restricted",
+    "relation_type": "requires",
+    "field_b": "management.aaa.enabled",
+    "rationale": "restricting admin access relies on AAA to identify and authorize administrators"
+  },
+  {
+    "field_a": "management.aaa.enabled",
+    "relation_type": "requires",
+    "field_b": "management.logging.enabled",
+    "rationale": "AAA accounting records are only useful if logging is enabled"
+  },
+  {
+    "field_a": "management.login.max_failed_attempts",
+    "relation_type": "requires",
+    "field_b": "management.aaa.enabled",
+    "rationale": "account lockout thresholds are enforced by the AAA subsystem"
+  },
+  {
+    "field_a": "management.password.strong_policy_enabled",
+    "relation_type": "enables",
+    "field_b": "management.login.max_failed_attempts",
+    "rationale": "password policy and lockout threshold together defeat brute-force attacks"
+  },
+  {
+    "field_a": "management.session.idle_timeout_minutes",
+    "relation_type": "shares_path_with",
+    "field_b": "management.ssh.version",
+    "rationale": "idle timeout applies to the active SSH management session"
+  },
+  {
+    "field_a": "management.logging.remote_syslog_configured",
+    "relation_type": "requires",
+    "field_b": "management.logging.enabled",
+    "rationale": "remote syslog forwards logs that must first be generated locally"
+  },
+  {
+    "field_a": "management.logging.enabled",
+    "relation_type": "enables",
+    "field_b": "management.logging.remote_syslog_configured",
+    "rationale": "local logging is the prerequisite for forwarding to a remote collector"
+  },
+  {
+    "field_a": "management.logging.remote_syslog_configured",
+    "relation_type": "requires",
+    "field_b": "management.acl.configured",
+    "rationale": "syslog traffic must be permitted by management ACLs or logs are dropped"
+  },
+  {
+    "field_a": "management.ntp.configured",
+    "relation_type": "requires",
+    "field_b": "management.acl.configured",
+    "rationale": "NTP peers should be restricted by ACL to prevent time-source spoofing"
+  },
+  {
+    "field_a": "management.protocols.insecure_disabled",
+    "relation_type": "requires",
+    "field_b": "management.snmp.secure_configuration",
+    "rationale": "SNMPv1/v2c counts as insecure; migrate to secure SNMP before disabling it"
+  },
+  {
+    "field_a": "routing.protocol_authentication_enabled",
+    "relation_type": "conflicts_with",
+    "field_b": "interfaces.unused_ports_disabled",
+    "rationale": "shutting down interfaces can drop routing adjacencies that authentication changes depend on"
+  },
+  {
+    "field_a": "routing.protocol_authentication_enabled",
+    "relation_type": "requires",
+    "field_b": "management.crypto.weak_algorithms_disabled",
+    "rationale": "routing authentication must use strong algorithms, not MD5 or plaintext"
+  },
+  {
+    "field_a": "management.banner.configured",
+    "relation_type": "shares_path_with",
+    "field_b": "management.ssh.version",
+    "rationale": "the login banner is presented on the SSH management path before authentication"
+  },
+  {
+    "field_a": "management.crypto.weak_algorithms_disabled",
+    "relation_type": "conflicts_with",
+    "field_b": "management.https.enabled",
+    "rationale": "removing weak TLS ciphers can break existing browser or API management sessions"
+  },
+  {
+    "field_a": "management.https.enabled",
+    "relation_type": "requires",
+    "field_b": "management.crypto.weak_algorithms_disabled",
+    "rationale": "HTTPS with weak ciphers gives false assurance of secure management"
+  },
+  {
+    "field_a": "interfaces.unused_ports_disabled",
+    "relation_type": "conflicts_with",
+    "field_b": "management.ssh.version",
+    "rationale": "shutting a port can sever the interface the active SSH session traverses"
+  }
+]

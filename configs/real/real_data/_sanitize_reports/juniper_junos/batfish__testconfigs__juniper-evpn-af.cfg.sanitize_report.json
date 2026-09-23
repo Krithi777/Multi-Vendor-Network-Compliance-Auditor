@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-evpn-af.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-evpn-af.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "2bf8a50d3a8f9beffb7737ce65af353d8c0fa141059c765f9c7cf4eb70bd85d2",
+  "sha256_sanitized": "8348e39ad67a605f031408d88a13ce8d559938aa324feeea4ba4b8d743a9eef8",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

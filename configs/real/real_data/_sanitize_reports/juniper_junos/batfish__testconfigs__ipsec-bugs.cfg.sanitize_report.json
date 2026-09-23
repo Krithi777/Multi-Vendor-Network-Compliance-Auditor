@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ipsec-bugs.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ipsec-bugs.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "5f8a31e2240104e39471ddf78c47b2ec7df0cb53b2750d57568a2059c55989ee",
+  "sha256_sanitized": "5f8a31e2240104e39471ddf78c47b2ec7df0cb53b2750d57568a2059c55989ee",
+  "redactions": [],
+  "clean": true
+}

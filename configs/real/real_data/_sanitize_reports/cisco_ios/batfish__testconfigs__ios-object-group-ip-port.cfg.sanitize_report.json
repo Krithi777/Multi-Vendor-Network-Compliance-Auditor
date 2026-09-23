@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-object-group-ip-port.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-object-group-ip-port.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "ff9fc19283a5f7458326dd2c123ac9dbb9810064eed52f937cd31fdfd87a15dd",
+  "sha256_sanitized": "ff9fc19283a5f7458326dd2c123ac9dbb9810064eed52f937cd31fdfd87a15dd",
+  "redactions": [],
+  "clean": true
+}

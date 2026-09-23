@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__address-object-group-inheritance.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__address-object-group-inheritance.cfg",
+  "vendor": "panos",
+  "sha256_original": "b42f088ba461e5f0b09d4fa7a8def03f82b15223ea06da984e4313f0720fc836",
+  "sha256_sanitized": "ccfea2083d7a06a96a0174dcdc801225f8a0a42eace39b3657fbd9b2b6bfa90c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

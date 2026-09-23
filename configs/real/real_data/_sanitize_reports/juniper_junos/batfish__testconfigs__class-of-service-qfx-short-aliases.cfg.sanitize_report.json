@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__class-of-service-qfx-short-aliases.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__class-of-service-qfx-short-aliases.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ff52528237d738106de795466c879ae8e1cd2fc31d91c9190b6b2d63977cd335",
+  "sha256_sanitized": "ff52528237d738106de795466c879ae8e1cd2fc31d91c9190b6b2d63977cd335",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__panorama-managed-device-hostname.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__panorama-managed-device-hostname.cfg",
+  "vendor": "panos",
+  "sha256_original": "30da9082c9e6a761b522324eff7d6158fd96b84e2b457bfb8a64560384d2a728",
+  "sha256_sanitized": "0005d7fb7f3d70cb5d102c3e0cb4b33a0e1ac5c2a82240b35198e3e2f4677721",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-crypto-transform-set.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-crypto-transform-set.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "9a9ae37d21b72f3786a00b761b19e1f92c2181fb48062f9b5e5086ca6bd4ea30",
+  "sha256_sanitized": "9a9ae37d21b72f3786a00b761b19e1f92c2181fb48062f9b5e5086ca6bd4ea30",
+  "redactions": [],
+  "clean": true
+}

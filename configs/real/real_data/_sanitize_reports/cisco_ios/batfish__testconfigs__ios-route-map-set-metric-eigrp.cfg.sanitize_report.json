@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-route-map-set-metric-eigrp.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-route-map-set-metric-eigrp.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "9944c434adaeefcb01658f9f3e9ea45e64e1739d621e2c038fc86d3afa8f6097",
+  "sha256_sanitized": "9944c434adaeefcb01658f9f3e9ea45e64e1739d621e2c038fc86d3afa8f6097",
+  "redactions": [],
+  "clean": true
+}

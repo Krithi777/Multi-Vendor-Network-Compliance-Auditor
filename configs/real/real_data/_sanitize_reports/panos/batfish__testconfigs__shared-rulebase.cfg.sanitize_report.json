@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__shared-rulebase.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__shared-rulebase.cfg",
+  "vendor": "panos",
+  "sha256_original": "f8c8abb3295a06c56bc02370f23880ae317e03208a13c15402ce6168679011d3",
+  "sha256_sanitized": "f8c8abb3295a06c56bc02370f23880ae317e03208a13c15402ce6168679011d3",
+  "redactions": [],
+  "clean": true
+}

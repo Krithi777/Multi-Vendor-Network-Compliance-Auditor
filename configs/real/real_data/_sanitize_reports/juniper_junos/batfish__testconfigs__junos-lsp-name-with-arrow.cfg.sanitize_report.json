@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__junos-lsp-name-with-arrow.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__junos-lsp-name-with-arrow.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "95fa8ff9817b4e367ae8f79c41477e3f0223cf2a291ba757a0b03c589a30adf7",
+  "sha256_sanitized": "ad3c02e0052cccee11a596dccca785d8f295815dab7eb064c031370b5cc11c25",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

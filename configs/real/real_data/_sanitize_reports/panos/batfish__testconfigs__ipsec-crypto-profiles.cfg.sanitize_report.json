@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__ipsec-crypto-profiles.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__ipsec-crypto-profiles.cfg",
+  "vendor": "panos",
+  "sha256_original": "49424f37aea7d15bc0be2b5ffe3e52a7ca206d1479fb5e2e8f1c9b4088181482",
+  "sha256_sanitized": "49424f37aea7d15bc0be2b5ffe3e52a7ca206d1479fb5e2e8f1c9b4088181482",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__authentication-order.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__authentication-order.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "d61611be64911a6aa8489bf6edf4535e735255e2a34e247386cd361d5f97ffbd",
+  "sha256_sanitized": "d61611be64911a6aa8489bf6edf4535e735255e2a34e247386cd361d5f97ffbd",
+  "redactions": [],
+  "clean": true
+}

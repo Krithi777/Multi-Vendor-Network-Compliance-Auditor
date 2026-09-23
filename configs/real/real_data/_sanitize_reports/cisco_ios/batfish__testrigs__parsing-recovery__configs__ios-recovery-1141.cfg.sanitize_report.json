@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__parsing-recovery__configs__ios-recovery-1141.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__parsing-recovery__configs__ios-recovery-1141.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "efb23a92963eb779ff23aaf927de4436c5c85eae7c033dffe64aa464f2146950",
+  "sha256_sanitized": "efb23a92963eb779ff23aaf927de4436c5c85eae7c033dffe64aa464f2146950",
+  "redactions": [],
+  "clean": true
+}

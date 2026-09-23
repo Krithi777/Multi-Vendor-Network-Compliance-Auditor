@@ -1,0 +1,18 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__ciscoconfparse2__sample_01.junos",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__ciscoconfparse2__sample_01.junos",
+  "vendor": "juniper_junos",
+  "sha256_original": "c481c69ded9cf5720e5f863f028f2644e48f26bec25df98df6c3ad2dcb554db1",
+  "sha256_sanitized": "68c23e8491e7a091486ca666dacb4c51e4cdde95019065ec85de94d676192754",
+  "redactions": [
+    {
+      "type": "root_auth",
+      "count": 2
+    },
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

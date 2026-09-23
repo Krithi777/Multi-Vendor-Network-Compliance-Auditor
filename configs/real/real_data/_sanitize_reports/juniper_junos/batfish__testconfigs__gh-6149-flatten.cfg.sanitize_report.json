@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__gh-6149-flatten.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__gh-6149-flatten.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "6d17dae385914feca769a302890bdacd44513f4c81dd18f4f1ebf47cf48fb6b4",
+  "sha256_sanitized": "e52bdedac0af275f85657f2d84f3198c84bc4e88b0bf65be57d316b9fce11571",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

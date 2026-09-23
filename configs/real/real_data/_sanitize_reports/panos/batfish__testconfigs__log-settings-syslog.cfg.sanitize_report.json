@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__log-settings-syslog.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__log-settings-syslog.cfg",
+  "vendor": "panos",
+  "sha256_original": "d667a590a5a95aca6b08cc4f76a0a7898419c07ba5aa5a13fea1ae37ce90bc7a",
+  "sha256_sanitized": "240849586f72fb12e43989b9a7602965137ed8fc92c9a630b47e4e162ace82e1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

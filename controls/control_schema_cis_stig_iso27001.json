@@ -1,0 +1,1390 @@
+[
+  {
+    "control_id": "CTRL-001",
+    "canonical_field": "management.ssh.version",
+    "description": "SSH must be restricted to version 2",
+    "operator": "eq",
+    "expected_value": 2,
+    "severity": "high",
+    "nist_800_53": [
+      "SC-8",
+      "SC-13",
+      "SC-23"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "2.1.1.2"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.10.1.2"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": null,
+        "note": "No SSH version control in this benchmark"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": null,
+        "note": "No SSH version control in this benchmark"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": null,
+        "note": "No SSH version control in this benchmark"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-001210 (+001200)"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-001200"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000205",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": null,
+        "note": "No STIG rule covers this control"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000700",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control"
+      }
+    ],
+    "iso_27001": [
+      "8.20",
+      "8.24"
+    ]
+  },
+  {
+    "control_id": "CTRL-002",
+    "canonical_field": "management.telnet.enabled",
+    "description": "Telnet must be disabled for device management",
+    "operator": "eq",
+    "expected_value": false,
+    "severity": "high",
+    "nist_800_53": [
+      "CM-7",
+      "SC-7",
+      "SC-8",
+      "SC-23"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.2.2"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.10.6"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.4.5"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.2.3"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.8"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000140",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000470"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000265",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000061"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000340"
+      }
+    ],
+    "iso_27001": [
+      "8.20",
+      "8.24"
+    ]
+  },
+  {
+    "control_id": "CTRL-003",
+    "canonical_field": "management.http.enabled",
+    "description": "HTTP (unencrypted) management interface must be disabled",
+    "operator": "eq",
+    "expected_value": false,
+    "severity": "high",
+    "nist_800_53": [
+      "CM-7",
+      "SC-7",
+      "SC-8",
+      "SC-23"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.2.9",
+        "note": "Bundled with HTTPS control; benchmark has no standalone HTTP-disable rec"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.10.2.1"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.4.5"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.2.3"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.9",
+        "note": "TOC has duplicate '2.9' numbering; this is the 'API access using https' entry"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000470"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": null,
+        "note": "No STIG rule covers this control; No router-STIG rule; SRX has JUSX-DM-000167"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000265",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000061"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000340"
+      }
+    ],
+    "iso_27001": [
+      "8.20",
+      "8.24"
+    ]
+  },
+  {
+    "control_id": "CTRL-004",
+    "canonical_field": "management.https.enabled",
+    "description": "HTTPS must be enabled for web-based device management",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "SC-8",
+      "SC-13",
+      "SC-23"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.2.9",
+        "note": "Bundled with HTTP-disable control"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.10.2.2"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.4.5"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.2.5"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.9",
+        "note": "TOC has duplicate '2.9' numbering; this is the 'API access using https' entry"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-001210",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": null,
+        "note": "No STIG rule covers this control"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000265",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": null,
+        "note": "No STIG rule covers this control"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": null,
+        "note": "No STIG rule covers this control; ARST-ND-000340 makes HTTPS mgmt (http-commands) a STIG finding; no positive rule requiring HTTPS enabled"
+      }
+    ],
+    "iso_27001": [
+      "8.20",
+      "8.24"
+    ]
+  },
+  {
+    "control_id": "CTRL-005",
+    "canonical_field": "management.session.idle_timeout_minutes",
+    "description": "Administrative sessions must time out after a maximum of 10 minutes of inactivity",
+    "operator": "lte",
+    "expected_value": 10,
+    "severity": "medium",
+    "nist_800_53": [
+      "AC-11",
+      "AC-12"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.2.6, 1.2.7, 1.2.8, 1.2.10",
+        "note": "Separate exec-timeout recs for aux, console, vty, and http"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.6.3, 6.10.2.4",
+        "note": "Login class idle timeout + web-mgmt idle timeout"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.4.4"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.4.1"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.4.1, 2.6.2",
+        "note": "Console idle timeout + SSH idle timeout"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000720",
+        "note": "STIG idle timeout threshold is 5 min, stricter than schema's <=10"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000710",
+        "note": "STIG idle timeout threshold is 5 min, stricter than schema's <=10"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000275",
+        "note": "STIG idle timeout threshold is 10 min; STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000069",
+        "note": "STIG idle timeout threshold is 10 min"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000490",
+        "note": "STIG idle timeout threshold is 10 min"
+      }
+    ],
+    "iso_27001": [
+      "8.5",
+      "5.15"
+    ]
+  },
+  {
+    "control_id": "CTRL-006",
+    "canonical_field": "management.aaa.enabled",
+    "description": "AAA (Authentication, Authorization, and Accounting) must be enabled for device management",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "AC-2",
+      "AC-3",
+      "AC-6",
+      "AU-2",
+      "IA-2"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.1.1"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.3.1"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": null,
+        "note": "No standalone external-AAA enablement control in this benchmark"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.4.2",
+        "note": "Closest proxy: Authentication Profile lockout config, not explicit external AAA enablement"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.5.3"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-001370"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-001360"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000165",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000136"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000810"
+      }
+    ],
+    "iso_27001": [
+      "5.15",
+      "5.16",
+      "8.5"
+    ]
+  },
+  {
+    "control_id": "CTRL-007",
+    "canonical_field": "management.password.strong_policy_enabled",
+    "description": "A strong password policy (complexity, minimum length, encryption) must be enforced",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "IA-5"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.4.1, 1.4.2, 1.4.3",
+        "note": "Covers secret hashing/encryption only; no complexity/length control in this benchmark"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.6.9, 6.6.10, 6.6.11, 6.6.12"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.2.1"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.3.1, 1.3.2, 1.3.3, 1.3.4, 1.3.5, 1.3.6, 1.3.7, 1.3.8, 1.3.9"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.1.3"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000550 (+000570/580/590/600/610/620)",
+        "note": "STIG minimum password length is 15 chars"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000550 (+000570/580/590/600)",
+        "note": "STIG minimum password length is 15 chars"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000220 (+000225/230/235)",
+        "note": "STIG minimum password length is 15 chars; STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000053 (+000055-000059)",
+        "note": "STIG minimum password length is 15 chars"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000380",
+        "note": "STIG minimum password length is 15 chars"
+      }
+    ],
+    "iso_27001": [
+      "5.17",
+      "8.5"
+    ]
+  },
+  {
+    "control_id": "CTRL-008",
+    "canonical_field": "management.login.max_failed_attempts",
+    "description": "Failed login attempts must be limited and result in a lockout period",
+    "operator": "lte",
+    "expected_value": 3,
+    "severity": "medium",
+    "nist_800_53": [
+      "AC-7"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": null,
+        "note": "No login-attempt lockout control in this benchmark"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.6.1.1, 6.6.1.5",
+        "note": "Max 3 failed attempts + lockout period >= 30 min"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.2.2"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.4.2"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": null,
+        "note": "No login-attempt lockout control in this benchmark"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000150",
+        "note": "STIG lockout threshold is 3 attempts"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000150",
+        "note": "STIG lockout threshold is 3 attempts"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000045",
+        "note": "STIG lockout threshold is 3 attempts; STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000015 (+000092)",
+        "note": "STIG lockout threshold is 3 attempts"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000120",
+        "note": "STIG lockout threshold is 3 attempts"
+      }
+    ],
+    "iso_27001": [
+      "8.5"
+    ]
+  },
+  {
+    "control_id": "CTRL-009",
+    "canonical_field": "management.logging.enabled",
+    "description": "System event logging must be enabled",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "medium",
+    "nist_800_53": [
+      "AU-2",
+      "AU-3",
+      "AU-12"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "2.2.1"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "1.7, 6.12.3"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "7.1.1"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.1.1"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "1.1.7"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000210",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000930",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control; SRX equivalent: JUSX-DM-000040"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000060",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000024",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000790"
+      }
+    ],
+    "iso_27001": [
+      "8.15"
+    ]
+  },
+  {
+    "control_id": "CTRL-010",
+    "canonical_field": "management.logging.remote_syslog_configured",
+    "description": "Logs must be forwarded to a remote syslog host",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "medium",
+    "nist_800_53": [
+      "AU-4",
+      "AU-9",
+      "AU-11"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "2.2.4"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.12.1"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "7.2.1, 7.3.1, 7.3.2, 7.3.3"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.1.1.1"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "1.1.9"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-001450"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-001300 (+001440)"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000110",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000128"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000850"
+      }
+    ],
+    "iso_27001": [
+      "8.15",
+      "8.16"
+    ]
+  },
+  {
+    "control_id": "CTRL-011",
+    "canonical_field": "management.ntp.configured",
+    "description": "NTP must be configured with a valid time source",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "low",
+    "nist_800_53": [
+      "AU-8"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "2.3.2"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.7.1, 6.7.2"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.1.4"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.6.2"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "1.1.4"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-001030"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-001020"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000120",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000100"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000600"
+      }
+    ],
+    "iso_27001": [
+      "8.17"
+    ]
+  },
+  {
+    "control_id": "CTRL-012",
+    "canonical_field": "management.ntp.authentication_enabled",
+    "description": "NTP must use authentication keys to validate time sources",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "medium",
+    "nist_800_53": [
+      "AU-8",
+      "SC-8"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "2.3.1.1, 2.3.1.2, 2.3.1.3, 2.3.1.4"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.7.5, 6.7.6, 6.7.7"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": null,
+        "note": "No NTP authentication control in this benchmark"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": null,
+        "note": "No NTP authentication control in this benchmark"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "1.1.5"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-001150"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-001140"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000215",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000145"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000600"
+      }
+    ],
+    "iso_27001": [
+      "8.17",
+      "8.24"
+    ]
+  },
+  {
+    "control_id": "CTRL-013",
+    "canonical_field": "management.snmp.secure_configuration",
+    "description": "SNMP must be secured (SNMPv3 only, no default/weak community strings, ACL-restricted)",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "CM-6",
+      "IA-5",
+      "SC-7"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.5.1, 1.5.2, 1.5.3, 1.5.4, 1.5.5, 1.5.6, 1.5.7, 1.5.8, 1.5.9, 1.5.10"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.3.1, 2.3.2, 2.3.3, 2.3.4"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.5.1, 1.1.1.2"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.7.1, 2.7.2, 2.7.3"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-001130 (+001140)"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-001120 (+001130)"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000210",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000118"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000660"
+      }
+    ],
+    "iso_27001": [
+      "8.20",
+      "8.21",
+      "8.24"
+    ]
+  },
+  {
+    "control_id": "CTRL-014",
+    "canonical_field": "interfaces.unused_ports_disabled",
+    "description": "Unused physical/logical ports and interfaces must be administratively disabled",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "medium",
+    "nist_800_53": [
+      "CM-7",
+      "SC-7"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.2.3",
+        "note": "Covers aux port; no generic unused-interface rec"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "3.3, 6.11.1"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "1.3",
+        "note": "Closest analog: disable unused mgmt services on WAN port, not physical interfaces"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": null,
+        "note": "No unused-interface control in this benchmark"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": null,
+        "note": "No unused-interface control in this benchmark"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-RT-000060",
+        "note": "L2 switch equivalent: CISC-L2-000210"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-RT-000060"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000200",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control; STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": null,
+        "note": "No STIG rule covers this control"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-RT-000150",
+        "note": "L2 equivalent: ARST-L2-000170"
+      }
+    ],
+    "iso_27001": [
+      "8.9",
+      "8.20"
+    ]
+  },
+  {
+    "control_id": "CTRL-015",
+    "canonical_field": "management.acl.configured",
+    "description": "Management access must be restricted by an access control list",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "AC-4",
+      "AC-17",
+      "SC-7"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.2.4, 1.2.5, 3.2.1, 3.2.2"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "2.1, 2.2, 2.3, 2.4"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.4.6"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.2.1, 1.2.2"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "1.1.2"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000140"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000140"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000035",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control; STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": null,
+        "note": "No STIG rule covers this control"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000110"
+      }
+    ],
+    "iso_27001": [
+      "8.3",
+      "8.20"
+    ]
+  },
+  {
+    "control_id": "CTRL-016",
+    "canonical_field": "routing.protocol_authentication_enabled",
+    "description": "Dynamic routing protocol neighbor authentication must be enabled where the protocol is used",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "CM-6",
+      "SC-8",
+      "SC-23"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "3.3.1 (EIGRP), 3.3.2 (OSPF), 3.3.3 (BGP)"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "4.1.1 (BGP), 4.2.1 (ISIS), 4.3.1 (OSPF), 4.4.1 (OSPFv3), 4.5.1 (RIP)"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": null,
+        "note": "This benchmark does not cover dynamic routing protocols"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": null,
+        "note": "This benchmark does not cover dynamic routing protocols"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "3.1.1 (OSPF), 3.1.2 (ISIS), 3.2.1 (BGP), 3.2.2 (BGP TCP-AO)"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-RT-000050"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-RT-000020 (+000050)"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": null,
+        "note": "No STIG rule covers this control"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": null,
+        "note": "No STIG rule covers this control"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-RT-000280"
+      }
+    ],
+    "iso_27001": [
+      "8.20",
+      "8.24"
+    ]
+  },
+  {
+    "control_id": "CTRL-017",
+    "canonical_field": "management.admin_access.restricted",
+    "description": "Administrative access must be restricted to authorized sources/roles",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "AC-6",
+      "AC-17"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.2.1, 1.2.5"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.6.2, 6.10.2.6, 5.9"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.4.2, 2.4.7"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.2.1, 1.2.2"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.3.1, 2.6.1, 2.7.1"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000460",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000460"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000035",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000075"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000550"
+      }
+    ],
+    "iso_27001": [
+      "8.2",
+      "5.15"
+    ]
+  },
+  {
+    "control_id": "CTRL-018",
+    "canonical_field": "management.banner.configured",
+    "description": "A security/legal warning banner must be configured for administrative access",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "low",
+    "nist_800_53": [
+      "AC-8"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.3.1, 1.3.2, 1.3.3, 1.3.4"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.6.8"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.1.1, 2.1.2"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.1.2"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.9.1",
+        "note": "TOC has duplicate '2.9' numbering; this is the 'Login Banner' entry"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000160"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000160"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000050",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000016"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000130"
+      }
+    ],
+    "iso_27001": [
+      "5.31"
+    ]
+  },
+  {
+    "control_id": "CTRL-019",
+    "canonical_field": "management.crypto.weak_algorithms_disabled",
+    "description": "Weak cryptographic algorithms/keys must be disabled; strong ciphers, key lengths, and hashing must be enforced",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "IA-7",
+      "SC-8",
+      "SC-13",
+      "SC-23"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "2.1.1.1.3 (RSA modulus >=2048), 1.5.10 (SNMPv3 AES128)"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.10.1.6, 6.10.1.7, 6.10.1.8, 6.10.1.9, 6.10.1.10, 6.10.1.11, 6.10.1.12, 6.6.12"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.1.8, 2.1.9"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.2.5",
+        "note": "TLS minimum version 1.1/1.2 for admin interface certificate"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.6.3, 1.2"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-001210 (+001200)"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-001200 (+001190)"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000265 (+000260, 000205)",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000051",
+        "note": "Closest fit \u2014 no dedicated STIG rule for this control"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000700 (+000690, 000470)"
+      }
+    ],
+    "iso_27001": [
+      "8.24"
+    ]
+  },
+  {
+    "control_id": "CTRL-020",
+    "canonical_field": "management.protocols.insecure_disabled",
+    "description": "Insecure/clear-text management protocols must be disabled in favor of encrypted equivalents",
+    "operator": "eq",
+    "expected_value": true,
+    "severity": "high",
+    "nist_800_53": [
+      "CM-7",
+      "SC-8",
+      "SC-23"
+    ],
+    "cis": [
+      {
+        "vendor": "cisco_ios_xe",
+        "benchmark": "CIS Cisco IOS XE 17.x Benchmark v2.2.1",
+        "rec_id": "1.2.2, 1.2.9",
+        "note": "Cluster control: SSH-only for vty + HTTP/HTTPS handling"
+      },
+      {
+        "vendor": "juniper_junos",
+        "benchmark": "CIS Juniper OS Benchmark v2.1.0",
+        "rec_id": "6.10.3.1, 6.10.8, 6.10.9",
+        "note": "XNM clear-text, FTP, Finger disabled"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "benchmark": "CIS FortiGate 7.4.x Benchmark v1.0.1",
+        "rec_id": "2.4.5, 1.3"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "benchmark": "CIS Palo Alto Firewall 11 Benchmark v1.2.0",
+        "rec_id": "1.2.3, 1.2.4"
+      },
+      {
+        "vendor": "arista_eos",
+        "benchmark": "CIS Arista EOS Benchmark v1.0.0",
+        "rec_id": "2.8, 1.1.9"
+      }
+    ],
+    "stig": [
+      {
+        "vendor": "cisco_ios_xe",
+        "stig_id": "CISC-ND-000470"
+      },
+      {
+        "vendor": "juniper_junos",
+        "stig_id": "JUNI-ND-000470"
+      },
+      {
+        "vendor": "fortinet_fortios",
+        "stig_id": "FGFW-ND-000265",
+        "note": "STIG ID from public DISA FortiGate Firewall NDM STIG (V1R4/V1R5); not in provided zip \u2014 verify against official XCCDF before use"
+      },
+      {
+        "vendor": "paloalto_panos",
+        "stig_id": "PANW-NM-000061"
+      },
+      {
+        "vendor": "arista_eos",
+        "stig_id": "ARST-ND-000340"
+      }
+    ],
+    "iso_27001": [
+      "8.20",
+      "8.24"
+    ]
+  }
+]

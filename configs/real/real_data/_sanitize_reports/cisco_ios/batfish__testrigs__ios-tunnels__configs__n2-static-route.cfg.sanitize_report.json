@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ios-tunnels__configs__n2-static-route.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ios-tunnels__configs__n2-static-route.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "c491748eeae007e543cc2d62126249504902561eaeef2d99510b62b35cd5ec6d",
+  "sha256_sanitized": "c2974bdca3384ac4728fa4eca55945f066bb978fe961bfbb9383462b05cf089d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__ntp-server.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__ntp-server.cfg",
+  "vendor": "panos",
+  "sha256_original": "f8bb11bc22dc3488216a0d8cd7a3b4aff0781c3c89a5979f4dc848f279589ffd",
+  "sha256_sanitized": "4360d38345b04aff7bf6fc2f6f10ddb023adb83bb5827a21d16d7c2d4aaa598a",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

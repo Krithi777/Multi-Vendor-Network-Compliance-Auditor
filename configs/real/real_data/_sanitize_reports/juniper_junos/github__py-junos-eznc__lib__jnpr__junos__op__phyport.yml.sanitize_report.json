@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__op__phyport.yml",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__op__phyport.yml",
+  "vendor": "juniper_junos",
+  "sha256_original": "5e38c90b5c943cb0628d21105be8d4b3d5f13d1265863212c764f8fcf1c267ac",
+  "sha256_sanitized": "5e38c90b5c943cb0628d21105be8d4b3d5f13d1265863212c764f8fcf1c267ac",
+  "redactions": [],
+  "clean": true
+}

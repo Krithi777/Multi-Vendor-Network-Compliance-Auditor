@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-vxlan-l2vni.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-vxlan-l2vni.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "cc5603ea63d022295506688b6d2cb66372d54ad4ea9b03c68260759fccab8997",
+  "sha256_sanitized": "385dcf4de389e5898d89899fdf368d77a9084dc3fa0a06bdea9d57c9b6bcdc1c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

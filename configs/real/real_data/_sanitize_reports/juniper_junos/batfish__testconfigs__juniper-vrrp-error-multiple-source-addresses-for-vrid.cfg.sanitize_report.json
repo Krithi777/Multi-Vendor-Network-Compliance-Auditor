@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-vrrp-error-multiple-source-addresses-for-vrid.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-vrrp-error-multiple-source-addresses-for-vrid.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ee0660670d17a49dbfb1c2235ce62c41abc2b0ff28f02e0d212246f46756b9f4",
+  "sha256_sanitized": "a30635fa13fbf7ddec087a139c719001be6a10efd58aa42ca2f530edf6adacd9",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

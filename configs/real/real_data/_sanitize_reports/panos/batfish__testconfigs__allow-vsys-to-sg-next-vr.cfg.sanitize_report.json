@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__allow-vsys-to-sg-next-vr.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__allow-vsys-to-sg-next-vr.cfg",
+  "vendor": "panos",
+  "sha256_original": "65412110d8a631d07860ea0d3602de11b60f653f5b16f864e82d17ff470742f7",
+  "sha256_sanitized": "b185a1eba2cfa0c0e19afd17c1d9748b2f4a7532baa655c2179a65eb2ad5d23f",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

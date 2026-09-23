@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-interface-vrrp.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-interface-vrrp.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "f6851b8dc266507f57715c3f2d24bc60b7b84146317f78f43920cb20fa08fa13",
+  "sha256_sanitized": "6bf84c67dfe2b84d26736ff491f1662882c0aafd0a0958f0d4c8308d3146492f",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

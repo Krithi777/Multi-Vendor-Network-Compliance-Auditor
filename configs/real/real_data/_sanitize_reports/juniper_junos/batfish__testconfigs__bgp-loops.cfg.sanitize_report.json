@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-loops.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-loops.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "647b278b0d83892216b6d3e5e0e3dfc0c8ec48fd48467c5bd597d4524a1823cd",
+  "sha256_sanitized": "647b278b0d83892216b6d3e5e0e3dfc0c8ec48fd48467c5bd597d4524a1823cd",
+  "redactions": [],
+  "clean": true
+}

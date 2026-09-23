@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__access-group-acl__configs__iosAccessGroupAcl.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__access-group-acl__configs__iosAccessGroupAcl.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "54980b2a5194f3deeb579039ad9ba4672b371d0151615d9ca4d978ed95591229",
+  "sha256_sanitized": "cfc63e36264826a1973a9fcf14f18b4a849c48c79f2e9330c415ab5cf6c615e5",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

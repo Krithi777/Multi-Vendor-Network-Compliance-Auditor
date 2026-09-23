@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-portchannel-eigrp.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-portchannel-eigrp.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "3e7338456ab6ab1bb790954edd8fd3ed5932fdac22e67bcc7b6add54a11eef7a",
+  "sha256_sanitized": "c1d317f2484e4daf100a308086c62c1e851fd0f30e7ffcc99f9040ac11c835b2",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

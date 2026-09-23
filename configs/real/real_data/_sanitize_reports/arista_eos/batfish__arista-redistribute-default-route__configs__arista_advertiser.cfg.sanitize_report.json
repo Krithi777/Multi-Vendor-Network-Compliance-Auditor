@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__arista-redistribute-default-route__configs__arista_advertiser.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__arista-redistribute-default-route__configs__arista_advertiser.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "c398a13fee0fe9e357da9086a776007d807a1f1676994a5fbe63d0fafde3c0d4",
+  "sha256_sanitized": "5041893b80e7c199668118e928f66d53f3b8f3547f8354c5aeea20ac429afdd4",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

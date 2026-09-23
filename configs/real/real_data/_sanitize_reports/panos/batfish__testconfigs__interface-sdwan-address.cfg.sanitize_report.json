@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__interface-sdwan-address.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__interface-sdwan-address.cfg",
+  "vendor": "panos",
+  "sha256_original": "57b6d8e721769dccda241570d42a22f6f502700beb3abf52eee6ce3e92fd0eda",
+  "sha256_sanitized": "6ff9ad25761d398182e3bf5820ba6aa6c42560c655ee66dad1f36018c5fdbc33",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

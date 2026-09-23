@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-set-protocols-isis.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-set-protocols-isis.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "d417b05c00c3ee65c1d9719c61ad6882e53dc1e04161e7e4e089ee71174d88c3",
+  "sha256_sanitized": "d417b05c00c3ee65c1d9719c61ad6882e53dc1e04161e7e4e089ee71174d88c3",
+  "redactions": [],
+  "clean": true
+}

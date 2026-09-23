@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__ciscoconfparse2__sample_07.ios",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__ciscoconfparse2__sample_07.ios",
+  "vendor": "juniper_junos",
+  "sha256_original": "d11ec63b7714f785a8940c5b79b9f08416ff1e4267664ca318c2c3b5d2be6e76",
+  "sha256_sanitized": "38004f4da65f007eefbece83c13a25ac1e3390670fd658a90fe2691b1ff37de1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 45
+    }
+  ],
+  "clean": false
+}

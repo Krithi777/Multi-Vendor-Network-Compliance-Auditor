@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-vrrp-error-no-virtual-address.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-vrrp-error-no-virtual-address.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "fb3b6f326cc4971024e8502da275538fcae2dbb9f0284d32c85e1118873abb74",
+  "sha256_sanitized": "c10891215457e7a543a5baf97a143f7737f3d27103609bd88f0b6d9dd0af3a37",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

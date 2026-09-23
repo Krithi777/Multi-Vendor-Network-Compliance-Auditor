@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__parsing-recovery__configs__ios-recovery.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__parsing-recovery__configs__ios-recovery.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "0f72f19fdb66987e09b6a0241a9829acf362e4f4042b18ab486fbee151b31a4e",
+  "sha256_sanitized": "2180307f36172366855321dd871521416b97fbaa19a23937130c7ea2758884e8",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

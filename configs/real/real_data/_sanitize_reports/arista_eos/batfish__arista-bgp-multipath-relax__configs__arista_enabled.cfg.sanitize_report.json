@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__arista-bgp-multipath-relax__configs__arista_enabled.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__arista-bgp-multipath-relax__configs__arista_enabled.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "157fcfa9d2ee6fdbfb3c50457a50aecf392e61a77f562498347e342672fddaf3",
+  "sha256_sanitized": "c5f2939b4f973af41dd5c9d132e9b7f3c977ead69777ae64cdb05ab2f6a66e9c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

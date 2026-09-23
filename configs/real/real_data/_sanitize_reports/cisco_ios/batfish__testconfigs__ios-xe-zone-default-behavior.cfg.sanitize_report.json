@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-xe-zone-default-behavior.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-xe-zone-default-behavior.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "b9d4a782d90c63d77bdd2aeeb3aa96078d2b567afcfa6ef45dde1f75d3604621",
+  "sha256_sanitized": "9c319fcdcdcb01e026273af3f4a2c9fd011286b56f76e0376bc2841fa1f26e68",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

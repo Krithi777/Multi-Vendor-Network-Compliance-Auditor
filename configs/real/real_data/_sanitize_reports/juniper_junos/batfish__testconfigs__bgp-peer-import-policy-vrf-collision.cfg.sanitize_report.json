@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-peer-import-policy-vrf-collision.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-peer-import-policy-vrf-collision.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "6988aeef317b82c7fbfcec20ef4d1459160ee45612a49e7672f6dee98e7bdba4",
+  "sha256_sanitized": "5787a2c1bca14e53bc44d0d4a09d0ea00f849d5347dca362f50f60f58e7366b2",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

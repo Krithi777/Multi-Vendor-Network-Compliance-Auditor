@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-vrf-leaking.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-vrf-leaking.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "0cac49902df692cb6325e37f8cab8c1a361bb631229b5c03447955ce31b93a30",
+  "sha256_sanitized": "5d5fa972fb6250930f683c36fc9db405d7ea53915d084bb933426b9fd00e4f3c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

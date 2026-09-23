@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__switch-options-vrf-target-auto.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__switch-options-vrf-target-auto.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "98c96aaff9a0a9171df5d6048837d6a5494567464d16237abb1dbc687f88af25",
+  "sha256_sanitized": "98c96aaff9a0a9171df5d6048837d6a5494567464d16237abb1dbc687f88af25",
+  "redactions": [],
+  "clean": true
+}

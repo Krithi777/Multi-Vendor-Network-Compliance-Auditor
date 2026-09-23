@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__command__system_queues.yml",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__command__system_queues.yml",
+  "vendor": "juniper_junos",
+  "sha256_original": "a61e2aacc3ebd60df9e007e263a1029244613402037b0886858ea25c65cf4759",
+  "sha256_sanitized": "a61e2aacc3ebd60df9e007e263a1029244613402037b0886858ea25c65cf4759",
+  "redactions": [],
+  "clean": true
+}

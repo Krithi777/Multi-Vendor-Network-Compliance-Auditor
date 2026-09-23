@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__security-rule-tag.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__security-rule-tag.cfg",
+  "vendor": "panos",
+  "sha256_original": "1ffc1ffec63e64299a4fc528f260822a4b4fa2a0ddffd3dc3260cdce7a3d3d44",
+  "sha256_sanitized": "1ffc1ffec63e64299a4fc528f260822a4b4fa2a0ddffd3dc3260cdce7a3d3d44",
+  "redactions": [],
+  "clean": true
+}

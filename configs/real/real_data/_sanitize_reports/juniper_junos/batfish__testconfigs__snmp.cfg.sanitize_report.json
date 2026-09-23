@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__snmp.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__snmp.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "68f8a481ba9cbd63099b76686c5914f4cb314b703d7f1eca90b0a3f167149907",
+  "sha256_sanitized": "0605a1a69cf4939d5eaa82bfb8d56881af0fb4bd05f18ba6a86a3dbafdce9772",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

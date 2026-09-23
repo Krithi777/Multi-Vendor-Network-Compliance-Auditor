@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__switch-options-rd-ip.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__switch-options-rd-ip.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "aaaa22819ca75a0aa308aada80bf29aea50afc6fa64a02aa5c551eccb135e663",
+  "sha256_sanitized": "b7ba22536a5e1b4c99ea31b17340d8905e14bc0ed8afc8c16cae74dc438392b5",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

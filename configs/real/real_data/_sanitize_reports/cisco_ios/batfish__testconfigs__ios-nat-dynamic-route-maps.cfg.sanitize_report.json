@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-nat-dynamic-route-maps.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-nat-dynamic-route-maps.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "28158d1271029dc7aa83f51f32f80a44fa98e1cbfd4be5b2297ff00aa0e82d14",
+  "sha256_sanitized": "eaf73f2aa7c5ea739f28c86c0e8a054890fa130f5ece88b2f72a17e52749c198",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 17
+    }
+  ],
+  "clean": false
+}

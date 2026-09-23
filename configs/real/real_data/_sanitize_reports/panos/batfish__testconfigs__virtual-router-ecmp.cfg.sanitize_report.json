@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__virtual-router-ecmp.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__virtual-router-ecmp.cfg",
+  "vendor": "panos",
+  "sha256_original": "8adf67b837918ff174761de563a471c118ed9644325fe4c99bed42b319f36072",
+  "sha256_sanitized": "8adf67b837918ff174761de563a471c118ed9644325fe4c99bed42b319f36072",
+  "redactions": [],
+  "clean": true
+}

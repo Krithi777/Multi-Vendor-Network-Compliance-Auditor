@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__firewall-zone-address-book-global-loses.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__firewall-zone-address-book-global-loses.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ee6a27f5535317cb944a10ee124823fb963196dd2484cefc7ecc0f240b420214",
+  "sha256_sanitized": "72df7376d68111d9e2ccf99e14a5cdf0c5e2f2b3364949bc33fe511aac3f91bd",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

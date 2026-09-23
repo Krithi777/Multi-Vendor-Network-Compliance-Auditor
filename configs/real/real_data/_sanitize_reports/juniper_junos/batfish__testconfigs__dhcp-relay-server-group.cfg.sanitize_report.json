@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__dhcp-relay-server-group.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__dhcp-relay-server-group.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "586ede6830285868ab2865d0cc78c3accc13d158a8944d5c96d823c0596f889b",
+  "sha256_sanitized": "7010bd797e3948526f95c048e7d58a7f12e5eaa0fafb52bf2d55cc9c23d3da45",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

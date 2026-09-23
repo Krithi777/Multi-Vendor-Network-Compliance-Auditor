@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__aaaAuthenticationIos.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__aaaAuthenticationIos.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "46b9252812a66d6a0b0dea3015774a4e22f1e2c45f78a55a75cc848279608ad3",
+  "sha256_sanitized": "46b9252812a66d6a0b0dea3015774a4e22f1e2c45f78a55a75cc848279608ad3",
+  "redactions": [],
+  "clean": true
+}

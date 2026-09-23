@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-evpn-vni-list-no-range.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-evpn-vni-list-no-range.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "110900b409b35dc4c43ab941d41757be959bdf3a967681151d58bdf5c8cf2210",
+  "sha256_sanitized": "110900b409b35dc4c43ab941d41757be959bdf3a967681151d58bdf5c8cf2210",
+  "redactions": [],
+  "clean": true
+}

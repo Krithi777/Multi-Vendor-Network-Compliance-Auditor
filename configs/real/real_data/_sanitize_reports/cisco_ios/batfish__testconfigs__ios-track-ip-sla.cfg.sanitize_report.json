@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-track-ip-sla.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-track-ip-sla.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "dd9d2d82e35048402bc521c997deed1c8f085b8d0ab0da861a31121090ff7c65",
+  "sha256_sanitized": "074a31d6fde38101d87f466d4f5d49397c3d311d9f5cda3803cdec4d6118d6d5",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

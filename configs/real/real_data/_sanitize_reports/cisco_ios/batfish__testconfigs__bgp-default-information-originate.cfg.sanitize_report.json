@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__bgp-default-information-originate.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__bgp-default-information-originate.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "1a651673021b04727c02aafe710056060562bf1c4f7ea2ec56277aa4710c3d9b",
+  "sha256_sanitized": "fcdd7a517cf7753d652480b63ae00741321b41fc28a591335caf50dd230430dd",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

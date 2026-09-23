@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-vlan-access.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-vlan-access.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "6f73cc2506204ff613b9e8cd08c1d867d2a042afc2df91d6807b1c38a968e794",
+  "sha256_sanitized": "6f73cc2506204ff613b9e8cd08c1d867d2a042afc2df91d6807b1c38a968e794",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__arista-vs-ios-warnings__configs__arista-ospf-redistribute-bgp.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__arista-vs-ios-warnings__configs__arista-ospf-redistribute-bgp.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "0d0a1fcd8b38bb671922081b9f78e3ed47c92a14b2685d6b33883a8dc48f9296",
+  "sha256_sanitized": "0d0a1fcd8b38bb671922081b9f78e3ed47c92a14b2685d6b33883a8dc48f9296",
+  "redactions": [],
+  "clean": true
+}

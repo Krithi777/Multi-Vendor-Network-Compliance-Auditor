@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__irb-vxlan-autostate.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__irb-vxlan-autostate.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "4e01da6dba24ba0caaabdc9902962cf8a8a26d9427f907d662daa295aad74c19",
+  "sha256_sanitized": "b4e504eef6db3c0feec03d571ab00b528546bbc29b9837dbb45b18602aa0a8d6",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

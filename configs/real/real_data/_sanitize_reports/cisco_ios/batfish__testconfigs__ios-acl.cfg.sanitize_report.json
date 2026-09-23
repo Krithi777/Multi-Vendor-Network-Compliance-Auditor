@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-acl.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-acl.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "f97683ac13cd914ad3b26928a32e00a066df8cd01f80e22cf75b1fdaabd342c6",
+  "sha256_sanitized": "b9ae0a95dd35789a5a7f10da4124d477fd955becb337384e97b91afd320f9091",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

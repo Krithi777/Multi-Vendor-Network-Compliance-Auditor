@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__eigrp-distribute-list-wildcard__configs__sender.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__eigrp-distribute-list-wildcard__configs__sender.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "ce3cd825c5524f1e71e7651b26bf330dcabd86d668bb8fcccaccd63371e9d273",
+  "sha256_sanitized": "7f0fee236beb41ec2170381a819eb912306105cc3f66551ade87a9f05d555b96",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 16
+    }
+  ],
+  "clean": false
+}

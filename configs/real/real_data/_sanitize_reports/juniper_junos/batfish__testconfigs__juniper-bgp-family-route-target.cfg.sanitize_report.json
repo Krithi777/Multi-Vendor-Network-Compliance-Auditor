@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-bgp-family-route-target.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-bgp-family-route-target.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "c7a95ddbaea7c8bfacf5d20f7ef5eed9b4867f9f4083fb58a6c06457e2dcc5f6",
+  "sha256_sanitized": "168da32bad9a4460679d47a5a314ba4de413d29420f77f275a7f16ae42838c20",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

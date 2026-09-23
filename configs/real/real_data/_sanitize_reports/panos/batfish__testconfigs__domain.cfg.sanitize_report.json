@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__domain.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__domain.cfg",
+  "vendor": "panos",
+  "sha256_original": "3fc2106fc9c2dc15265c955d86dd0b2e3afa8289182e8dfba0f907cb084918b4",
+  "sha256_sanitized": "3fc2106fc9c2dc15265c955d86dd0b2e3afa8289182e8dfba0f907cb084918b4",
+  "redactions": [],
+  "clean": true
+}

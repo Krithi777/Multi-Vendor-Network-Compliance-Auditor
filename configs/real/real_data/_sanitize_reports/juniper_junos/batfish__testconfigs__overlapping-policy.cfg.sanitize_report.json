@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__overlapping-policy.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__overlapping-policy.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "f618100a58a5252aaf3634e9338020e89b7621914c5a3231e5579a7fb1244c92",
+  "sha256_sanitized": "f618100a58a5252aaf3634e9338020e89b7621914c5a3231e5579a7fb1244c92",
+  "redactions": [],
+  "clean": true
+}

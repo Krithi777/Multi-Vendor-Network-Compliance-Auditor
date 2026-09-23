@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__prefix6-normalization-validation.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__prefix6-normalization-validation.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "825456caa310f788ba2f2d2f8cb6342fc424bd3cd7fa02baea35482d3aff4a8b",
+  "sha256_sanitized": "825456caa310f788ba2f2d2f8cb6342fc424bd3cd7fa02baea35482d3aff4a8b",
+  "redactions": [],
+  "clean": true
+}

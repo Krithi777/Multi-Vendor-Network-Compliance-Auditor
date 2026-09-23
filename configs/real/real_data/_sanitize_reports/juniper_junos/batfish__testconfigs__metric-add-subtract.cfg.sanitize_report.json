@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__metric-add-subtract.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__metric-add-subtract.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "06c26d35c5b36ca4fe30e460cc112c847af1ef84a40af1623cfcf048b3fd9ffa",
+  "sha256_sanitized": "06c26d35c5b36ca4fe30e460cc112c847af1ef84a40af1623cfcf048b3fd9ffa",
+  "redactions": [],
+  "clean": true
+}

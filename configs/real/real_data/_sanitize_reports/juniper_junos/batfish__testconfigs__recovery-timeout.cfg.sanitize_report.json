@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__recovery-timeout.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__recovery-timeout.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "f6a062fc8a69aa03883f3849b57a819928166bb2316370b69248714f8d522435",
+  "sha256_sanitized": "f6a062fc8a69aa03883f3849b57a819928166bb2316370b69248714f8d522435",
+  "redactions": [],
+  "clean": true
+}

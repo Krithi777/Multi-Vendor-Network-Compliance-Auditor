@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-aaa-group-server.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-aaa-group-server.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "352164223a5847b5957ddf502324705b88f2138d02292014fbd4efa06663efce",
+  "sha256_sanitized": "b2b5ad41b6202c154ff7eec56d67566fd7a665f22264384ead1b255614bfe5e8",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

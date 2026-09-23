@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-eigrp-match-acl.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-eigrp-match-acl.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "01abdb48362bcac9397a807cf705cde446a5726b5af45f01ef44390877ae48ca",
+  "sha256_sanitized": "69256a5efe23e9e67087183e17a79032788da9c7472722b257f9ec71ca1d534e",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

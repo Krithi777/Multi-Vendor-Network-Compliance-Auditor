@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interface-vlan.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interface-vlan.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "2d06f67e1b8e2340fb79e9b6a3fb1fbf8d9f8b5e0a354ebae4200bdf85012c68",
+  "sha256_sanitized": "0cbb507a082dcd59268821fc578c0134f93401f5c88d54c27ab8a38ad1438963",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

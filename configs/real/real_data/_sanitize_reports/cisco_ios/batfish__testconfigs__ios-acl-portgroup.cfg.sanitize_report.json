@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-acl-portgroup.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-acl-portgroup.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "646c2075e6000d8aa16843bd0b2c10d07e22f93be4520bd4421653867e6e4afb",
+  "sha256_sanitized": "5a8f840b0d2a20da210d4eddcdc7609e154cb3fceb481ace90fc2335f6973376",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

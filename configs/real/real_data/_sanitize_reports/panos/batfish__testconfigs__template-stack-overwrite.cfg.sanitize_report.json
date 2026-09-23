@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__template-stack-overwrite.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__template-stack-overwrite.cfg",
+  "vendor": "panos",
+  "sha256_original": "174aad70263565c6667d484777e6eefca47d9a6ad377c1b74cdb34166202a1eb",
+  "sha256_sanitized": "de54cd0b957e99f0725e22a84d35efe0a4ed1f511ff68ad84a3289828d0f0f6a",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 20
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__firewall-source-address.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__firewall-source-address.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "b9df944c3395d319f3bb933b42121c51723d60a3f3603a5972826387ec2f8b5a",
+  "sha256_sanitized": "140190f2b886171efd5c8bf9896eb1c88d5a45eec238ca521983eb7d9d341ff2",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

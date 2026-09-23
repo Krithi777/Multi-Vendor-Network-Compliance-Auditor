@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-route-map-set-tag.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-route-map-set-tag.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "7c7a0fea24964a341489a465bc32ac0c154c4a967caf698d4b2a6fa21a272561",
+  "sha256_sanitized": "7c7a0fea24964a341489a465bc32ac0c154c4a967caf698d4b2a6fa21a272561",
+  "redactions": [],
+  "clean": true
+}

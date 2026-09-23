@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__apply-path-mixed-ip-and-not-ip-or-prefix.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__apply-path-mixed-ip-and-not-ip-or-prefix.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "7dd5d210a3b411c081878972aeec72e15b6e8cb63b1d5f38a7c4fdd08dff5025",
+  "sha256_sanitized": "7dd5d210a3b411c081878972aeec72e15b6e8cb63b1d5f38a7c4fdd08dff5025",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

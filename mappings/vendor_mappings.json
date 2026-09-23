@@ -1,0 +1,1011 @@
+{
+  "schema_version": "1.0",
+  "generated_note": "Phase 2 artifact -- vendor CLI syntax per canonical_field, keyed by control_id. Built from standard vendor documentation/knowledge, not pulled from the Phase 3 config corpus. Entries marked syntax_confidence=approximate should be spot-checked against the exact target OS/version before Phase 4 uses them.",
+  "vendors_covered": [
+    "cisco_ios",
+    "juniper_junos",
+    "fortios",
+    "panos",
+    "arista_eos"
+  ],
+  "controls": {
+    "CTRL-001": {
+      "canonical_field": "management.ssh.version",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "ip ssh version 2",
+          "fail_line": "ip ssh version 1",
+          "match_regex": "^ip ssh version \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system services ssh",
+          "pass_line": "set system services ssh protocol-version v2",
+          "fail_line": "set system services ssh protocol-version v1",
+          "match_regex": "^set system services ssh protocol-version v\\d",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system global",
+          "pass_line": "set admin-ssh-v1 disable",
+          "fail_line": "set admin-ssh-v1 enable",
+          "match_regex": "^\\s*set admin-ssh-v1 (enable|disable)",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate",
+          "notes": "FortiOS has no direct SSH-version selector; admin-ssh-v1 is the closest proxy (blocks SSHv1 fallback)."
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": null,
+          "fail_line": null,
+          "match_regex": null,
+          "tri_state_capable": false,
+          "always_compliant": true,
+          "syntax_confidence": "verified",
+          "notes": "PAN-OS management SSH is SSHv2-only by platform design; there is no CLI toggle, so FAIL cannot be generated."
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": null,
+          "fail_line": null,
+          "match_regex": null,
+          "tri_state_capable": false,
+          "always_compliant": true,
+          "syntax_confidence": "verified",
+          "notes": "EOS management SSH is SSHv2-only by platform design; no legacy-version toggle exists."
+        }
+      },
+      "operator": "eq",
+      "expected_value": 2
+    },
+    "CTRL-002": {
+      "canonical_field": "management.telnet.enabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "line vty 0 4",
+          "pass_line": "transport input ssh",
+          "fail_line": "transport input telnet",
+          "match_regex": "^transport input .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system services",
+          "pass_line": null,
+          "fail_line": "set system services telnet",
+          "match_regex": "^set system services telnet$",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "Junos telnet has no explicit 'disabled' directive -- PASS and MISSING are the same underlying config (line absent)."
+        },
+        "fortios": {
+          "context_path": "system global",
+          "pass_line": "set admintelnet disable",
+          "fail_line": "set admintelnet enable",
+          "match_regex": "^\\s*set admintelnet (enable|disable)",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": null,
+          "fail_line": null,
+          "match_regex": null,
+          "tri_state_capable": false,
+          "always_compliant": true,
+          "syntax_confidence": "verified",
+          "notes": "PAN-OS management interface does not offer telnet at all."
+        },
+        "arista_eos": {
+          "context_path": "line vty 0 4",
+          "pass_line": "transport input ssh",
+          "fail_line": "transport input telnet",
+          "match_regex": "^transport input .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": false
+    },
+    "CTRL-003": {
+      "canonical_field": "management.http.enabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "no ip http server",
+          "fail_line": "ip http server",
+          "match_regex": "^(no )?ip http server$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system services",
+          "pass_line": null,
+          "fail_line": "set system services web-management http",
+          "match_regex": "^set system services web-management http$",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "No explicit disable directive; PASS and MISSING share the same underlying config (line absent)."
+        },
+        "fortios": {
+          "context_path": "system interface (mgmt)",
+          "pass_line": "set allowaccess https ssh",
+          "fail_line": "set allowaccess http https ssh",
+          "match_regex": "^\\s*set allowaccess .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": "set deviceconfig system service disable-http yes",
+          "fail_line": "set deviceconfig system service disable-http no",
+          "match_regex": "^set deviceconfig system service disable-http (yes|no)",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate"
+        },
+        "arista_eos": {
+          "context_path": "management api http-commands",
+          "pass_line": "no protocol http",
+          "fail_line": "protocol http",
+          "match_regex": "^\\s*(no )?protocol http$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": false
+    },
+    "CTRL-004": {
+      "canonical_field": "management.https.enabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "ip http secure-server",
+          "fail_line": "no ip http secure-server",
+          "match_regex": "^(no )?ip http secure-server$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system services",
+          "pass_line": "set system services web-management https",
+          "fail_line": null,
+          "match_regex": "^set system services web-management https.*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "FAIL state = MISSING (line simply absent); no explicit disable form."
+        },
+        "fortios": {
+          "context_path": "system interface (mgmt)",
+          "pass_line": "set allowaccess https ssh",
+          "fail_line": "set allowaccess ssh",
+          "match_regex": "^\\s*set allowaccess .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified",
+          "notes": "Same field as CTRL-003; FortiOS expresses both controls via one allowaccess list."
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": "set deviceconfig system service disable-https no",
+          "fail_line": "set deviceconfig system service disable-https yes",
+          "match_regex": "^set deviceconfig system service disable-https (yes|no)",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate"
+        },
+        "arista_eos": {
+          "context_path": "management api http-commands",
+          "pass_line": "protocol https",
+          "fail_line": "no protocol https",
+          "match_regex": "^\\s*(no )?protocol https$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-005": {
+      "canonical_field": "management.session.idle_timeout_minutes",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "line vty 0 4",
+          "pass_line": "exec-timeout 10 0",
+          "fail_line": "exec-timeout 30 0",
+          "match_regex": "^exec-timeout \\d+ \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system login",
+          "pass_line": "set system login idle-timeout 10",
+          "fail_line": "set system login idle-timeout 30",
+          "match_regex": "^set system login idle-timeout \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system global",
+          "pass_line": "set admintimeout 10",
+          "fail_line": "set admintimeout 30",
+          "match_regex": "^\\s*set admintimeout \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": "set deviceconfig system idle-timeout 10",
+          "fail_line": "set deviceconfig system idle-timeout 30",
+          "match_regex": "^set deviceconfig system idle-timeout \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate",
+          "notes": "Verify exact key name against target PAN-OS version."
+        },
+        "arista_eos": {
+          "context_path": "line vty 0 4",
+          "pass_line": "exec-timeout 10 0",
+          "fail_line": "exec-timeout 30 0",
+          "match_regex": "^exec-timeout \\d+ \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "lte",
+      "expected_value": 10
+    },
+    "CTRL-006": {
+      "canonical_field": "management.aaa.enabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "aaa new-model",
+          "fail_line": null,
+          "match_regex": "^(no )?aaa new-model$",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "FAIL = MISSING (absence of the line); Cisco has no explicit 'aaa disabled' directive beyond omission."
+        },
+        "juniper_junos": {
+          "context_path": "system",
+          "pass_line": "set system authentication-order [ radius password ]",
+          "fail_line": null,
+          "match_regex": "^set system authentication-order .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "FAIL = MISSING; absence of authentication-order is the insecure state."
+        },
+        "fortios": {
+          "context_path": "user tacacs+",
+          "pass_line": "config user tacacs+",
+          "fail_line": null,
+          "match_regex": "^config user (tacacs\\+|radius)$",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate",
+          "notes": "Evidence = presence of a tacacs+/radius server block; FAIL = MISSING (block absent)."
+        },
+        "panos": {
+          "context_path": "mgt-config users",
+          "pass_line": "set mgt-config users admin authentication-profile aaa-profile",
+          "fail_line": null,
+          "match_regex": "^set mgt-config users \\S+ authentication-profile \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate",
+          "notes": "FAIL = MISSING; absence of an authentication-profile assignment is the insecure state."
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "aaa authentication login default group tacacs+ local",
+          "fail_line": null,
+          "match_regex": "^aaa authentication login default .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-007": {
+      "canonical_field": "management.password.strong_policy_enabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "security passwords min-length 8",
+          "fail_line": null,
+          "match_regex": "^security passwords min-length \\d+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system login",
+          "pass_line": "set system login password minimum-length 8",
+          "fail_line": null,
+          "match_regex": "^set system login password minimum-length \\d+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system password-policy",
+          "pass_line": "set minimum-length 8",
+          "fail_line": null,
+          "match_regex": "^\\s*set minimum-length \\d+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "shared password-complexity",
+          "pass_line": "set shared password-complexity minimum-length 8",
+          "fail_line": null,
+          "match_regex": "^set shared password-complexity minimum-length \\d+",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate"
+        },
+        "arista_eos": {
+          "context_path": "management security",
+          "pass_line": "password minimum-length 8",
+          "fail_line": null,
+          "match_regex": "^password minimum-length \\d+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-008": {
+      "canonical_field": "management.login.max_failed_attempts",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "login block-for 120 attempts 3 within 60",
+          "fail_line": "login block-for 120 attempts 10 within 60",
+          "match_regex": "^login block-for \\d+ attempts \\d+ within \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system login retry-options",
+          "pass_line": "set system login retry-options tries-before-disconnect 3",
+          "fail_line": "set system login retry-options tries-before-disconnect 10",
+          "match_regex": "^set system login retry-options tries-before-disconnect \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system global",
+          "pass_line": "set admin-lockout-threshold 3",
+          "fail_line": "set admin-lockout-threshold 10",
+          "match_regex": "^\\s*set admin-lockout-threshold \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "shared password-complexity",
+          "pass_line": "set shared password-complexity failed-attempts 3",
+          "fail_line": "set shared password-complexity failed-attempts 10",
+          "match_regex": "^set shared password-complexity failed-attempts \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate"
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "aaa authentication policy lockout failure 3 window 900",
+          "fail_line": "aaa authentication policy lockout failure 10 window 900",
+          "match_regex": "^aaa authentication policy lockout failure \\d+ window \\d+",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "lte",
+      "expected_value": 3
+    },
+    "CTRL-009": {
+      "canonical_field": "management.logging.enabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "logging on",
+          "fail_line": "no logging on",
+          "match_regex": "^(no )?logging on$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system syslog",
+          "pass_line": "set system syslog file messages any any",
+          "fail_line": null,
+          "match_regex": "^set system syslog file messages .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "log memory setting",
+          "pass_line": "set status enable",
+          "fail_line": "set status disable",
+          "match_regex": "^\\s*set status (enable|disable)",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "shared log-settings",
+          "pass_line": "set shared log-settings config",
+          "fail_line": null,
+          "match_regex": "^set shared log-settings .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate",
+          "notes": "Marker line only; exact key varies by log category."
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "logging on",
+          "fail_line": "no logging on",
+          "match_regex": "^(no )?logging on$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-010": {
+      "canonical_field": "management.logging.remote_syslog_configured",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "logging host 10.0.0.5",
+          "fail_line": null,
+          "match_regex": "^logging host \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system syslog",
+          "pass_line": "set system syslog host 10.0.0.5 any any",
+          "fail_line": null,
+          "match_regex": "^set system syslog host \\S+ .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "log syslogd setting",
+          "pass_line": "set server 10.0.0.5",
+          "fail_line": null,
+          "match_regex": "^\\s*set server \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "shared syslog",
+          "pass_line": "set shared syslog syslog-profile1 server-list srv1 server 10.0.0.5",
+          "fail_line": null,
+          "match_regex": "^set shared syslog .* server \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate"
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "logging host 10.0.0.5",
+          "fail_line": null,
+          "match_regex": "^logging host \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-011": {
+      "canonical_field": "management.ntp.configured",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "ntp server 10.0.0.10",
+          "fail_line": null,
+          "match_regex": "^ntp server \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system ntp",
+          "pass_line": "set system ntp server 10.0.0.10",
+          "fail_line": null,
+          "match_regex": "^set system ntp server \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system ntp ntpserver",
+          "pass_line": "set server 10.0.0.10",
+          "fail_line": null,
+          "match_regex": "^\\s*set server \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "deviceconfig system ntp-servers",
+          "pass_line": "set deviceconfig system ntp-servers primary-ntp-server ntp-server-address 10.0.0.10",
+          "fail_line": null,
+          "match_regex": "^set deviceconfig system ntp-servers primary-ntp-server ntp-server-address \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "ntp server 10.0.0.10",
+          "fail_line": null,
+          "match_regex": "^ntp server \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-012": {
+      "canonical_field": "management.ntp.authentication_enabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "ntp authenticate",
+          "fail_line": "no ntp authenticate",
+          "match_regex": "^(no )?ntp authenticate$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system ntp",
+          "pass_line": "set system ntp server 10.0.0.10 key 1",
+          "fail_line": null,
+          "match_regex": "^set system ntp server \\S+ key \\d+",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate"
+        },
+        "fortios": {
+          "context_path": "system ntp ntpserver",
+          "pass_line": "set authentication enable",
+          "fail_line": "set authentication disable",
+          "match_regex": "^\\s*set authentication (enable|disable)",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate"
+        },
+        "panos": {
+          "context_path": "deviceconfig system ntp-servers",
+          "pass_line": "set deviceconfig system ntp-servers primary-ntp-server authentication-type symmetric-key",
+          "fail_line": null,
+          "match_regex": "^set deviceconfig system ntp-servers primary-ntp-server authentication-type \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate"
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "ntp authenticate",
+          "fail_line": "no ntp authenticate",
+          "match_regex": "^(no )?ntp authenticate$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-013": {
+      "canonical_field": "management.snmp.secure_configuration",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "snmp-server group ADMIN v3 priv",
+          "fail_line": "snmp-server community public RO",
+          "match_regex": "^snmp-server (community|group) .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "snmp",
+          "pass_line": "set snmp v3 usm local-engine user snmpv3user",
+          "fail_line": "set snmp community public authorization read-only",
+          "match_regex": "^set snmp (v3|community) .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system snmp user / community",
+          "pass_line": "set security-level auth-priv",
+          "fail_line": "set name \"public\"",
+          "match_regex": "^\\s*(set security-level .*|set name \\\"public\\\")",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate"
+        },
+        "panos": {
+          "context_path": "deviceconfig system snmp-setting",
+          "pass_line": "set deviceconfig system snmp-setting access-setting version v3",
+          "fail_line": "set deviceconfig system snmp-setting access-setting version v2c community public",
+          "match_regex": "^set deviceconfig system snmp-setting access-setting version .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate"
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "snmp-server group ADMIN v3 priv",
+          "fail_line": "snmp-server community public ro",
+          "match_regex": "^snmp-server (community|group) .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-014": {
+      "canonical_field": "interfaces.unused_ports_disabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "interface <unused>",
+          "pass_line": "shutdown",
+          "fail_line": "no shutdown",
+          "match_regex": "^(no )?shutdown$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "interfaces <unused>",
+          "pass_line": "set interfaces ge-0/0/5 disable",
+          "fail_line": null,
+          "match_regex": "^set interfaces \\S+ disable",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system interface <unused>",
+          "pass_line": "set status down",
+          "fail_line": "set status up",
+          "match_regex": "^\\s*set status (up|down)",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "network interface <unused>",
+          "pass_line": null,
+          "fail_line": "set zone trust network layer3 member ethernet1/5",
+          "match_regex": "^set zone \\S+ network layer3 member \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate",
+          "notes": "PAN-OS interfaces are inert until assigned to a zone; there's no direct admin-shutdown CLI toggle for this pattern."
+        },
+        "arista_eos": {
+          "context_path": "interface <unused>",
+          "pass_line": "shutdown",
+          "fail_line": "no shutdown",
+          "match_regex": "^(no )?shutdown$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-015": {
+      "canonical_field": "management.acl.configured",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "line vty 0 4",
+          "pass_line": "access-class MGMT_ACL in",
+          "fail_line": null,
+          "match_regex": "^access-class \\S+ in$",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "interfaces lo0",
+          "pass_line": "set interfaces lo0 unit 0 family inet filter input mgmt-acl",
+          "fail_line": null,
+          "match_regex": "^set interfaces lo0 unit 0 family inet filter input \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system interface (mgmt)",
+          "pass_line": "set trusthost1 10.0.0.0 255.255.255.0",
+          "fail_line": null,
+          "match_regex": "^\\s*set trusthost\\d \\S+ \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "Same trusthost mechanism as CTRL-017 in FortiOS."
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": "set deviceconfig system permitted-ip 10.0.0.0/24",
+          "fail_line": null,
+          "match_regex": "^set deviceconfig system permitted-ip \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "Same permitted-ip mechanism as CTRL-017 in PAN-OS."
+        },
+        "arista_eos": {
+          "context_path": "line vty 0 4",
+          "pass_line": "access-class MGMT_ACL in",
+          "fail_line": null,
+          "match_regex": "^access-class \\S+ in$",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-016": {
+      "canonical_field": "routing.protocol_authentication_enabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "interface <routed>",
+          "pass_line": "ip ospf authentication message-digest",
+          "fail_line": null,
+          "match_regex": "^ip ospf authentication.*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "protocols ospf area 0 interface",
+          "pass_line": "set protocols ospf area 0 interface ge-0/0/0 authentication-type md5",
+          "fail_line": null,
+          "match_regex": "^set protocols ospf .* authentication.*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "router ospf ospf-interface",
+          "pass_line": "set authentication message-digest",
+          "fail_line": null,
+          "match_regex": "^\\s*set authentication .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate"
+        },
+        "panos": {
+          "context_path": "network virtual-router protocol ospf",
+          "pass_line": "set network virtual-router default protocol ospf area 0.0.0.0 interface ethernet1/1 authentication md5",
+          "fail_line": null,
+          "match_regex": "^set network virtual-router .* authentication \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate",
+          "notes": "Requires PAN-OS Advanced Routing Engine."
+        },
+        "arista_eos": {
+          "context_path": "interface <routed>",
+          "pass_line": "ip ospf authentication message-digest",
+          "fail_line": null,
+          "match_regex": "^ip ospf authentication.*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-017": {
+      "canonical_field": "management.admin_access.restricted",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "line vty 0 4",
+          "pass_line": "access-class ADMIN_SRC in",
+          "fail_line": null,
+          "match_regex": "^access-class \\S+ in$",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "Distinct ACL name from CTRL-015 by convention, same mechanism (access-class)."
+        },
+        "juniper_junos": {
+          "context_path": "firewall family inet filter mgmt-in",
+          "pass_line": "set firewall family inet filter mgmt-in term allow-mgmt from source-address 10.0.0.0/24",
+          "fail_line": null,
+          "match_regex": "^set firewall family inet filter mgmt-in term allow-mgmt from source-address .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "approximate"
+        },
+        "fortios": {
+          "context_path": "system interface (mgmt)",
+          "pass_line": "set trusthost1 10.0.0.0 255.255.255.0",
+          "fail_line": null,
+          "match_regex": "^\\s*set trusthost\\d \\S+ \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "Same underlying line as CTRL-015 in FortiOS -- one mechanism serves both controls."
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": "set deviceconfig system permitted-ip 10.0.0.0/24",
+          "fail_line": null,
+          "match_regex": "^set deviceconfig system permitted-ip \\S+",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified",
+          "notes": "Same underlying line as CTRL-015 in PAN-OS."
+        },
+        "arista_eos": {
+          "context_path": "line vty 0 4",
+          "pass_line": "access-class ADMIN_SRC in",
+          "fail_line": null,
+          "match_regex": "^access-class \\S+ in$",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-018": {
+      "canonical_field": "management.banner.configured",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "banner login ^C Authorized access only ^C",
+          "fail_line": null,
+          "match_regex": "^banner login .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system login",
+          "pass_line": "set system login message \"Authorized access only\"",
+          "fail_line": null,
+          "match_regex": "^set system login message .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system global",
+          "pass_line": "set pre-login-banner enable",
+          "fail_line": "set pre-login-banner disable",
+          "match_regex": "^\\s*set pre-login-banner (enable|disable)",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": "set deviceconfig system login-banner \"Authorized access only\"",
+          "fail_line": null,
+          "match_regex": "^set deviceconfig system login-banner .*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "banner login",
+          "fail_line": null,
+          "match_regex": "^banner login.*",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-019": {
+      "canonical_field": "management.crypto.weak_algorithms_disabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "ip ssh server algorithm mac hmac-sha2-256",
+          "fail_line": "ip ssh server algorithm mac hmac-sha1",
+          "match_regex": "^ip ssh server algorithm (mac|encryption) .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system services ssh",
+          "pass_line": "set system services ssh macs hmac-sha2-256",
+          "fail_line": "set system services ssh macs hmac-sha1",
+          "match_regex": "^set system services ssh macs .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system global",
+          "pass_line": "set ssh-hmac-md5 disable",
+          "fail_line": "set ssh-hmac-md5 enable",
+          "match_regex": "^\\s*set ssh-hmac-md5 (enable|disable)",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "panos": {
+          "context_path": "deviceconfig system ciphers",
+          "pass_line": "set deviceconfig system ciphers ssh-mac hmac-sha2-256",
+          "fail_line": "set deviceconfig system ciphers ssh-mac hmac-sha1",
+          "match_regex": "^set deviceconfig system ciphers ssh-mac \\S+",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate"
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "ip ssh server algorithm mac hmac-sha2-256",
+          "fail_line": "ip ssh server algorithm mac hmac-sha1",
+          "match_regex": "^ip ssh server algorithm (mac|encryption) .*",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    },
+    "CTRL-020": {
+      "canonical_field": "management.protocols.insecure_disabled",
+      "vendors": {
+        "cisco_ios": {
+          "context_path": "global",
+          "pass_line": "no ip finger",
+          "fail_line": "ip finger",
+          "match_regex": "^(no )?ip finger$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        },
+        "juniper_junos": {
+          "context_path": "system services",
+          "pass_line": null,
+          "fail_line": "set system services finger",
+          "match_regex": "^set system services finger$",
+          "tri_state_capable": false,
+          "syntax_confidence": "verified"
+        },
+        "fortios": {
+          "context_path": "system global",
+          "pass_line": "set ftp-service disable",
+          "fail_line": "set ftp-service enable",
+          "match_regex": "^\\s*set ftp-service (enable|disable)",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate",
+          "notes": "Exact key name should be verified against the target FortiOS admin guide."
+        },
+        "panos": {
+          "context_path": "deviceconfig system",
+          "pass_line": "set deviceconfig system service disable-telnet yes",
+          "fail_line": "set deviceconfig system service disable-telnet no",
+          "match_regex": "^set deviceconfig system service disable-telnet (yes|no)",
+          "tri_state_capable": true,
+          "syntax_confidence": "approximate",
+          "notes": "Illustrative; PAN-OS exposes several discrete disable-<service> flags -- pick the ones relevant to your demo."
+        },
+        "arista_eos": {
+          "context_path": "global",
+          "pass_line": "no ip finger",
+          "fail_line": "ip finger",
+          "match_regex": "^(no )?ip finger$",
+          "tri_state_capable": true,
+          "syntax_confidence": "verified"
+        }
+      },
+      "operator": "eq",
+      "expected_value": true
+    }
+  },
+  "generation_status": {
+    "fortios": {
+      "synthetic_dataset_generated": true,
+      "generated_at": "2026-09-23",
+      "total_files": 53,
+      "counts_by_state": {
+        "PASS": 20,
+        "FAIL": 13,
+        "MISSING": 20
+      },
+      "source_baseline": "baseline_fortios.cfg",
+      "manifest": "metadata/synthetic_manifest_fortios.jsonl",
+      "gap_reason": "7/20 controls have no distinct FAIL value on this platform (FAIL == MISSING), so only PASS+MISSING exist for those."
+    },
+    "arista_eos": {
+      "synthetic_dataset_generated": false,
+      "held_out_for_demo": true,
+      "note": "Intentionally excluded per Phase 4 plan -- kept as genuinely unseen vendor for the Phase 11 live demo."
+    },
+    "cisco_ios": {
+      "synthetic_dataset_generated": true,
+      "manifest": "configs/synthetic/cisco_ios (see cisco_panos.zip)"
+    },
+    "juniper_junos": {
+      "synthetic_dataset_generated": true,
+      "manifest": "configs/synthetic/juniper_junos (see cisco_panos.zip)"
+    },
+    "panos": {
+      "synthetic_dataset_generated": true,
+      "manifest": "configs/synthetic/panos (see cisco_panos.zip)"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__class-of-service-builtin-forwarding-classes.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__class-of-service-builtin-forwarding-classes.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "1ba635f354d1bab7e52553f7e8f4a28a780f19b0c5ed55cec4b4958d35c6381b",
+  "sha256_sanitized": "1ba635f354d1bab7e52553f7e8f4a28a780f19b0c5ed55cec4b4958d35c6381b",
+  "redactions": [],
+  "clean": true
+}

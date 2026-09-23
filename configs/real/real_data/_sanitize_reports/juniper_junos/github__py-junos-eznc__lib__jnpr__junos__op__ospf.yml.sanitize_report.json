@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__op__ospf.yml",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__op__ospf.yml",
+  "vendor": "juniper_junos",
+  "sha256_original": "a10223545e32e042f85eacca785a2e89b14eaafc4cecdd80a38f305bf489411e",
+  "sha256_sanitized": "a10223545e32e042f85eacca785a2e89b14eaafc4cecdd80a38f305bf489411e",
+  "redactions": [],
+  "clean": true
+}

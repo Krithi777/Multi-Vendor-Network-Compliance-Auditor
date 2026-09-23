@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__bgp-agg-vrf-summary-only__configs__c2.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__bgp-agg-vrf-summary-only__configs__c2.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "0e3ffd9424af5fe8726c2720afce9cc6c04ef3262caee239dc0a230f31ea877c",
+  "sha256_sanitized": "39781d1b2a27716a2e1c412f046e8912b0186b754cdaae057a7268ac3f927abb",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

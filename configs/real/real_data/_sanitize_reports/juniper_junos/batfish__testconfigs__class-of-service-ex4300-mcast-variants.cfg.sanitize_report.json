@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__class-of-service-ex4300-mcast-variants.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__class-of-service-ex4300-mcast-variants.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "60107efe279ef1352a722a3fc08c0e5982ddcc0f5b24c5408fe8f9791dbaa188",
+  "sha256_sanitized": "60107efe279ef1352a722a3fc08c0e5982ddcc0f5b24c5408fe8f9791dbaa188",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,718 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "vendor_mappings",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "vendors_covered",
+    "controls"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_note": {
+      "type": "string"
+    },
+    "vendors_covered": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "cisco_ios",
+          "juniper_junos",
+          "fortios",
+          "panos",
+          "arista_eos"
+        ]
+      },
+      "minItems": 5,
+      "uniqueItems": true
+    },
+    "controls": {
+      "type": "object",
+      "minProperties": 20,
+      "patternProperties": {
+        "^CTRL-\\d{3}$": {
+          "type": "object",
+          "required": [
+            "canonical_field",
+            "operator",
+            "expected_value",
+            "vendors"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "canonical_field": {
+              "type": "string",
+              "pattern": "^[a-z0-9_]+(\\.[a-z0-9_]+)+$"
+            },
+            "operator": {
+              "enum": [
+                "eq",
+                "ne",
+                "lte",
+                "gte"
+              ]
+            },
+            "expected_value": {
+              "type": [
+                "boolean",
+                "integer"
+              ]
+            },
+            "vendors": {
+              "type": "object",
+              "required": [
+                "cisco_ios",
+                "juniper_junos",
+                "fortios",
+                "panos",
+                "arista_eos"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "cisco_ios": {
+                  "type": "object",
+                  "required": [
+                    "context_path",
+                    "pass_line",
+                    "fail_line",
+                    "match_regex",
+                    "tri_state_capable",
+                    "syntax_confidence"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "context_path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "pass_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fail_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "match_regex": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "tri_state_capable": {
+                      "type": "boolean"
+                    },
+                    "always_compliant": {
+                      "type": "boolean"
+                    },
+                    "syntax_confidence": {
+                      "enum": [
+                        "verified",
+                        "approximate"
+                      ]
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "tri_state_capable": {
+                            "const": true
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "pass_line": {
+                            "type": "string"
+                          },
+                          "fail_line": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "always_compliant": {
+                            "const": true
+                          }
+                        },
+                        "required": [
+                          "always_compliant"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "notes"
+                        ],
+                        "properties": {
+                          "pass_line": {
+                            "type": "null"
+                          },
+                          "fail_line": {
+                            "type": "null"
+                          },
+                          "tri_state_capable": {
+                            "const": false
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "not": {
+                          "required": [
+                            "always_compliant"
+                          ]
+                        }
+                      },
+                      "then": {
+                        "anyOf": [
+                          {
+                            "properties": {
+                              "pass_line": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "fail_line": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "juniper_junos": {
+                  "type": "object",
+                  "required": [
+                    "context_path",
+                    "pass_line",
+                    "fail_line",
+                    "match_regex",
+                    "tri_state_capable",
+                    "syntax_confidence"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "context_path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "pass_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fail_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "match_regex": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "tri_state_capable": {
+                      "type": "boolean"
+                    },
+                    "always_compliant": {
+                      "type": "boolean"
+                    },
+                    "syntax_confidence": {
+                      "enum": [
+                        "verified",
+                        "approximate"
+                      ]
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "tri_state_capable": {
+                            "const": true
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "pass_line": {
+                            "type": "string"
+                          },
+                          "fail_line": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "always_compliant": {
+                            "const": true
+                          }
+                        },
+                        "required": [
+                          "always_compliant"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "notes"
+                        ],
+                        "properties": {
+                          "pass_line": {
+                            "type": "null"
+                          },
+                          "fail_line": {
+                            "type": "null"
+                          },
+                          "tri_state_capable": {
+                            "const": false
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "not": {
+                          "required": [
+                            "always_compliant"
+                          ]
+                        }
+                      },
+                      "then": {
+                        "anyOf": [
+                          {
+                            "properties": {
+                              "pass_line": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "fail_line": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "fortios": {
+                  "type": "object",
+                  "required": [
+                    "context_path",
+                    "pass_line",
+                    "fail_line",
+                    "match_regex",
+                    "tri_state_capable",
+                    "syntax_confidence"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "context_path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "pass_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fail_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "match_regex": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "tri_state_capable": {
+                      "type": "boolean"
+                    },
+                    "always_compliant": {
+                      "type": "boolean"
+                    },
+                    "syntax_confidence": {
+                      "enum": [
+                        "verified",
+                        "approximate"
+                      ]
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "tri_state_capable": {
+                            "const": true
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "pass_line": {
+                            "type": "string"
+                          },
+                          "fail_line": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "always_compliant": {
+                            "const": true
+                          }
+                        },
+                        "required": [
+                          "always_compliant"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "notes"
+                        ],
+                        "properties": {
+                          "pass_line": {
+                            "type": "null"
+                          },
+                          "fail_line": {
+                            "type": "null"
+                          },
+                          "tri_state_capable": {
+                            "const": false
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "not": {
+                          "required": [
+                            "always_compliant"
+                          ]
+                        }
+                      },
+                      "then": {
+                        "anyOf": [
+                          {
+                            "properties": {
+                              "pass_line": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "fail_line": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "panos": {
+                  "type": "object",
+                  "required": [
+                    "context_path",
+                    "pass_line",
+                    "fail_line",
+                    "match_regex",
+                    "tri_state_capable",
+                    "syntax_confidence"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "context_path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "pass_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fail_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "match_regex": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "tri_state_capable": {
+                      "type": "boolean"
+                    },
+                    "always_compliant": {
+                      "type": "boolean"
+                    },
+                    "syntax_confidence": {
+                      "enum": [
+                        "verified",
+                        "approximate"
+                      ]
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "tri_state_capable": {
+                            "const": true
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "pass_line": {
+                            "type": "string"
+                          },
+                          "fail_line": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "always_compliant": {
+                            "const": true
+                          }
+                        },
+                        "required": [
+                          "always_compliant"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "notes"
+                        ],
+                        "properties": {
+                          "pass_line": {
+                            "type": "null"
+                          },
+                          "fail_line": {
+                            "type": "null"
+                          },
+                          "tri_state_capable": {
+                            "const": false
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "not": {
+                          "required": [
+                            "always_compliant"
+                          ]
+                        }
+                      },
+                      "then": {
+                        "anyOf": [
+                          {
+                            "properties": {
+                              "pass_line": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "fail_line": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "arista_eos": {
+                  "type": "object",
+                  "required": [
+                    "context_path",
+                    "pass_line",
+                    "fail_line",
+                    "match_regex",
+                    "tri_state_capable",
+                    "syntax_confidence"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "context_path": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "pass_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "fail_line": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "match_regex": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "tri_state_capable": {
+                      "type": "boolean"
+                    },
+                    "always_compliant": {
+                      "type": "boolean"
+                    },
+                    "syntax_confidence": {
+                      "enum": [
+                        "verified",
+                        "approximate"
+                      ]
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "tri_state_capable": {
+                            "const": true
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "pass_line": {
+                            "type": "string"
+                          },
+                          "fail_line": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "always_compliant": {
+                            "const": true
+                          }
+                        },
+                        "required": [
+                          "always_compliant"
+                        ]
+                      },
+                      "then": {
+                        "required": [
+                          "notes"
+                        ],
+                        "properties": {
+                          "pass_line": {
+                            "type": "null"
+                          },
+                          "fail_line": {
+                            "type": "null"
+                          },
+                          "tri_state_capable": {
+                            "const": false
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "not": {
+                          "required": [
+                            "always_compliant"
+                          ]
+                        }
+                      },
+                      "then": {
+                        "anyOf": [
+                          {
+                            "properties": {
+                              "pass_line": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "fail_line": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-interface-reenter.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-interface-reenter.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "6e008b1c82cd3579086beb72d2cbd5acc57a5002377a8341e653d79d38a016b7",
+  "sha256_sanitized": "4a3fac8e5e1b7bf07663056fe2b4c70dc07838a2fb6b618546d0fe508f60c803",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

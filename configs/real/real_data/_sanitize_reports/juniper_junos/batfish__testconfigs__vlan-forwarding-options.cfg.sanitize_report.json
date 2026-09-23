@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__vlan-forwarding-options.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__vlan-forwarding-options.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "bedb941b789ed6710599c81f35c17e537c1acf8dae639651811e6349955d90b0",
+  "sha256_sanitized": "bedb941b789ed6710599c81f35c17e537c1acf8dae639651811e6349955d90b0",
+  "redactions": [],
+  "clean": true
+}

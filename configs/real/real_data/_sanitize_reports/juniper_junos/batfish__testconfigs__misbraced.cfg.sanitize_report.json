@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__misbraced.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__misbraced.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "e11a62d2868fab62c93fe7c76ea5aded9f4a8a698866d04c28b889aead0dcb18",
+  "sha256_sanitized": "e11a62d2868fab62c93fe7c76ea5aded9f4a8a698866d04c28b889aead0dcb18",
+  "redactions": [],
+  "clean": true
+}

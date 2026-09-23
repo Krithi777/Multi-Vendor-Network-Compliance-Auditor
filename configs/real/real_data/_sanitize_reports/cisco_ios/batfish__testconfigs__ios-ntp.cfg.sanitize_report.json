@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ntp.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ntp.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "7bb38f763b5c3b82fffb1664b5a146b39632558330019c5dc341c395953b4ea0",
+  "sha256_sanitized": "9972b72ec74cf00bc44923e7aae436f82f43feed14a726dc9b54ef0e1c9dd8bc",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

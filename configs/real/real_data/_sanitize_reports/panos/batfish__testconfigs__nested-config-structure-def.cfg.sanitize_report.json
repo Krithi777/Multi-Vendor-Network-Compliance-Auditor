@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__nested-config-structure-def.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__nested-config-structure-def.cfg",
+  "vendor": "panos",
+  "sha256_original": "9d4690b8e7645ef118c8a6ec07c3a8c761d6a9b39b96d0449fb1ad0d3a81b436",
+  "sha256_sanitized": "b0e5f3fd24f01ef1214555dc9a82d187af979994659fb5c70fdc93edbc8500d1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

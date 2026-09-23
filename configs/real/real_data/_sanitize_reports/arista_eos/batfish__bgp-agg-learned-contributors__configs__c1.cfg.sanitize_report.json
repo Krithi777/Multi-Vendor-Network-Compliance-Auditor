@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__bgp-agg-learned-contributors__configs__c1.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__bgp-agg-learned-contributors__configs__c1.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "5050954ac88d3a6fbe8a386f9db7ba6ccd125231eda9ec9a8c9be92417e1e06b",
+  "sha256_sanitized": "7d26c871750dd635c779fe944dcbea8094f96338e776e054d3188ef272cb28d6",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__delete-and-move-lines.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__delete-and-move-lines.cfg",
+  "vendor": "panos",
+  "sha256_original": "53812f67dd0b0341392c5ed78202f7ed7e52a7e10e6f860858ef43009687a39f",
+  "sha256_sanitized": "f8002dddf532567246acc893e001de9a82ced157538cf9809e3bcbbaecd5bede",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

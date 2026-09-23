@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-enforce-first-as-default.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-enforce-first-as-default.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "26adc6bf59d4f890e78d356e0852b1c903c23b1aaf5d41cd646d37f19dcbc7b2",
+  "sha256_sanitized": "02b7d3b89561eddabd1532b6e6c7758a7cc6481553083ac77e02c4f671e1a5a6",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

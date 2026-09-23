@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__forwarding-table-traceoptions.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__forwarding-table-traceoptions.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "0f482a6995650e966d90e26cfe0a1b29fc87d6eaaaddddd1be0585602b6e426f",
+  "sha256_sanitized": "0f482a6995650e966d90e26cfe0a1b29fc87d6eaaaddddd1be0585602b6e426f",
+  "redactions": [],
+  "clean": true
+}

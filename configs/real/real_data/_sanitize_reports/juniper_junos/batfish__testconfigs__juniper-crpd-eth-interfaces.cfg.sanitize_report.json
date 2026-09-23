@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-crpd-eth-interfaces.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-crpd-eth-interfaces.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "b6d4929dbf17319790a7a8051ad9269b3157e3ba8f8b1f1777e55cb394d69541",
+  "sha256_sanitized": "e22088927a2bf91c0832604231b45c863ba280524df0a6ddfd1821a5c9aba119",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

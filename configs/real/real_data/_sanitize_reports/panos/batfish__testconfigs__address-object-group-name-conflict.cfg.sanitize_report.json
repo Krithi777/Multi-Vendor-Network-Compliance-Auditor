@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__address-object-group-name-conflict.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__address-object-group-name-conflict.cfg",
+  "vendor": "panos",
+  "sha256_original": "4ca157473121468c34bac36a5818eaca7a08a5906b43fcb23fde19a09ffff52c",
+  "sha256_sanitized": "4ca157473121468c34bac36a5818eaca7a08a5906b43fcb23fde19a09ffff52c",
+  "redactions": [],
+  "clean": true
+}

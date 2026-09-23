@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ios-crypto-ipsec__configs__r2.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ios-crypto-ipsec__configs__r2.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "2e4496ed442c37400f028357b91fcf09a55e6210986ea652e6b933a4ffc34035",
+  "sha256_sanitized": "1fa5e4074a8878737f99af4f18e9d0877fdc93308667b080b2d9938547eeb2b5",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 8
+    }
+  ],
+  "clean": false
+}

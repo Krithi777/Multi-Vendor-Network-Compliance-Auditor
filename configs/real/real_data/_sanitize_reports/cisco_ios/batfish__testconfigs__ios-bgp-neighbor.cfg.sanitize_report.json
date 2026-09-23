@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-neighbor.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-neighbor.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "1ee6392b325b48cbd8d75d4dedd215f1ac9c646eaeecba4c17a15fff28f78796",
+  "sha256_sanitized": "6b83019ccac350fef5e65648fc377b54969bf4262b2c38831a5d0ba168d5b77d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

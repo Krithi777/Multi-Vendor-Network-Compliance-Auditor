@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__drop-vsys-to-sg-missing-external.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__drop-vsys-to-sg-missing-external.cfg",
+  "vendor": "panos",
+  "sha256_original": "575d219f6f28b8dcd128f464f743df24c5fceb4cf0c53d5cc029eef4f9389129",
+  "sha256_sanitized": "c117d2da7c78614cd5f9bd224394b744e62deb5d7e935bdc2fc06ed07f1b9207",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

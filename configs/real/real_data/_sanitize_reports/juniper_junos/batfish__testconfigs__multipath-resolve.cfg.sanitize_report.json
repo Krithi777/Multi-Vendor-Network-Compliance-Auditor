@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__multipath-resolve.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__multipath-resolve.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "49e50374c4f6435061529fffb4de7977f3513fbee7c3fa2864eb477f7f22d9ad",
+  "sha256_sanitized": "49e50374c4f6435061529fffb4de7977f3513fbee7c3fa2864eb477f7f22d9ad",
+  "redactions": [],
+  "clean": true
+}

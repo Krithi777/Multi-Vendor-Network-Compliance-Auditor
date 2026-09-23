@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__application-override-nat-interaction.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__application-override-nat-interaction.cfg",
+  "vendor": "panos",
+  "sha256_original": "79ae8bae1c5270568b91632a7e3013b559b8ad644b880bc2ef2e27dd80d3072f",
+  "sha256_sanitized": "75654c9ba232dee1aeab78a324b0c482668378ebfd1ea1e635a95d68ecc72973",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 8
+    }
+  ],
+  "clean": false
+}

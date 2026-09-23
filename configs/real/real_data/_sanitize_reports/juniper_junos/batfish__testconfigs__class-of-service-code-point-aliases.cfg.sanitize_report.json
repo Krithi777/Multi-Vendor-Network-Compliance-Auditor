@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__class-of-service-code-point-aliases.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__class-of-service-code-point-aliases.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "99a7de11b0bd052819b2fb630bc6859293324112a2d063744a9814a11bda90ba",
+  "sha256_sanitized": "99a7de11b0bd052819b2fb630bc6859293324112a2d063744a9814a11bda90ba",
+  "redactions": [],
+  "clean": true
+}

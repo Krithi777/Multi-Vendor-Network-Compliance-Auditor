@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__iosLoggingOnOmitted.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__iosLoggingOnOmitted.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "88db781e50b603507f2d67f9ca6b8968fa2f70e12619ea64aae59336bff9231b",
+  "sha256_sanitized": "88db781e50b603507f2d67f9ca6b8968fa2f70e12619ea64aae59336bff9231b",
+  "redactions": [],
+  "clean": true
+}

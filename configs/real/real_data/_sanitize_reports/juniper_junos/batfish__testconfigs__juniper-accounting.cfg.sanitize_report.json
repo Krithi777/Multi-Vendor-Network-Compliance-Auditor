@@ -1,0 +1,18 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-accounting.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-accounting.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "3efb335dbe6420bcf502704078e5b6786249f306280a50f7846e28bd199273d0",
+  "sha256_sanitized": "9a843b15e24b00ad127e021c7edde13ee4850758c4b5b0c2852e973f2ab839ef",
+  "redactions": [
+    {
+      "type": "shared_secret",
+      "count": 2
+    },
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

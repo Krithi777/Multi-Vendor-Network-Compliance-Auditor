@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-eigrp-distribute-list-routemap.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-eigrp-distribute-list-routemap.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "ed6673794ca62633e61c99800a58077fc9135425ae0df660ac7d1b9aa5fa34be",
+  "sha256_sanitized": "885b6f553e51672816515e4ee1eb8698973e8195d1d9f290b5320681f9546884",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-routing-options-as-gh-6710.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-routing-options-as-gh-6710.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "38fdd42c412b21887992b98a96b9c7cdbe4cd0be534defb4abb669fcbacff8b2",
+  "sha256_sanitized": "bed2a40b8cd26d91c265b04a32eac307f80b45264107fdda25e01e2851a747c7",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

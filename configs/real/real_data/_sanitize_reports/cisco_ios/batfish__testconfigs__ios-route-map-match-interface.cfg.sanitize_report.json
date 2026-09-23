@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-route-map-match-interface.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-route-map-match-interface.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "a29c0a78dd2a9df6488d79fa78acff549a91c0e45de77fc0b1568d9ff3d75413",
+  "sha256_sanitized": "03b6c0cbc03acfb6afadb401d7da25293113694f1cae7c4614f74c26f034fdda",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

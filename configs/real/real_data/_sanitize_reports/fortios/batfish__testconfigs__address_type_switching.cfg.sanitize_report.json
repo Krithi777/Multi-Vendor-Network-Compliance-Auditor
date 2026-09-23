@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__address_type_switching.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__address_type_switching.cfg",
+  "vendor": "fortios",
+  "sha256_original": "138f7f1e913c6196232abd9ddd69e87eeaa162801ad8e99a624821f79fbb1b56",
+  "sha256_sanitized": "7c43b0f72a6c9ab1812be86c6362dc2469510b81c226e227f313a719aaa6597d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

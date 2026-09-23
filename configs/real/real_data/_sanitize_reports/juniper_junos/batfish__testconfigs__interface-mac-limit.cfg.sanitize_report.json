@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interface-mac-limit.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interface-mac-limit.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "9ecbf92ef31bcb92f9ffd455a291475389f3424b9af5b96da29486b2b423bd2d",
+  "sha256_sanitized": "9ecbf92ef31bcb92f9ffd455a291475389f3424b9af5b96da29486b2b423bd2d",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__storm-control.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__storm-control.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ffadfd335fd8589c50e8b1058982d916f71b28856c8b06fc991ce4356ea54401",
+  "sha256_sanitized": "ffadfd335fd8589c50e8b1058982d916f71b28856c8b06fc991ce4356ea54401",
+  "redactions": [],
+  "clean": true
+}

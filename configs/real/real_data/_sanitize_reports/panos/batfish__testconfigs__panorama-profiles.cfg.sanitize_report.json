@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__panorama-profiles.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__panorama-profiles.cfg",
+  "vendor": "panos",
+  "sha256_original": "8e1f6c6fff991c62439eb8d08563bac9a02d59ca2849787cdee28253e5d01e1e",
+  "sha256_sanitized": "8e1f6c6fff991c62439eb8d08563bac9a02d59ca2849787cdee28253e5d01e1e",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__bgp_routemap_defs_refs.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__bgp_routemap_defs_refs.cfg",
+  "vendor": "fortios",
+  "sha256_original": "ce24000016c71be384ac5549d181761fccb99ec178ce13ea07fd81351defb0ea",
+  "sha256_sanitized": "a51244f716fe708fbcd320a68962b44dd4e508488e20202fb56dc835722d5217",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

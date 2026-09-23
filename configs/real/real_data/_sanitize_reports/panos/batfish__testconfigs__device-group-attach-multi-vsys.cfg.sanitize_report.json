@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__device-group-attach-multi-vsys.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__device-group-attach-multi-vsys.cfg",
+  "vendor": "panos",
+  "sha256_original": "a5979d53641be73caac38659920b63ff611b0285021d49ff67ae1fbf6aa3d948",
+  "sha256_sanitized": "adb82a6937030b430e7ffcf1bc3bdd88edd4ab1ba287e564dadd4f4d6248829c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

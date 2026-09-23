@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-object-group-network.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-object-group-network.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "236cd60c483e99e5ed86640d6d5b89c5585f9b9c0a9bd14e935a45ac68593d6c",
+  "sha256_sanitized": "75eb8a5259587186d4e77a20abaaac8829d7677e8f29039cb3c7b90220ee4300",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

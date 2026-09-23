@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__fortios_replacemsg.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__fortios_replacemsg.cfg",
+  "vendor": "fortios",
+  "sha256_original": "4a59a5dde1393ad7a00cbedacdd71755dcb1164298f9398533b4aeaedbb1cc6a",
+  "sha256_sanitized": "4a59a5dde1393ad7a00cbedacdd71755dcb1164298f9398533b4aeaedbb1cc6a",
+  "redactions": [],
+  "clean": true
+}

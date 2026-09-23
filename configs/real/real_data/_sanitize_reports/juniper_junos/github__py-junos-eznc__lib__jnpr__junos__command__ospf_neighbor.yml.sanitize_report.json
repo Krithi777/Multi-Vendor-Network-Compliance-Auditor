@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__command__ospf_neighbor.yml",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__command__ospf_neighbor.yml",
+  "vendor": "juniper_junos",
+  "sha256_original": "83b27d55e4d31a3775507f1843d3650470c8c56d9c3c432bbab26fa84ce0e65b",
+  "sha256_sanitized": "83b27d55e4d31a3775507f1843d3650470c8c56d9c3c432bbab26fa84ce0e65b",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-bgp-bmp.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-bgp-bmp.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "9c42b674f4e4f87125d9b7b2ffb3c44cf6a5a232bed7b191ef7a582983b424b7",
+  "sha256_sanitized": "9c42b674f4e4f87125d9b7b2ffb3c44cf6a5a232bed7b191ef7a582983b424b7",
+  "redactions": [],
+  "clean": true
+}

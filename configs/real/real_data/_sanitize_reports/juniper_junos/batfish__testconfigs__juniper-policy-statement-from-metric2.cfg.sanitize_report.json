@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-policy-statement-from-metric2.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-policy-statement-from-metric2.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "8beb622321c5989296ab85d86ff25003b7e783b8ebc6ec8654cf641820592321",
+  "sha256_sanitized": "8beb622321c5989296ab85d86ff25003b7e783b8ebc6ec8654cf641820592321",
+  "redactions": [],
+  "clean": true
+}

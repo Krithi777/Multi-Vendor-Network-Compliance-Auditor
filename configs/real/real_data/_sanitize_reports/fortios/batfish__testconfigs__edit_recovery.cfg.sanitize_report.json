@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__edit_recovery.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__edit_recovery.cfg",
+  "vendor": "fortios",
+  "sha256_original": "8a8531dcd43f930469218111cf61b32d516b97022a20f2e306e78b6c4bcccbf4",
+  "sha256_sanitized": "8a8531dcd43f930469218111cf61b32d516b97022a20f2e306e78b6c4bcccbf4",
+  "redactions": [],
+  "clean": true
+}

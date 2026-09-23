@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__service-built-in-override.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__service-built-in-override.cfg",
+  "vendor": "panos",
+  "sha256_original": "a7916db2ab57fe9629d6c2ed4974daa926d52d6f0acf431072223927c50cc74c",
+  "sha256_sanitized": "a7916db2ab57fe9629d6c2ed4974daa926d52d6f0acf431072223927c50cc74c",
+  "redactions": [],
+  "clean": true
+}

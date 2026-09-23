@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-interface-standby.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-interface-standby.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "1b4d21fa3e7b76ddcce058ae5a070e7b954bd07bec4074b98c23fc9962d102f7",
+  "sha256_sanitized": "8f365f8b660d8d42adffc311255ac1e7f719e3261f75d18893c9b17de4e24251",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

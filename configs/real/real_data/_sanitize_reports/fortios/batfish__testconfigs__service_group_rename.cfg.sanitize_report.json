@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__service_group_rename.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__service_group_rename.cfg",
+  "vendor": "fortios",
+  "sha256_original": "9ccec81a05688129a154bddbf193d713302ecce7202dacf0ad7a072b17a28629",
+  "sha256_sanitized": "9ccec81a05688129a154bddbf193d713302ecce7202dacf0ad7a072b17a28629",
+  "redactions": [],
+  "clean": true
+}

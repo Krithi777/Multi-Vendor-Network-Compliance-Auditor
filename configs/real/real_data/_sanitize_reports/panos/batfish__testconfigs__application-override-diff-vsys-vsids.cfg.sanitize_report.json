@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__application-override-diff-vsys-vsids.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__application-override-diff-vsys-vsids.cfg",
+  "vendor": "panos",
+  "sha256_original": "48ba42e4575b5ee99476398f9a3b3569cebe3589c867e9ce0c4dfd30b0d0f80f",
+  "sha256_sanitized": "b8f6ca3a695305ef3e9211235db388ec1f411a04bdb8c79e03f17fcea6cb4234",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

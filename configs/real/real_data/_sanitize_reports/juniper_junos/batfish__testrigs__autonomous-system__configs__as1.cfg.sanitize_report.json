@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testrigs__autonomous-system__configs__as1.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testrigs__autonomous-system__configs__as1.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ca7b5aaa6b08a4b5069225fb572b0520efca229ad47613e60468e0ba76fba09a",
+  "sha256_sanitized": "7ff93c56ef3417248d1d913fcca9cf91a374a63777df8ecdd44a3d23a8efb849",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

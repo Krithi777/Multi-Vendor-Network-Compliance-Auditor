@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-route-map-set-weight.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-route-map-set-weight.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "8faf50fb3348f3a89cfc3c4ea5f3b682adee9f7e71dc706bb6d01a60eb50ed9f",
+  "sha256_sanitized": "8faf50fb3348f3a89cfc3c4ea5f3b682adee9f7e71dc706bb6d01a60eb50ed9f",
+  "redactions": [],
+  "clean": true
+}

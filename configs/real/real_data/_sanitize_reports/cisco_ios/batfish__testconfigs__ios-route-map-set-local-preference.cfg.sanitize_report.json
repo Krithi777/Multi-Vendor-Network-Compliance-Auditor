@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-route-map-set-local-preference.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-route-map-set-local-preference.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "81ebac3a6c5268c7c95e9e9b63b420ec0e790e41a8d497d25e501a15a1b26b9e",
+  "sha256_sanitized": "81ebac3a6c5268c7c95e9e9b63b420ec0e790e41a8d497d25e501a15a1b26b9e",
+  "redactions": [],
+  "clean": true
+}

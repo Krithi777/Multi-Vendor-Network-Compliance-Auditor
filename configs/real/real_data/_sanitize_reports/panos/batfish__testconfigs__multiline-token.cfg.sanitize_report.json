@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__multiline-token.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__multiline-token.cfg",
+  "vendor": "panos",
+  "sha256_original": "ae368a84ede5b7b9afcafa923276e43f3fa0c6c2609d172574c2be0ab9419222",
+  "sha256_sanitized": "ae368a84ede5b7b9afcafa923276e43f3fa0c6c2609d172574c2be0ab9419222",
+  "redactions": [],
+  "clean": true
+}

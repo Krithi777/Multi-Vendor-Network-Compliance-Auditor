@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__vsys-import.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__vsys-import.cfg",
+  "vendor": "panos",
+  "sha256_original": "4d31145038d5fae1abfde08a020036fc250f391c28f629cba13285989262a4f6",
+  "sha256_sanitized": "4d31145038d5fae1abfde08a020036fc250f391c28f629cba13285989262a4f6",
+  "redactions": [],
+  "clean": true
+}

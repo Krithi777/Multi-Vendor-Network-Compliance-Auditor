@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interface-arp.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interface-arp.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "96f77ff956a1c4e4239ff1650fb31d72b16fbfb45a9ec0099b63cc9cd0a6fe2a",
+  "sha256_sanitized": "389597ea495edb2488647b3cdb991c594b7467719ff2e5d77f11ae0d92daceaf",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__rfc1583NoCompatible.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__rfc1583NoCompatible.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "bd99648bb96fbf180a0fb8977ce511dfbf16bcae0ae9fcf727c08a3a295f980d",
+  "sha256_sanitized": "9cc008240ba9783b004eea160ceefd7c409e08bf3278d5c6f5b4e874a9695795",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

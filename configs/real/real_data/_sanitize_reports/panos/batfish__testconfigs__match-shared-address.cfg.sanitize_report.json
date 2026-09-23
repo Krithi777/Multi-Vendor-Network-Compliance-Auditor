@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__match-shared-address.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__match-shared-address.cfg",
+  "vendor": "panos",
+  "sha256_original": "3193524805b8b580fb40aeb3118a965e3afb5ef635d09840f5533ea851f6a670",
+  "sha256_sanitized": "2ec1079e0e36a06e95235492d0ab646379038591bcaf690d501eb89887674e5f",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

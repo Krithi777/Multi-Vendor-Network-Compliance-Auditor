@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interface-inet6-address.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interface-inet6-address.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "2d6ecf2dac7d53f1e14259d0ae9848f07e3fc3568521962e506eae4645b2ae0e",
+  "sha256_sanitized": "2d6ecf2dac7d53f1e14259d0ae9848f07e3fc3568521962e506eae4645b2ae0e",
+  "redactions": [],
+  "clean": true
+}

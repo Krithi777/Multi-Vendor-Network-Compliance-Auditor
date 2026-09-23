@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__match-vsys-address-over-shared.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__match-vsys-address-over-shared.cfg",
+  "vendor": "panos",
+  "sha256_original": "94c0c480815a3136479a58cb6a844631e90e440ccec24ce717b73f3102814746",
+  "sha256_sanitized": "4dfa519908291964a1e8d7c2ccb479bd24b4cd162ae68d16714fb46cd2d9a23e",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

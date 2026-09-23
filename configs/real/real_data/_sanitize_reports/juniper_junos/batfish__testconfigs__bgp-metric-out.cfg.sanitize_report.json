@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-metric-out.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-metric-out.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "5e510200999b40cc8b52da0874ae4a33dbb6187953879d092da6cac00cd8a5dc",
+  "sha256_sanitized": "be24fda583f8a265e627b467982ca63f948afd6a7d8c6926a1e0700dcac1fe0b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

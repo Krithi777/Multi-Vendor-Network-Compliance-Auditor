@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__paloalto_layer2_ae_svi.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__paloalto_layer2_ae_svi.cfg",
+  "vendor": "panos",
+  "sha256_original": "86078170d7dcd31de411e7bbd763915e2804d69eb43cc2f3b7fdd20d98a65e9f",
+  "sha256_sanitized": "a941e40bd2587a927f836ea37406507c0817875516ac5c41b445282440fd6091",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

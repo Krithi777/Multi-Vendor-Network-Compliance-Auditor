@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__set-partial.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__set-partial.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "f11a9192ba05f23b64407dad6e1c01c811a600a5a11c8cee507276e76b0d39ba",
+  "sha256_sanitized": "f11a9192ba05f23b64407dad6e1c01c811a600a5a11c8cee507276e76b0d39ba",
+  "redactions": [],
+  "clean": true
+}

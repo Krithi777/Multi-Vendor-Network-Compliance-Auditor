@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios_banner.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios_banner.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "ec954a3ac387c9d3003716df2ea8336f3f1b614f25874f28a105e42d7779732f",
+  "sha256_sanitized": "ec954a3ac387c9d3003716df2ea8336f3f1b614f25874f28a105e42d7779732f",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp_disable.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp_disable.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "bd8537c86f49a751c8e015c05a520c248bf653ff78ecb6db9b4fb00f5f1889c0",
+  "sha256_sanitized": "bd8537c86f49a751c8e015c05a520c248bf653ff78ecb6db9b4fb00f5f1889c0",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__nat-match-noop-rules.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__nat-match-noop-rules.cfg",
+  "vendor": "panos",
+  "sha256_original": "702cf6ea659fc7c12f5b75eadd46734c4ff749f46eaaa5ac83a88c7dea80f664",
+  "sha256_sanitized": "40b2d44c6b0e1541a7879af602dc2ba639e1b421d749fa90a78410eb91a24462",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

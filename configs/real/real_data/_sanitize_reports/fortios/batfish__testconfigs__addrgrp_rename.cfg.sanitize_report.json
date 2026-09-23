@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__addrgrp_rename.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__addrgrp_rename.cfg",
+  "vendor": "fortios",
+  "sha256_original": "148efaa900e7cf6405eaa6e1001ba640a54c347be01396fc0d2e0313f8f53b3b",
+  "sha256_sanitized": "447a78ee8c313e52439434e996d96d33c39cae94f62f7b707814aab27c3b9ecf",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

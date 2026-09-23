@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__address-object-nexthop.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__address-object-nexthop.cfg",
+  "vendor": "panos",
+  "sha256_original": "6e868879900922a992d48950fe63125e04637702d6f0c7dbd3591aaf8fd70633",
+  "sha256_sanitized": "0b8669354de818d0b2cfa11aa4f2c47cc4fa1bbcbf4aeba4d5a6389f2bce68cf",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 10
+    }
+  ],
+  "clean": false
+}
