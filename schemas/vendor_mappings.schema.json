@@ -15,6 +15,9 @@
     "generated_note": {
       "type": "string"
     },
+    "generation_status": {
+      "type": "object"
+    },
     "vendors_covered": {
       "type": "array",
       "items": {

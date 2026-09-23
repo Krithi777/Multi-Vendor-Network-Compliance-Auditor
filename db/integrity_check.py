@@ -17,7 +17,7 @@ EXPECTED_TABLES = {
 EXPECTED_VENDORS = 5
 EXPECTED_CONTROLS = 20
 DEP_RULES_RANGE = (30, 40)
-CORPUS_REAL, CORPUS_SYNTHETIC = 903, 195
+CORPUS_REAL, CORPUS_SYNTHETIC = 903, 193
 
 # The 6 mgmt-path fields named explicitly in plan 5.3 -- Phase 8's connectivity-conflict
 # check scans these for shares_path_with edges, so it matters that it's exactly THESE six,

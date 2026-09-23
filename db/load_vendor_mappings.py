@@ -30,7 +30,7 @@ SQL = text("""
 """)
 
 def load():
-    data = read_json("mappings/vendor_mappings_corrected.json")
+    data = read_json("mappings/vendor_mappings.json")
     validate(data, "schemas/vendor_mappings.schema.json")
     rows = build_rows(data)
     if is_dry_run():

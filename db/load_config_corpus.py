@@ -1,5 +1,6 @@
 # db/load_config_corpus.py -- Phase 3 (903 real) + Phase 4 (195 synthetic) manifests -> config_corpus
 import os
+from pathlib import Path
 from sqlalchemy import text
 from common import read_jsonl, get_engine, is_dry_run, ROOT
 
@@ -19,7 +20,7 @@ def build_real_rows(manifest):
         # manifest paths are Windows-style: configs\sanitized\<vendor>\<file>  ->  configs/real/<vendor>/<file>
         base = m["sanitized_path"].replace("\\", "/").split("/")[-1]
         rows.append(dict(
-            fp=f"configs/real/{m['vendor']}/{base}", vendor=m["vendor"], st="real",
+            fp=f"configs/real/real_data/{m['vendor']}/{base}", vendor=m["vendor"], st="real",
             src=m["source"], cid=None, state=None,
             sha=m.get("sanitize_report", {}).get("sha256_sanitized"),
             conf=m.get("label_confidence", "silver"),      # real values: silver / fixture / snippet
@@ -32,7 +33,9 @@ def build_synthetic_rows(manifest):
     for m in manifest:
         _need(m, ["vendor", "control_id", "state", "file_path"], "phase4")
         rows.append(dict(
-            fp=m["file_path"].replace("\\", "/"), vendor=m["vendor"], st="synthetic",
+            fp=f"configs/synthetic/synthetic_dataset/{m['vendor']}/{Path(m['file_path']).name}",
+            vendor=m["vendor"],
+            st="synthetic",
             src="synthetic_mutation", cid=m["control_id"], state=m["state"],
             sha=m.get("sha256"),            # NB: Phase 4 hashes are truncated to 16 hex chars
             conf="exact", at=None,          # no collection timestamp exists for generated files
