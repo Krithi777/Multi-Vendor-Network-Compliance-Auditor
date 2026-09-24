@@ -46,20 +46,36 @@ class PgVectorStore:
     """Thin repository over the Phase 7 pgvector table."""
     def __init__(self, connection): self.connection=connection
     def add(self, record: VectorRecord):
-        self.connection.execute(
-            """INSERT INTO phase7_embedding_records
+        from sqlalchemy import text
+        import json
+        sql = text("""INSERT INTO phase7_embedding_records
                (raw_line,vendor,canonical_field,template_signature,embedding,session_id,source_metadata)
-               VALUES (:raw_line,:vendor,:field,:signature,:embedding,:session,:meta)""",
-            {"raw_line":record.raw_line,"vendor":record.vendor,"field":record.canonical_field,
-             "signature":record.template_signature,"embedding":list(record.embedding),
-             "session":record.session_id,"meta":record.source_metadata or {}})
+               VALUES (:raw_line,:vendor,:field,:signature,CAST(:embedding AS vector),CAST(:session AS uuid),CAST(:meta AS jsonb))""")
+        params = {
+            "raw_line": record.raw_line, "vendor": record.vendor, "field": record.canonical_field,
+            "signature": record.template_signature, "embedding": str([float(x) for x in record.embedding]),
+            "session": record.session_id, "meta": json.dumps(record.source_metadata or {})
+        }
+        if hasattr(self.connection, "begin"):
+            with self.connection.begin() as conn:
+                conn.execute(sql, params)
+        else:
+            self.connection.execute(sql, params)
+
     def query(self, embedding, vendor=None, limit=5):
-        sql="""SELECT raw_line,vendor,canonical_field,template_signature,embedding,session_id,source_metadata,
-                      1 - (embedding <=> :embedding) AS score
+        from sqlalchemy import text
+        import json
+        sql = text("""SELECT raw_line,vendor,canonical_field,template_signature,embedding,session_id,source_metadata,
+                      1 - (embedding <=> CAST(:embedding AS vector)) AS score
                FROM phase7_embedding_records
                WHERE (:vendor IS NULL OR vendor=:vendor)
-               ORDER BY embedding <=> :embedding LIMIT :limit"""
-        rows=self.connection.execute(text(sql), {"embedding":list(embedding),"vendor":vendor,"limit":limit}).mappings()
+               ORDER BY embedding <=> CAST(:embedding AS vector) LIMIT :limit""")
+        params = {"embedding": str([float(x) for x in embedding]), "vendor": vendor, "limit": limit}
+        if hasattr(self.connection, "connect"):
+            with self.connection.connect() as conn:
+                rows = conn.execute(sql, params).mappings().all()
+        else:
+            rows = self.connection.execute(sql, params).mappings().all()
         return [(float(r["score"]), VectorRecord(r["raw_line"],r["vendor"],r["canonical_field"],
                  r["template_signature"],r["embedding"],r["session_id"],r["source_metadata"])) for r in rows]
 

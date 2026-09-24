@@ -57,10 +57,10 @@ class PostgresTeachingRepository:
             conn.execute(text("""
               INSERT INTO phase7_confirmed_examples
               (session_id,raw_line,vendor,canonical_field,template_signature,context_path,source_metadata)
-              VALUES (:session,:line,:vendor,:field,:sig,:context,:meta)
+              VALUES (:session,:line,:vendor,:field,:sig,:context,CAST(:meta AS jsonb))
             """), {"session":example.session_id,"line":example.raw_line,"vendor":example.vendor,
                    "field":example.canonical_field,"sig":signature,"context":example.context_path,
-                   "meta":example.source_metadata or {}})
+                   "meta":json.dumps(example.source_metadata or {})})
     def save_template(self, session):
         from sqlalchemy import text
         if not session.template: return
