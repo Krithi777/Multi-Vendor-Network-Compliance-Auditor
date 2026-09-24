@@ -1,0 +1,73 @@
+{
+  "script_version": "2.2",
+  "seed": 42,
+  "source_manifest_sha256": "bf4ce73e0469794165963de9e50f463273e7226d714eb8f89720c3d89cba5f84",
+  "total_files": 193,
+  "distinct_contents": 116,
+  "excluded_invalid_cases": [
+    "panos/CTRL-001/PASS",
+    "panos/CTRL-002/PASS"
+  ],
+  "counts_by_split": {
+    "train": 153,
+    "validation": 18,
+    "test": 22
+  },
+  "fractions_by_split": {
+    "train": 0.7927,
+    "validation": 0.0933,
+    "test": 0.114
+  },
+  "vendor_by_split": {
+    "cisco_ios": {
+      "test": 5,
+      "train": 42,
+      "validation": 5
+    },
+    "fortios": {
+      "test": 6,
+      "train": 41,
+      "validation": 6
+    },
+    "juniper_junos": {
+      "test": 6,
+      "train": 36,
+      "validation": 3
+    },
+    "panos": {
+      "test": 5,
+      "train": 34,
+      "validation": 4
+    }
+  },
+  "state_by_split": {
+    "FAIL": {
+      "test": 6,
+      "train": 27,
+      "validation": 8
+    },
+    "MISSING": {
+      "test": 16,
+      "train": 48,
+      "validation": 10
+    },
+    "PASS": {
+      "test": 0,
+      "train": 78,
+      "validation": 0
+    }
+  },
+  "leakage_checks": {
+    "file_key_in_multiple_splits": 0,
+    "content_hash_in_multiple_splits": 0,
+    "control_group_in_multiple_splits": 0
+  },
+  "rules": [
+    "PASS files pinned to train (byte-identical baseline copies)",
+    "non-PASS files grouped by (vendor, control_id); groups sharing content are merged",
+    "whole units assigned to splits, stratified by vendor, ~80/10/10 by file count",
+    "no SHA-256 appears in more than one split",
+    "Arista EOS excluded (held out for the Phase 11 demo)",
+    "2 invalid PAN-OS PASS cases excluded per Phase 5 integrity_check.py finding"
+  ]
+}

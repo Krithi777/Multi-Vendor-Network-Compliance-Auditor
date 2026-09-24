@@ -1,0 +1,6 @@
+# Phase 7 runtime dependencies (add to the existing environment; do not create a second app)
+SQLAlchemy>=2.0
+psycopg2-binary>=2.9
+pgvector>=0.3
+sentence-transformers>=3.0
+pytest>=8.0
