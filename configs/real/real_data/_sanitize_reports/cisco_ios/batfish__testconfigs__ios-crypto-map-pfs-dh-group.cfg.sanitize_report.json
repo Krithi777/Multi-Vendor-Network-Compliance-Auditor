@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-crypto-map-pfs-dh-group.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-crypto-map-pfs-dh-group.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "ec86240808329cdade1767bd86cc0e3a9ed2c76ce8b1c27a501c0f2683adbeee",
+  "sha256_sanitized": "ec86240808329cdade1767bd86cc0e3a9ed2c76ce8b1c27a501c0f2683adbeee",
+  "redactions": [],
+  "clean": true
+}

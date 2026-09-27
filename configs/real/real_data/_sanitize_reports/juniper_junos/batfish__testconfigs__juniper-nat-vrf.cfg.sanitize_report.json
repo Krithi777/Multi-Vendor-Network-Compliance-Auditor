@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-nat-vrf.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-nat-vrf.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "f50efa89c89a471150c655003148ca156809b35631533d13d8d8660a30e6acfb",
+  "sha256_sanitized": "f50efa89c89a471150c655003148ca156809b35631533d13d8d8660a30e6acfb",
+  "redactions": [],
+  "clean": true
+}

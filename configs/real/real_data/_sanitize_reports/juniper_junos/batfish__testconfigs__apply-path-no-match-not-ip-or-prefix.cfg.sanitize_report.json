@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__apply-path-no-match-not-ip-or-prefix.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__apply-path-no-match-not-ip-or-prefix.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "650f005db67f0600cd50ff9bfd15585cbe16c04d2b939b01ccbf395d8872488e",
+  "sha256_sanitized": "650f005db67f0600cd50ff9bfd15585cbe16c04d2b939b01ccbf395d8872488e",
+  "redactions": [],
+  "clean": true
+}

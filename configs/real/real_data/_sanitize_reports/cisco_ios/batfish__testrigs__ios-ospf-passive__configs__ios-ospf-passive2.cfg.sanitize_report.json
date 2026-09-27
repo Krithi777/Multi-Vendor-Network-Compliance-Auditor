@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ios-ospf-passive__configs__ios-ospf-passive2.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ios-ospf-passive__configs__ios-ospf-passive2.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "223becd81b79bebd3e9303340a3035f07caf6e19aa47700c2c84a100d2cb9e19",
+  "sha256_sanitized": "e9eed2cf907d99f26a101cb810020b8fee39d66b5d1b44163bb53ccdf7a9a4fd",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

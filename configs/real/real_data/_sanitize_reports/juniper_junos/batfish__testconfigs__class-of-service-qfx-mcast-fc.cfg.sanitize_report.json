@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__class-of-service-qfx-mcast-fc.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__class-of-service-qfx-mcast-fc.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "5d8249f60cea8bb1ba04e7f102b5b5e21f7a66c6de3a8b57ebb5a9174895cba9",
+  "sha256_sanitized": "5d8249f60cea8bb1ba04e7f102b5b5e21f7a66c6de3a8b57ebb5a9174895cba9",
+  "redactions": [],
+  "clean": true
+}

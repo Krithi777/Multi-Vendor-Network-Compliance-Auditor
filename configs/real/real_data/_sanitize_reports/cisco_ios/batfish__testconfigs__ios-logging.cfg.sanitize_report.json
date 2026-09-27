@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-logging.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-logging.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "0c7f50602296bf5bc6a1ec11a5dccaff949b8ce823d69e6aa0cf67f53ca8df30",
+  "sha256_sanitized": "1983683c6424019cf3b92cc2118d9d672887fcce5f42a11561a6684a0027806d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-policy-add-path-send-count.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-policy-add-path-send-count.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "a27bc5368851b5a0a4f5a352a6b89d62d8746a84758c5c77eeb4a1d504f6c387",
+  "sha256_sanitized": "ec8d8cbc4f353f1070f63d37e2da492e4395980129b915924743cac2a584d31e",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

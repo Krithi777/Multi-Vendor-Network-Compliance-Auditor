@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ibgp-no-update-source__configs__r1.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ibgp-no-update-source__configs__r1.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "13dc71edcf0d73ac21d5a999d1a8c988e169cf6ff25bc43fe01a319625e76634",
+  "sha256_sanitized": "c8d30615f72bc172feb5200e6b5f0cd501d584922b65ed723291f0b61766a6bb",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

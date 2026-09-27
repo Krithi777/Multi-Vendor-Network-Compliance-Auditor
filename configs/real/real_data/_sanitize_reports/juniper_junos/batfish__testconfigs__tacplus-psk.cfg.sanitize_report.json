@@ -1,0 +1,18 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__tacplus-psk.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__tacplus-psk.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "bfb6be528674357b2e550361de30d9be5b1dbe16c1112aabaf9def368489e6c7",
+  "sha256_sanitized": "bef6ef2589ec1b2f11a6e14532a7b8f17434aba3506bf072f12168b0fd2d6fe3",
+  "redactions": [
+    {
+      "type": "shared_secret",
+      "count": 3
+    },
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

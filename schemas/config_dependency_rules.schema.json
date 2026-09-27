@@ -1,0 +1,16 @@
+{
+  "type": "array",
+  "minItems": 30,
+  "maxItems": 40,
+  "items": {
+    "type": "object",
+    "required": ["field_a", "relation_type", "field_b"],
+    "additionalProperties": false,
+    "properties": {
+      "field_a": {"type": "string"},
+      "relation_type": {"enum": ["requires", "enables", "conflicts_with", "shares_path_with"]},
+      "field_b": {"type": "string"},
+      "rationale": {"type": "string"}
+    }
+  }
+}

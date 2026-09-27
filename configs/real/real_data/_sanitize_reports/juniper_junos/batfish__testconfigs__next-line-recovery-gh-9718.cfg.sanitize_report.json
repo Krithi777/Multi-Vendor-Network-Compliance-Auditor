@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__next-line-recovery-gh-9718.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__next-line-recovery-gh-9718.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "7caea705236fa75fe2794a1724ad0c71850ad2e2dcefbce0c37da20a958f6f4f",
+  "sha256_sanitized": "a76ff0322f846a0c1f3554d604ea9aad5abefeb39c244ad62329971080abfde6",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

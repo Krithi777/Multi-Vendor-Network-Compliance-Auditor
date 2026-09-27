@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__nat-source-static__configs__r2.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__nat-source-static__configs__r2.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "fa82db952fce5803d29578d86918ab6c75692d8c29daf420e91efd8ccdeaa4c8",
+  "sha256_sanitized": "33c628ed0c104e35d6bb44c0afb50cc50ab4693255ca814ae45150be819800b5",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

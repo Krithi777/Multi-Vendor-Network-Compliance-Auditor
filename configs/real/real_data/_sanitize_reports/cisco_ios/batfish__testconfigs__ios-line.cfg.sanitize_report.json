@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-line.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-line.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "c10ee50579f836fb0185e0149195258c5716daf694c99a0910df12683abd409b",
+  "sha256_sanitized": "c75350b346f1909f7cfdb92dcab09fe1c5af0763d3067f25c36c1578372e85ae",
+  "redactions": [
+    {
+      "type": "line_password",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

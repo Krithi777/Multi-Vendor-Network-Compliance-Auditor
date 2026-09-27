@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__rulebase-tracing.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__rulebase-tracing.cfg",
+  "vendor": "panos",
+  "sha256_original": "25d53c98247d600e993f24a9728da512bc95f47201f279b7ac3a723a76884c36",
+  "sha256_sanitized": "5fca8bf8dc3c84802f338bdf65cfd2519478225fcbc39ae45c1043496bcab37b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

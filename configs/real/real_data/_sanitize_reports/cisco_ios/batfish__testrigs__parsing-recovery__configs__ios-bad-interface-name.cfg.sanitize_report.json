@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__parsing-recovery__configs__ios-bad-interface-name.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__parsing-recovery__configs__ios-bad-interface-name.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "f46b1672c4941dc9ebc455ef9efe61039fb303d2e403ffafaff03be4a62fb43f",
+  "sha256_sanitized": "f46b1672c4941dc9ebc455ef9efe61039fb303d2e403ffafaff03be4a62fb43f",
+  "redactions": [],
+  "clean": true
+}

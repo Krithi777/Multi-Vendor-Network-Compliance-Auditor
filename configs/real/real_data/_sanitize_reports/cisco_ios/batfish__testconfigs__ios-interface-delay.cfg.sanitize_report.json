@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-interface-delay.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-interface-delay.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "0eebaab3c9a16507bca1f67e986ba967ad832ebd5470b2ff7be3fdd53eef623b",
+  "sha256_sanitized": "e4b20294d4f87a7d1d1fef973b4a56f00bfb35dd1fb98aa82b6c6b9dfad77a6a",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

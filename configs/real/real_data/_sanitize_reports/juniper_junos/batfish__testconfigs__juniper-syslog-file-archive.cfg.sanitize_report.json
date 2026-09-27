@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-syslog-file-archive.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-syslog-file-archive.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "11120cbc949f8fc601685d62910f6984756349937151ec540c7b50801971c759",
+  "sha256_sanitized": "11120cbc949f8fc601685d62910f6984756349937151ec540c7b50801971c759",
+  "redactions": [],
+  "clean": true
+}

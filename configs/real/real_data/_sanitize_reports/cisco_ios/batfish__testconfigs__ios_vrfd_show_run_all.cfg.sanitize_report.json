@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios_vrfd_show_run_all.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios_vrfd_show_run_all.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "6faf7d9f774069f4d52107b363ee83725c59e8b0d59c876bed5a5c8251fd15b6",
+  "sha256_sanitized": "6faf7d9f774069f4d52107b363ee83725c59e8b0d59c876bed5a5c8251fd15b6",
+  "redactions": [],
+  "clean": true
+}

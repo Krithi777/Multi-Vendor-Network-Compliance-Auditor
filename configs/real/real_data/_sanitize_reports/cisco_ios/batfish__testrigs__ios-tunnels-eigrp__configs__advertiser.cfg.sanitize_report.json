@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ios-tunnels-eigrp__configs__advertiser.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ios-tunnels-eigrp__configs__advertiser.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "4ef38840ab4696452253b8d2564e61fad88fdc9f0df3e824de23135541dea815",
+  "sha256_sanitized": "3fce2a753352319d55cf8613c32303344e7beefc9af1bd4be17a5c67ec9e027f",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

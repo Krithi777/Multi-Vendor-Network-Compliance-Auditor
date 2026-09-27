@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__static-routes-ipv6.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__static-routes-ipv6.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "779f5510b51b1606274de275c478d599409fe0ad6d7a47188af25a355d9446df",
+  "sha256_sanitized": "779f5510b51b1606274de275c478d599409fe0ad6d7a47188af25a355d9446df",
+  "redactions": [],
+  "clean": true
+}

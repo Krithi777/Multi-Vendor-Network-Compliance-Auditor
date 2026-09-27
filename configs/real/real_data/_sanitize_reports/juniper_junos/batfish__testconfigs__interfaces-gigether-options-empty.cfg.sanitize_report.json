@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interfaces-gigether-options-empty.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interfaces-gigether-options-empty.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "78f65b58efde6748a0b1d2a2f6935e376c2d5442fdcab2adc47cd9c2ce711050",
+  "sha256_sanitized": "78f65b58efde6748a0b1d2a2f6935e376c2d5442fdcab2adc47cd9c2ce711050",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__from-protocols.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__from-protocols.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "5878dfedc3910597e71e5c764ac8a76daae16b958f81b7d32f06cf4741c38b6f",
+  "sha256_sanitized": "5878dfedc3910597e71e5c764ac8a76daae16b958f81b7d32f06cf4741c38b6f",
+  "redactions": [],
+  "clean": true
+}

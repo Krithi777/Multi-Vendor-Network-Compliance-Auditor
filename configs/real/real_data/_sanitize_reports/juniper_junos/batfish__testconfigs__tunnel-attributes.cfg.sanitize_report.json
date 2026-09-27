@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__tunnel-attributes.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__tunnel-attributes.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ec82b1d2a668d13375acd1cd59efc3c372f4100b7efedbf07478a0818a419273",
+  "sha256_sanitized": "489d3b905b5b5e3049754c31872de665ef227fac188f6976d8d25a0a2df17625",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

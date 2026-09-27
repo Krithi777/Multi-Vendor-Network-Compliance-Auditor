@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\github__ciscoconfparse__sample_05.ios",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\github__ciscoconfparse__sample_05.ios",
+  "vendor": "cisco_ios",
+  "sha256_original": "491a1ee76ce9fffe74f773336a195492c771b6de4707b8ae857472cb6faac2ce",
+  "sha256_sanitized": "a5aae311800f3837be0862bc61b35190d17a91707a37e7de438131902775f6af",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 253
+    }
+  ],
+  "clean": false
+}

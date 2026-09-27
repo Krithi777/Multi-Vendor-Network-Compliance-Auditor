@@ -1,0 +1,1568 @@
+{
+  "CTRL-001": {
+    "canonical_field": "management.ssh.version",
+    "operator": "eq",
+    "expected_value": 2,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show ip ssh",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "ip ssh version 2"
+        ],
+        "rollback_commands": [
+          "ip ssh version 1"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system services ssh",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system services ssh protocol-version v2",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set system services ssh protocol-version v1",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "get system global | grep admin-ssh-v1",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "config system global",
+          "set admin-ssh-v1 disable",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system global",
+          "set admin-ssh-v1 enable",
+          "end"
+        ],
+        "requires_parameters": false,
+        "notes": "FortiOS has no direct SSH-version selector; admin-ssh-v1 is the closest proxy (blocks SSHv1 fallback)."
+      },
+      "panos": {
+        "remediation_commands": [],
+        "verification_command": "N/A",
+        "rollback_commands": [],
+        "syntax_confidence": "verified",
+        "notes": "PAN-OS management SSH is SSHv2-only by platform design; there is no CLI toggle, so FAIL cannot be generated."
+      },
+      "arista_eos": {
+        "remediation_commands": [],
+        "verification_command": "show ip ssh",
+        "rollback_commands": [],
+        "syntax_confidence": "verified",
+        "notes": "EOS management SSH is SSHv2-only by platform design; no legacy-version toggle exists."
+      }
+    }
+  },
+  "CTRL-002": {
+    "canonical_field": "management.telnet.enabled",
+    "operator": "eq",
+    "expected_value": false,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | section line vty",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "line vty 0 4",
+          "transport input ssh"
+        ],
+        "rollback_commands": [
+          "line vty 0 4",
+          "transport input telnet"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system services | display set | match telnet",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "delete system services telnet",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set system services telnet",
+          "commit"
+        ],
+        "remediation_basis": "derived_by_deleting_fail_line",
+        "requires_parameters": false,
+        "notes": "Junos telnet has no explicit 'disabled' directive -- PASS and MISSING are the same underlying config (line absent)."
+      },
+      "fortios": {
+        "verification_command": "get system global | grep admintelnet",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system global",
+          "set admintelnet disable",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system global",
+          "set admintelnet enable",
+          "end"
+        ],
+        "requires_parameters": false
+      },
+      "panos": {
+        "remediation_commands": [],
+        "verification_command": "N/A",
+        "rollback_commands": [],
+        "syntax_confidence": "verified",
+        "notes": "PAN-OS management interface does not offer telnet at all."
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | section line vty",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "line vty 0 4",
+          "transport input ssh"
+        ],
+        "rollback_commands": [
+          "line vty 0 4",
+          "transport input telnet"
+        ],
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-003": {
+    "canonical_field": "management.http.enabled",
+    "operator": "eq",
+    "expected_value": false,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show ip http server status",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "no ip http server"
+        ],
+        "rollback_commands": [
+          "ip http server"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system services | display set | match http",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "delete system services web-management http",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set system services web-management http",
+          "commit"
+        ],
+        "remediation_basis": "derived_by_deleting_fail_line",
+        "requires_parameters": false,
+        "notes": "No explicit disable directive; PASS and MISSING share the same underlying config (line absent)."
+      },
+      "fortios": {
+        "verification_command": "show system interface <MGMT_INTERFACE> | grep allowaccess",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system interface",
+          "edit <MGMT_INTERFACE>",
+          "set allowaccess https ssh",
+          "next",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system interface",
+          "edit <MGMT_INTERFACE>",
+          "set allowaccess http https ssh",
+          "next",
+          "end"
+        ],
+        "requires_parameters": true
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system service",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set deviceconfig system service disable-http yes",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set deviceconfig system service disable-http no",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "arista_eos": {
+        "verification_command": "show management api http-commands",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "management api http-commands",
+          "no protocol http"
+        ],
+        "rollback_commands": [
+          "management api http-commands",
+          "protocol http"
+        ],
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-004": {
+    "canonical_field": "management.https.enabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show ip http server status",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "ip http secure-server"
+        ],
+        "rollback_commands": [
+          "no ip http secure-server"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system services | display set | match https",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system services web-management https",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete system services web-management https",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false,
+        "notes": "FAIL state = MISSING (line simply absent); no explicit disable form."
+      },
+      "fortios": {
+        "verification_command": "show system interface <MGMT_INTERFACE> | grep allowaccess",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system interface",
+          "edit <MGMT_INTERFACE>",
+          "set allowaccess https ssh",
+          "next",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system interface",
+          "edit <MGMT_INTERFACE>",
+          "set allowaccess ssh",
+          "next",
+          "end"
+        ],
+        "requires_parameters": true,
+        "notes": "Same field as CTRL-003; FortiOS expresses both controls via one allowaccess list."
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system service",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set deviceconfig system service disable-https no",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set deviceconfig system service disable-https yes",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "arista_eos": {
+        "verification_command": "show management api http-commands",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "management api http-commands",
+          "protocol https"
+        ],
+        "rollback_commands": [
+          "management api http-commands",
+          "no protocol https"
+        ],
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-005": {
+    "canonical_field": "management.session.idle_timeout_minutes",
+    "operator": "lte",
+    "expected_value": 10,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | section line vty",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "line vty 0 4",
+          "exec-timeout 10 0"
+        ],
+        "rollback_commands": [
+          "line vty 0 4",
+          "exec-timeout 30 0"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system login | display set | match idle-timeout",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system login idle-timeout 10",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set system login idle-timeout 30",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "get system global | grep admintimeout",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system global",
+          "set admintimeout 10",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system global",
+          "set admintimeout 30",
+          "end"
+        ],
+        "requires_parameters": false
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system idle-timeout",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set deviceconfig system idle-timeout 10",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set deviceconfig system idle-timeout 30",
+          "commit"
+        ],
+        "requires_parameters": false,
+        "notes": "Verify exact key name against target PAN-OS version."
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | section line vty",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "line vty 0 4",
+          "exec-timeout 10 0"
+        ],
+        "rollback_commands": [
+          "line vty 0 4",
+          "exec-timeout 30 0"
+        ],
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-006": {
+    "canonical_field": "management.aaa.enabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include aaa new-model",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "aaa new-model"
+        ],
+        "rollback_commands": [
+          "no aaa new-model"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false,
+        "notes": "FAIL = MISSING (absence of the line); Cisco has no explicit 'aaa disabled' directive beyond omission."
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system authentication-order",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system authentication-order [ radius password ]",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete system authentication-order [ radius password ]",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false,
+        "notes": "FAIL = MISSING; absence of authentication-order is the insecure state."
+      },
+      "fortios": {
+        "verification_command": "show user tacacs+",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "config user tacacs+",
+          "edit <TACACS_SERVER_NAME>",
+          "set server <TACACS_SERVER_IP>",
+          "set key <TACACS_KEY>",
+          "next",
+          "end"
+        ],
+        "rollback_commands": [
+          "config user tacacs+",
+          "delete <TACACS_SERVER_NAME>",
+          "end"
+        ],
+        "rollback_confidence": "heuristic",
+        "manually_authored": true,
+        "requires_parameters": true,
+        "notes": "Evidence = presence of a tacacs+/radius server block; FAIL = MISSING (block absent)."
+      },
+      "panos": {
+        "verification_command": "show mgt-config users admin",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set mgt-config users admin authentication-profile aaa-profile",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete mgt-config users admin authentication-profile aaa-profile",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false,
+        "notes": "FAIL = MISSING; absence of an authentication-profile assignment is the insecure state."
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | include aaa authentication",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "aaa authentication login default group tacacs+ local"
+        ],
+        "rollback_commands": [
+          "no aaa authentication login default group tacacs+ local"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-007": {
+    "canonical_field": "management.password.strong_policy_enabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include security passwords",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "security passwords min-length 8"
+        ],
+        "rollback_commands": [
+          "no security passwords min-length 8"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system login | display set | match minimum-length",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system login password minimum-length 8",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete system login password minimum-length 8",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "show system password-policy",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system password-policy",
+          "set minimum-length 8",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system password-policy",
+          "unset minimum-length",
+          "end"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "panos": {
+        "verification_command": "show shared password-complexity",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set shared password-complexity minimum-length 8",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete shared password-complexity minimum-length 8",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | include password minimum-length",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "management security",
+          "password minimum-length 8"
+        ],
+        "rollback_commands": [
+          "management security",
+          "no password minimum-length 8"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-008": {
+    "canonical_field": "management.login.max_failed_attempts",
+    "operator": "lte",
+    "expected_value": 3,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include login block-for",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "login block-for 120 attempts 3 within 60"
+        ],
+        "rollback_commands": [
+          "login block-for 120 attempts 10 within 60"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system login retry-options",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system login retry-options tries-before-disconnect 3",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set system login retry-options tries-before-disconnect 10",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "get system global | grep admin-lockout-threshold",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system global",
+          "set admin-lockout-threshold 3",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system global",
+          "set admin-lockout-threshold 10",
+          "end"
+        ],
+        "requires_parameters": false
+      },
+      "panos": {
+        "verification_command": "show shared password-complexity",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set shared password-complexity failed-attempts 3",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set shared password-complexity failed-attempts 10",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | include aaa authentication policy lockout",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "aaa authentication policy lockout failure 3 window 900"
+        ],
+        "rollback_commands": [
+          "aaa authentication policy lockout failure 10 window 900"
+        ],
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-009": {
+    "canonical_field": "management.logging.enabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show logging | include Logging",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "logging on"
+        ],
+        "rollback_commands": [
+          "no logging on"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system syslog",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system syslog file messages any any",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete system syslog file messages any any",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "get log memory setting",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config log memory setting",
+          "set status enable",
+          "end"
+        ],
+        "rollback_commands": [
+          "config log memory setting",
+          "set status disable",
+          "end"
+        ],
+        "requires_parameters": false
+      },
+      "panos": {
+        "verification_command": "show shared log-settings",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set shared log-settings config",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete shared log-settings config",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false,
+        "notes": "Marker line only; exact key varies by log category."
+      },
+      "arista_eos": {
+        "verification_command": "show logging | include Logging",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "logging on"
+        ],
+        "rollback_commands": [
+          "no logging on"
+        ],
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-010": {
+    "canonical_field": "management.logging.remote_syslog_configured",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include logging host",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "logging host 10.0.0.5"
+        ],
+        "rollback_commands": [
+          "no logging host 10.0.0.5"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system syslog | display set | match host",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system syslog host 10.0.0.5 any any",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete system syslog host 10.0.0.5 any any",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "fortios": {
+        "verification_command": "show log syslogd setting",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config log syslogd setting",
+          "set status enable",
+          "set server 10.0.0.5",
+          "end"
+        ],
+        "rollback_commands": [
+          "config log syslogd setting",
+          "unset server",
+          "set status disable",
+          "end"
+        ],
+        "rollback_confidence": "heuristic",
+        "manually_authored": true,
+        "requires_parameters": true
+      },
+      "panos": {
+        "verification_command": "show shared log-settings syslog",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set shared syslog syslog-profile1 server-list srv1 server 10.0.0.5",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete shared syslog syslog-profile1 server-list srv1 server 10.0.0.5",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | include logging host",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "logging host 10.0.0.5"
+        ],
+        "rollback_commands": [
+          "no logging host 10.0.0.5"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      }
+    }
+  },
+  "CTRL-011": {
+    "canonical_field": "management.ntp.configured",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show ntp associations",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "ntp server 10.0.0.10"
+        ],
+        "rollback_commands": [
+          "no ntp server 10.0.0.10"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system ntp",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system ntp server 10.0.0.10",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete system ntp server 10.0.0.10",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "fortios": {
+        "verification_command": "show system ntp",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system ntp",
+          "config ntpserver",
+          "edit 1",
+          "set server 10.0.0.10",
+          "next",
+          "end",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system ntp",
+          "config ntpserver",
+          "edit 1",
+          "unset server",
+          "next",
+          "end",
+          "end"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system ntp-servers",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set deviceconfig system ntp-servers primary-ntp-server ntp-server-address 10.0.0.10",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete deviceconfig system ntp-servers primary-ntp-server ntp-server-address 10.0.0.10",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "arista_eos": {
+        "verification_command": "show ntp associations",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "ntp server 10.0.0.10"
+        ],
+        "rollback_commands": [
+          "no ntp server 10.0.0.10"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      }
+    }
+  },
+  "CTRL-012": {
+    "canonical_field": "management.ntp.authentication_enabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show ntp status",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "ntp authentication-key 1 md5 <NTP_KEY>",
+          "ntp trusted-key 1",
+          "ntp authenticate"
+        ],
+        "rollback_commands": [
+          "no ntp authenticate",
+          "no ntp trusted-key 1",
+          "no ntp authentication-key 1"
+        ],
+        "manually_authored": true,
+        "requires_parameters": true
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system ntp | display set | match key",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set system ntp authentication-key 1 type md5 value <NTP_KEY>",
+          "set system ntp server 10.0.0.10 key 1",
+          "set system ntp trusted-key 1",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete system ntp server 10.0.0.10 key 1",
+          "delete system ntp trusted-key 1",
+          "delete system ntp authentication-key 1",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "manually_authored": true,
+        "requires_parameters": true
+      },
+      "fortios": {
+        "verification_command": "show system ntp",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "config system ntp",
+          "config ntpserver",
+          "edit 1",
+          "set authentication enable",
+          "next",
+          "end",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system ntp",
+          "config ntpserver",
+          "edit 1",
+          "set authentication disable",
+          "next",
+          "end",
+          "end"
+        ],
+        "requires_parameters": false
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system ntp-servers",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set deviceconfig system ntp-servers primary-ntp-server authentication-type symmetric-key",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete deviceconfig system ntp-servers primary-ntp-server authentication-type symmetric-key",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "arista_eos": {
+        "verification_command": "show ntp status",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "ntp authentication-key 1 md5 <NTP_KEY>",
+          "ntp trusted-key 1",
+          "ntp authenticate"
+        ],
+        "rollback_commands": [
+          "no ntp authenticate",
+          "no ntp trusted-key 1",
+          "no ntp authentication-key 1"
+        ],
+        "manually_authored": true,
+        "requires_parameters": true
+      }
+    }
+  },
+  "CTRL-013": {
+    "canonical_field": "management.snmp.secure_configuration",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include snmp-server",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "snmp-server group ADMIN v3 priv"
+        ],
+        "rollback_commands": [
+          "no snmp-server group ADMIN v3 priv"
+        ],
+        "rollback_confidence": "heuristic",
+        "manually_authored": true,
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration snmp",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set snmp v3 usm local-engine user snmpv3user",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete snmp v3 usm local-engine user snmpv3user",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "manually_authored": true,
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "show system snmp user",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "config system snmp user",
+          "edit <SNMP_USER>",
+          "set security-level auth-priv",
+          "set auth-proto sha",
+          "set auth-pwd <AUTH_PASSWORD>",
+          "set priv-proto aes",
+          "set priv-pwd <PRIV_PASSWORD>",
+          "next",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system snmp user",
+          "delete <SNMP_USER>",
+          "end"
+        ],
+        "rollback_confidence": "heuristic",
+        "manually_authored": true,
+        "requires_parameters": true
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system snmp-setting",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set deviceconfig system snmp-setting access-setting version v3",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set deviceconfig system snmp-setting access-setting version v2c community public",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | include snmp-server",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "snmp-server group ADMIN v3 priv"
+        ],
+        "rollback_commands": [
+          "no snmp-server group ADMIN v3 priv"
+        ],
+        "rollback_confidence": "heuristic",
+        "manually_authored": true,
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-014": {
+    "canonical_field": "interfaces.unused_ports_disabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show interfaces <INTERFACE_NAME> status",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "interface <INTERFACE_NAME>",
+          "shutdown"
+        ],
+        "rollback_commands": [
+          "interface <INTERFACE_NAME>",
+          "no shutdown"
+        ],
+        "requires_parameters": true
+      },
+      "juniper_junos": {
+        "verification_command": "show interfaces terse <INTERFACE_NAME>",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set interfaces ge-0/0/5 disable",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete interfaces ge-0/0/5 disable",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "fortios": {
+        "verification_command": "show system interface <UNUSED_INTERFACE>",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system interface",
+          "edit <UNUSED_INTERFACE>",
+          "set status down",
+          "next",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system interface",
+          "edit <UNUSED_INTERFACE>",
+          "set status up",
+          "next",
+          "end"
+        ],
+        "requires_parameters": true
+      },
+      "panos": {
+        "verification_command": "show network interface",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "delete zone trust network layer3 member ethernet1/5",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set zone trust network layer3 member ethernet1/5",
+          "commit"
+        ],
+        "remediation_basis": "derived_by_deleting_fail_line",
+        "requires_parameters": true,
+        "notes": "PAN-OS interfaces are inert until assigned to a zone; there's no direct admin-shutdown CLI toggle for this pattern."
+      },
+      "arista_eos": {
+        "verification_command": "show interfaces <INTERFACE_NAME> status",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "interface <INTERFACE_NAME>",
+          "shutdown"
+        ],
+        "rollback_commands": [
+          "interface <INTERFACE_NAME>",
+          "no shutdown"
+        ],
+        "requires_parameters": true
+      }
+    }
+  },
+  "CTRL-015": {
+    "canonical_field": "management.acl.configured",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include access-class",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "line vty 0 4",
+          "access-class MGMT_ACL in"
+        ],
+        "rollback_commands": [
+          "line vty 0 4",
+          "no access-class MGMT_ACL in"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration interfaces lo0",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set interfaces lo0 unit 0 family inet filter input mgmt-acl",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete interfaces lo0 unit 0 family inet filter input mgmt-acl",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "show system interface <MGMT_INTERFACE> | grep trusthost",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system interface",
+          "edit <MGMT_INTERFACE>",
+          "set trusthost1 10.0.0.0 255.255.255.0",
+          "next",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system interface",
+          "edit <MGMT_INTERFACE>",
+          "unset trusthost1",
+          "next",
+          "end"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true,
+        "notes": "Same trusthost mechanism as CTRL-017 in FortiOS."
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system permitted-ip",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set deviceconfig system permitted-ip 10.0.0.0/24",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete deviceconfig system permitted-ip 10.0.0.0/24",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true,
+        "notes": "Same permitted-ip mechanism as CTRL-017 in PAN-OS."
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | include access-class",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "line vty 0 4",
+          "access-class MGMT_ACL in"
+        ],
+        "rollback_commands": [
+          "line vty 0 4",
+          "no access-class MGMT_ACL in"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      }
+    }
+  },
+  "CTRL-016": {
+    "canonical_field": "routing.protocol_authentication_enabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show ip ospf interface <INTERFACE_NAME>",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "interface <INTERFACE_NAME>",
+          "ip ospf authentication message-digest"
+        ],
+        "rollback_commands": [
+          "interface <INTERFACE_NAME>",
+          "no ip ospf authentication message-digest"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration protocols ospf | display set | match authentication",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set protocols ospf area 0 interface ge-0/0/0 authentication-type md5",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete protocols ospf area 0 interface ge-0/0/0 authentication-type md5",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "fortios": {
+        "verification_command": "get router info ospf interface",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "config router ospf",
+          "config ospf-interface",
+          "edit <INTERFACE_NAME>",
+          "set authentication message-digest",
+          "next",
+          "end",
+          "end"
+        ],
+        "rollback_commands": [
+          "config router ospf",
+          "config ospf-interface",
+          "edit <INTERFACE_NAME>",
+          "unset authentication",
+          "next",
+          "end",
+          "end"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "panos": {
+        "verification_command": "show network virtual-router default protocol ospf area 0.0.0.0 interface",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set network virtual-router default protocol ospf area 0.0.0.0 interface ethernet1/1 authentication md5",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete network virtual-router default protocol ospf area 0.0.0.0 interface ethernet1/1 authentication md5",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true,
+        "notes": "Requires PAN-OS Advanced Routing Engine."
+      },
+      "arista_eos": {
+        "verification_command": "show ip ospf interface <INTERFACE_NAME>",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "interface <INTERFACE_NAME>",
+          "ip ospf authentication message-digest"
+        ],
+        "rollback_commands": [
+          "interface <INTERFACE_NAME>",
+          "no ip ospf authentication message-digest"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      }
+    }
+  },
+  "CTRL-017": {
+    "canonical_field": "management.admin_access.restricted",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include access-class",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "line vty 0 4",
+          "access-class ADMIN_SRC in"
+        ],
+        "rollback_commands": [
+          "line vty 0 4",
+          "no access-class ADMIN_SRC in"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true,
+        "notes": "Distinct ACL name from CTRL-015 by convention, same mechanism (access-class)."
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration firewall family inet filter mgmt-in",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set firewall family inet filter mgmt-in term allow-mgmt from source-address 10.0.0.0/24",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete firewall family inet filter mgmt-in term allow-mgmt from source-address 10.0.0.0/24",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      },
+      "fortios": {
+        "verification_command": "show system interface <MGMT_INTERFACE> | grep trusthost",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system interface",
+          "edit <MGMT_INTERFACE>",
+          "set trusthost1 10.0.0.0 255.255.255.0",
+          "next",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system interface",
+          "edit <MGMT_INTERFACE>",
+          "unset trusthost1",
+          "next",
+          "end"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true,
+        "notes": "Same underlying line as CTRL-015 in FortiOS -- one mechanism serves both controls."
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system permitted-ip",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set deviceconfig system permitted-ip 10.0.0.0/24",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete deviceconfig system permitted-ip 10.0.0.0/24",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true,
+        "notes": "Same underlying line as CTRL-015 in PAN-OS."
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | include access-class",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "line vty 0 4",
+          "access-class ADMIN_SRC in"
+        ],
+        "rollback_commands": [
+          "line vty 0 4",
+          "no access-class ADMIN_SRC in"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": true
+      }
+    }
+  },
+  "CTRL-018": {
+    "canonical_field": "management.banner.configured",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include banner",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "banner login ^C Authorized access only ^C"
+        ],
+        "rollback_commands": [
+          "no banner login ^C Authorized access only ^C"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system login | display set | match message",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system login message \"Authorized access only\"",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete system login message \"Authorized access only\"",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "get system global | grep pre-login-banner",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system global",
+          "set pre-login-banner enable",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system global",
+          "set pre-login-banner disable",
+          "end"
+        ],
+        "requires_parameters": false
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system login-banner",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set deviceconfig system login-banner \"Authorized access only\"",
+          "commit"
+        ],
+        "rollback_commands": [
+          "delete deviceconfig system login-banner \"Authorized access only\"",
+          "commit"
+        ],
+        "rollback_confidence": "heuristic",
+        "requires_parameters": false
+      },
+      "arista_eos": {
+        "verification_command": "show banner login",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "banner login",
+          "Authorized access only",
+          "EOF"
+        ],
+        "rollback_commands": [
+          "no banner login"
+        ],
+        "rollback_confidence": "heuristic",
+        "manually_authored": true,
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-019": {
+    "canonical_field": "management.crypto.weak_algorithms_disabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show ip ssh | include Encryption",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "ip ssh server algorithm mac hmac-sha2-256"
+        ],
+        "rollback_commands": [
+          "ip ssh server algorithm mac hmac-sha1"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system services ssh | display set | match macs",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "set system services ssh macs hmac-sha2-256",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set system services ssh macs hmac-sha1",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "get system global | grep ssh-hmac-md5",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "config system global",
+          "set ssh-hmac-md5 disable",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system global",
+          "set ssh-hmac-md5 enable",
+          "end"
+        ],
+        "requires_parameters": false
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system ciphers",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set deviceconfig system ciphers ssh-mac hmac-sha2-256",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set deviceconfig system ciphers ssh-mac hmac-sha1",
+          "commit"
+        ],
+        "requires_parameters": false
+      },
+      "arista_eos": {
+        "verification_command": "show ip ssh | include Encryption",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "ip ssh server algorithm mac hmac-sha2-256"
+        ],
+        "rollback_commands": [
+          "ip ssh server algorithm mac hmac-sha1"
+        ],
+        "requires_parameters": false
+      }
+    }
+  },
+  "CTRL-020": {
+    "canonical_field": "management.protocols.insecure_disabled",
+    "operator": "eq",
+    "expected_value": true,
+    "vendors": {
+      "cisco_ios": {
+        "verification_command": "show running-config | include ip finger",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "no ip finger"
+        ],
+        "rollback_commands": [
+          "ip finger"
+        ],
+        "requires_parameters": false
+      },
+      "juniper_junos": {
+        "verification_command": "show configuration system services | display set | match finger",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "delete system services finger",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set system services finger",
+          "commit"
+        ],
+        "remediation_basis": "derived_by_deleting_fail_line",
+        "requires_parameters": false
+      },
+      "fortios": {
+        "verification_command": "get system global | grep ftp-service",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "config system global",
+          "set ftp-service disable",
+          "end"
+        ],
+        "rollback_commands": [
+          "config system global",
+          "set ftp-service enable",
+          "end"
+        ],
+        "requires_parameters": false,
+        "notes": "Exact key name should be verified against the target FortiOS admin guide."
+      },
+      "panos": {
+        "verification_command": "show deviceconfig system service",
+        "syntax_confidence": "approximate",
+        "remediation_commands": [
+          "set deviceconfig system service disable-telnet yes",
+          "commit"
+        ],
+        "rollback_commands": [
+          "set deviceconfig system service disable-telnet no",
+          "commit"
+        ],
+        "requires_parameters": false,
+        "notes": "Illustrative; PAN-OS exposes several discrete disable-<service> flags -- pick the ones relevant to your demo."
+      },
+      "arista_eos": {
+        "verification_command": "show running-config | include ip finger",
+        "syntax_confidence": "verified",
+        "remediation_commands": [
+          "no ip finger"
+        ],
+        "rollback_commands": [
+          "ip finger"
+        ],
+        "requires_parameters": false
+      }
+    }
+  }
+}

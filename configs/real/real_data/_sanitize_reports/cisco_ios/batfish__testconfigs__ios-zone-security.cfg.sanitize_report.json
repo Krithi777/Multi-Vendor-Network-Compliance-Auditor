@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-zone-security.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-zone-security.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "d56179e0a63d0ca888f6b77f217f28b77c287aece5c3dc906b582f47731a6983",
+  "sha256_sanitized": "d56179e0a63d0ca888f6b77f217f28b77c287aece5c3dc906b582f47731a6983",
+  "redactions": [],
+  "clean": true
+}

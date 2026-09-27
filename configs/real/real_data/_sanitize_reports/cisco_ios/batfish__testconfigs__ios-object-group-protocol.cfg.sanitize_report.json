@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-object-group-protocol.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-object-group-protocol.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "dbd7eef22875922e0c043171df74f279294cf6c68fa87b7d6ca6088d64accc46",
+  "sha256_sanitized": "dbd7eef22875922e0c043171df74f279294cf6c68fa87b7d6ca6088d64accc46",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-evpn-multicast-ingress.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-evpn-multicast-ingress.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "2a81f5c125ee74a7ce6c4047778dfe005a87602bb607bc963b61d9236d761d15",
+  "sha256_sanitized": "2a81f5c125ee74a7ce6c4047778dfe005a87602bb607bc963b61d9236d761d15",
+  "redactions": [],
+  "clean": true
+}

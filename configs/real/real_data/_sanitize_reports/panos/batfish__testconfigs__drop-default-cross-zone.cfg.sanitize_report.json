@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__drop-default-cross-zone.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__drop-default-cross-zone.cfg",
+  "vendor": "panos",
+  "sha256_original": "7e52c96feadee564fff98ae338b2a3f4215a708b9595eafd27b4dc42732a3c89",
+  "sha256_sanitized": "a201ec231a1c1400d863c811e691776d69cc61e4d7647aa7e57f125bc44610d1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

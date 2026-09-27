@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__switch-options-vrf-import-list.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__switch-options-vrf-import-list.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "bb06b1c2dc2a53e9d0f790d9942bc1c04979256a62f1ba39d39d849317f793bf",
+  "sha256_sanitized": "bb06b1c2dc2a53e9d0f790d9942bc1c04979256a62f1ba39d39d849317f793bf",
+  "redactions": [],
+  "clean": true
+}

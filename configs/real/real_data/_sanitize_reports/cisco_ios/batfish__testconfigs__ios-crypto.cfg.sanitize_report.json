@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-crypto.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-crypto.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "f489aa6b725ee0414b4ef47709e7dbcb4d6e8d1a687354732aaffacdd0fa3fc7",
+  "sha256_sanitized": "100bc0201678a6fd9034fd07c3d18696b10d0c49950bd4b3f4c7ace48fcfd919",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

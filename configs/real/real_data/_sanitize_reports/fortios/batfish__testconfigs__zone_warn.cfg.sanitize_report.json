@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__zone_warn.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__zone_warn.cfg",
+  "vendor": "fortios",
+  "sha256_original": "8c0f05db3f34ee3a64c493ff1e954e5a0f7d84d15d88b886fafc6d53fb164704",
+  "sha256_sanitized": "ea5c5b43326fca5f8e5755aa54ac5870409a3471f2091419ae5b893355e9dc21",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

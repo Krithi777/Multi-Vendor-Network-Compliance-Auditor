@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__humanname.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__humanname.cfg",
+  "vendor": "fortios",
+  "sha256_original": "70c740f15a11d0f8ed73291e57afd9ef7e41e5cb06500f35e236f734ccd641e2",
+  "sha256_sanitized": "70c740f15a11d0f8ed73291e57afd9ef7e41e5cb06500f35e236f734ccd641e2",
+  "redactions": [],
+  "clean": true
+}

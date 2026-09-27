@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__gh-8744.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__gh-8744.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "05657a03538b2eb8851d92d1983923b6405e575d67aa0c558d0e912351e67a1b",
+  "sha256_sanitized": "05657a03538b2eb8851d92d1983923b6405e575d67aa0c558d0e912351e67a1b",
+  "redactions": [],
+  "clean": true
+}

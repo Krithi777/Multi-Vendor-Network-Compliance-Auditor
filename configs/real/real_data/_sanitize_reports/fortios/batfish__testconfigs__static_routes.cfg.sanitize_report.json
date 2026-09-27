@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__static_routes.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__static_routes.cfg",
+  "vendor": "fortios",
+  "sha256_original": "0368be39c634ef58245e3fd77eb02ee73a944afc751c0eb1cc640cb5875af1ad",
+  "sha256_sanitized": "fa37da3405f2ab1409f211e5c6f8659a5f97a0ff5dbeb3849e566936541c3c8c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

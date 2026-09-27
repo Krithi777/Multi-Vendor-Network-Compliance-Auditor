@@ -1,0 +1,18 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__iosAaaVsModel.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__iosAaaVsModel.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "d86f03047421f6bc1094e2805c4f478fb3ff35080afd731af8d776f87f4521c0",
+  "sha256_sanitized": "60446d3ced365294f33c24a63817c9e01f7f72c33fc72d7864468424ffdaaaf2",
+  "redactions": [
+    {
+      "type": "enable_secret",
+      "count": 1
+    },
+    {
+      "type": "username_password",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

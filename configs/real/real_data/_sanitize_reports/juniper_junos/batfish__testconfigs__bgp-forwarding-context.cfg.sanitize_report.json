@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-forwarding-context.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-forwarding-context.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "9b6064856867bb029bebcff6e2615591b48aea48a74534ef7ee0ab2f7c93646f",
+  "sha256_sanitized": "4e419ed050f767f8ec13bbc24d79db96702c3216fd6aca14d7a8009f031ec814",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

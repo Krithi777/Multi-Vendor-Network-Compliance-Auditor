@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__implicit-init-interface.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__implicit-init-interface.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "2f9e730a50aa9cb05f79bc0d79284381f2ac2fcff36007703e54f6a01c00b98d",
+  "sha256_sanitized": "2f9e730a50aa9cb05f79bc0d79284381f2ac2fcff36007703e54f6a01c00b98d",
+  "redactions": [],
+  "clean": true
+}

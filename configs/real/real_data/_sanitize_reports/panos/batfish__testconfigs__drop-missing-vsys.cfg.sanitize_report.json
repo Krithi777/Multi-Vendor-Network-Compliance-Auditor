@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__drop-missing-vsys.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__drop-missing-vsys.cfg",
+  "vendor": "panos",
+  "sha256_original": "37ea0e682219d45f1ab74dace0101db9761b078a73a6055a44f64e2fdea20be1",
+  "sha256_sanitized": "31e39039bafe51e07c5268d9a878ce6b918aa0d488fbb229b5fa0eff1fb12ab4",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

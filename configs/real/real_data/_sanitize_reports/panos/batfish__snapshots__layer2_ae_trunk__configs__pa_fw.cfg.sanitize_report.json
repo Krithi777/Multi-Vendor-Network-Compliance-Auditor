@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__snapshots__layer2_ae_trunk__configs__pa_fw.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__snapshots__layer2_ae_trunk__configs__pa_fw.cfg",
+  "vendor": "panos",
+  "sha256_original": "19cc1c28949dbd1b8b2d1694fc9650a710ab63bd72a0aad4b4f96b68f72d7c3d",
+  "sha256_sanitized": "578b704eb714a17961b021dab229596801e6ae88445160369d2ff1ae48c12a01",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

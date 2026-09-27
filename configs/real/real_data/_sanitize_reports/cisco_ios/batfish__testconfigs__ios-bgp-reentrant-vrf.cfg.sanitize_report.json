@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-reentrant-vrf.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-reentrant-vrf.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "9aac9d9eb9e008a6a73f38ae3aa936b4ca0373af572b4eff1cf13f78d0bd68b2",
+  "sha256_sanitized": "7d6a81ee8c7c1110432b91fa97dfbb64f82764db5c9c0d5ac81c4cb8b332fc1e",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

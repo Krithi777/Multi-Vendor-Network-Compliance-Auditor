@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__ike-crypto-profiles.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__ike-crypto-profiles.cfg",
+  "vendor": "panos",
+  "sha256_original": "c8e00d8d91630a18ee68faab68a9407a527ec4c0717e0276eee163ace0ce3a6f",
+  "sha256_sanitized": "c8e00d8d91630a18ee68faab68a9407a527ec4c0717e0276eee163ace0ce3a6f",
+  "redactions": [],
+  "clean": true
+}

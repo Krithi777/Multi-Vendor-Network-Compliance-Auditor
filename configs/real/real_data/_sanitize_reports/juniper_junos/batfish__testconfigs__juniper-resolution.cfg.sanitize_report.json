@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-resolution.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-resolution.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "7a7ef2835af1c073cccd4b193f40060a2d81b9925d6c1659b654f4aa60c3bfd7",
+  "sha256_sanitized": "7a7ef2835af1c073cccd4b193f40060a2d81b9925d6c1659b654f4aa60c3bfd7",
+  "redactions": [],
+  "clean": true
+}

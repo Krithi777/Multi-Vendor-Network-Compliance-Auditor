@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-xe-eigrp-to-bgp.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-xe-eigrp-to-bgp.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "53d86e46d4624151e765d4e4c929acd81053202171c266845df69b09a0e32b6b",
+  "sha256_sanitized": "b2d65b512d53780b916adef91227fd306708e76ecbee3598dc2734d7d9d118c8",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

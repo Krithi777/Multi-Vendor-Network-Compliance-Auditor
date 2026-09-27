@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__firewall-filter-ttl.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__firewall-filter-ttl.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "fc2b74c108049f7e94460451dcef9165c4896bd3260999d6889409aa107b19e3",
+  "sha256_sanitized": "fc2b74c108049f7e94460451dcef9165c4896bd3260999d6889409aa107b19e3",
+  "redactions": [],
+  "clean": true
+}

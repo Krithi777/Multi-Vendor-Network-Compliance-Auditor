@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__firewall-filter-packet-length-spaced-range.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__firewall-filter-packet-length-spaced-range.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "0e5df563ccf1f0bd6ffd30ab539b88682a2c5edddafce9debebdd0142d33a615",
+  "sha256_sanitized": "0e5df563ccf1f0bd6ffd30ab539b88682a2c5edddafce9debebdd0142d33a615",
+  "redactions": [],
+  "clean": true
+}

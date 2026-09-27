@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__isis-level-ipv6-metric.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__isis-level-ipv6-metric.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "6f2937006f7293118ad08b4a1ce1c66e566e2d35e59117e0d2149a6f0d828ea0",
+  "sha256_sanitized": "6f2937006f7293118ad08b4a1ce1c66e566e2d35e59117e0d2149a6f0d828ea0",
+  "redactions": [],
+  "clean": true
+}

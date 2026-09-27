@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__template-variable-reference.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__template-variable-reference.cfg",
+  "vendor": "panos",
+  "sha256_original": "848841b024fa8b299e357dd654c947625fa8764fd6a96087cc9c3743c396fafa",
+  "sha256_sanitized": "2dbe63638e221a92f5422817811bfe8a108757f684afa70ccd6684605d87df18",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

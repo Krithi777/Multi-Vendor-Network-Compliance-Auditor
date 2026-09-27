@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__device-group-shared-inheritance.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__device-group-shared-inheritance.cfg",
+  "vendor": "panos",
+  "sha256_original": "c21c4cefcc065c88993a147033f75b16ac9b6ded3a1fc09c0d364ef14b675e62",
+  "sha256_sanitized": "0f97e629a4051159e59dfb84a1339c1b9d9d486c779dfa278ffe314b9d1b4189",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

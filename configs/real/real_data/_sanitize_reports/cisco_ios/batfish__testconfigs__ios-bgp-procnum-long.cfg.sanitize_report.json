@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-procnum-long.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-procnum-long.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "78d4e2b493afa27ba328465fbf73a4d1faebd6a222f34320c4f1e36213706fef",
+  "sha256_sanitized": "e02c768fa7884986271a216ee06e4a2ae994fb037ad3c740c752eefee25cc885",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

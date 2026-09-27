@@ -1,0 +1,25 @@
+enable 
+configure 
+hostname switch1
+dns domain lab.local 
+ 
+interface Ethernet1
+    no shutdown
+    description "switch2 **** Ethernet4"
+    no switchport
+    ip address 192.0.2.1/31
+ 
+interface Ethernet2
+    no shutdown
+    description "switch3 **** Ethernet4"
+    no switchport
+    ip address 192.0.2.2/31
+
+interface Loopback0
+    ip address 192.0.2.3/32
+router bgp 65001
+    redistribute connected
+ 
+    neighbor 192.0.2.4 remote-as 65002
+ 
+    neighbor 192.0.2.5 remote-as 65003

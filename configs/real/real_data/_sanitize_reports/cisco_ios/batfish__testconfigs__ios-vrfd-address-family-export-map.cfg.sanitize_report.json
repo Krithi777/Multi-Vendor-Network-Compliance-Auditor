@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-vrfd-address-family-export-map.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-vrfd-address-family-export-map.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "577fce86dd3baf75894eb70b6f31dfa2ea8ed7dba986ad6ca0094cd0fd344851",
+  "sha256_sanitized": "577fce86dd3baf75894eb70b6f31dfa2ea8ed7dba986ad6ca0094cd0fd344851",
+  "redactions": [],
+  "clean": true
+}

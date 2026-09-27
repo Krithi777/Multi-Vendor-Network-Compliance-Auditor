@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__switch-options-route-distinguisher.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__switch-options-route-distinguisher.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "adeca8200c3c7be892a98dcf27a125bd4ac56d5861ab53ba2bd471cf29a8076c",
+  "sha256_sanitized": "b1d479cb175602cc557f97837834c6037ae83422934f17c2e69ebfb77fe9dc47",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

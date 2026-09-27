@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 17px;
+}
+
+body {
+  background: #ffffff;
+  color: #0f1522;
+}
+
+/* Baseline bumps for the smallest label/meta sizes used throughout the
+   app -- Tailwind's text-[11px]/text-xs are fine for one-off tags, but
+   pages that lean on them for primary content (findings rows, evidence
+   rows, remediation lists) read as too small/too light. Nudge those two
+   sizes up slightly and keep them on the darker ink-soft color so body
+   copy stays legible without a page-by-page rewrite. */
+.text-\[11px\] {
+  font-size: 12px !important;
+}
+.text-xs {
+  font-size: 13px !important;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e4e7eb;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

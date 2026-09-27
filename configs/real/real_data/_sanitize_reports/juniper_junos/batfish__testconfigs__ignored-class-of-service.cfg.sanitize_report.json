@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ignored-class-of-service.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ignored-class-of-service.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ec72c9325c1682af3f08eb6d827f31c60e77338b622d12177a99d2bb62ec3561",
+  "sha256_sanitized": "ec72c9325c1682af3f08eb6d827f31c60e77338b622d12177a99d2bb62ec3561",
+  "redactions": [],
+  "clean": true
+}

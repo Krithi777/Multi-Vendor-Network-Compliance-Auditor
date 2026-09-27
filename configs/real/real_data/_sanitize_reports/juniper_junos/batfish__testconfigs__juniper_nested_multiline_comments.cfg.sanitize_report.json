@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper_nested_multiline_comments.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper_nested_multiline_comments.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "637a9ead3eb0a07ad87b547c637c6c359361927e7c8e64f58ffe3921a146d404",
+  "sha256_sanitized": "637a9ead3eb0a07ad87b547c637c6c359361927e7c8e64f58ffe3921a146d404",
+  "redactions": [],
+  "clean": true
+}

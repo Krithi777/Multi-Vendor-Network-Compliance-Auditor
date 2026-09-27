@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interfaces-family-vpls.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interfaces-family-vpls.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "a7235401bea136ba7b9a7bb54d640df8578ab1427bd2b4ed048505a25b03579b",
+  "sha256_sanitized": "a7235401bea136ba7b9a7bb54d640df8578ab1427bd2b4ed048505a25b03579b",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testrigs__l2-topology__configs__sw.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testrigs__l2-topology__configs__sw.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "e18f39c07fb76545ecc623fa6111f085aab54e719f2edb14f08a9e52e6b21d94",
+  "sha256_sanitized": "e18f39c07fb76545ecc623fa6111f085aab54e719f2edb14f08a9e52e6b21d94",
+  "redactions": [],
+  "clean": true
+}

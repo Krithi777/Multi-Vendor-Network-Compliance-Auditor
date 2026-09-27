@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__op__intopticdiag.yml",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__py-junos-eznc__lib__jnpr__junos__op__intopticdiag.yml",
+  "vendor": "juniper_junos",
+  "sha256_original": "7c39ed7c6205096ba127bfdff763202a19d3a8ebf87581e55a799da4e1d6ef3f",
+  "sha256_sanitized": "7c39ed7c6205096ba127bfdff763202a19d3a8ebf87581e55a799da4e1d6ef3f",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,457 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "remediation_rules",
+  "type": "object",
+  "minProperties": 20,
+  "patternProperties": {
+    "^CTRL-\\d{3}$": {
+      "type": "object",
+      "required": [
+        "canonical_field",
+        "operator",
+        "expected_value",
+        "vendors"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "canonical_field": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+(\\.[a-z0-9_]+)+$"
+        },
+        "operator": {
+          "enum": [
+            "eq",
+            "ne",
+            "lte",
+            "gte"
+          ]
+        },
+        "expected_value": {
+          "type": [
+            "boolean",
+            "integer"
+          ]
+        },
+        "vendors": {
+          "type": "object",
+          "required": [
+            "cisco_ios",
+            "juniper_junos",
+            "fortios",
+            "panos",
+            "arista_eos"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "cisco_ios": {
+              "type": "object",
+              "required": [
+                "remediation_commands",
+                "verification_command",
+                "rollback_commands",
+                "syntax_confidence"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "remediation_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "verification_command": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rollback_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "rollback_confidence": {
+                  "enum": [
+                    "heuristic"
+                  ]
+                },
+                "syntax_confidence": {
+                  "enum": [
+                    "verified",
+                    "approximate"
+                  ]
+                },
+                "requires_parameters": {
+                  "type": "boolean"
+                },
+                "manually_authored": {
+                  "type": "boolean"
+                },
+                "remediation_basis": {
+                  "enum": [
+                    "derived_by_deleting_fail_line"
+                  ]
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "remediation_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "notes"
+                    ],
+                    "properties": {
+                      "rollback_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "else": {
+                    "required": [
+                      "requires_parameters"
+                    ]
+                  }
+                }
+              ]
+            },
+            "juniper_junos": {
+              "type": "object",
+              "required": [
+                "remediation_commands",
+                "verification_command",
+                "rollback_commands",
+                "syntax_confidence"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "remediation_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "verification_command": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rollback_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "rollback_confidence": {
+                  "enum": [
+                    "heuristic"
+                  ]
+                },
+                "syntax_confidence": {
+                  "enum": [
+                    "verified",
+                    "approximate"
+                  ]
+                },
+                "requires_parameters": {
+                  "type": "boolean"
+                },
+                "manually_authored": {
+                  "type": "boolean"
+                },
+                "remediation_basis": {
+                  "enum": [
+                    "derived_by_deleting_fail_line"
+                  ]
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "remediation_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "notes"
+                    ],
+                    "properties": {
+                      "rollback_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "else": {
+                    "required": [
+                      "requires_parameters"
+                    ]
+                  }
+                }
+              ]
+            },
+            "fortios": {
+              "type": "object",
+              "required": [
+                "remediation_commands",
+                "verification_command",
+                "rollback_commands",
+                "syntax_confidence"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "remediation_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "verification_command": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rollback_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "rollback_confidence": {
+                  "enum": [
+                    "heuristic"
+                  ]
+                },
+                "syntax_confidence": {
+                  "enum": [
+                    "verified",
+                    "approximate"
+                  ]
+                },
+                "requires_parameters": {
+                  "type": "boolean"
+                },
+                "manually_authored": {
+                  "type": "boolean"
+                },
+                "remediation_basis": {
+                  "enum": [
+                    "derived_by_deleting_fail_line"
+                  ]
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "remediation_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "notes"
+                    ],
+                    "properties": {
+                      "rollback_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "else": {
+                    "required": [
+                      "requires_parameters"
+                    ]
+                  }
+                }
+              ]
+            },
+            "panos": {
+              "type": "object",
+              "required": [
+                "remediation_commands",
+                "verification_command",
+                "rollback_commands",
+                "syntax_confidence"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "remediation_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "verification_command": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rollback_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "rollback_confidence": {
+                  "enum": [
+                    "heuristic"
+                  ]
+                },
+                "syntax_confidence": {
+                  "enum": [
+                    "verified",
+                    "approximate"
+                  ]
+                },
+                "requires_parameters": {
+                  "type": "boolean"
+                },
+                "manually_authored": {
+                  "type": "boolean"
+                },
+                "remediation_basis": {
+                  "enum": [
+                    "derived_by_deleting_fail_line"
+                  ]
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "remediation_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "notes"
+                    ],
+                    "properties": {
+                      "rollback_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "else": {
+                    "required": [
+                      "requires_parameters"
+                    ]
+                  }
+                }
+              ]
+            },
+            "arista_eos": {
+              "type": "object",
+              "required": [
+                "remediation_commands",
+                "verification_command",
+                "rollback_commands",
+                "syntax_confidence"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "remediation_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "verification_command": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "rollback_commands": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "rollback_confidence": {
+                  "enum": [
+                    "heuristic"
+                  ]
+                },
+                "syntax_confidence": {
+                  "enum": [
+                    "verified",
+                    "approximate"
+                  ]
+                },
+                "requires_parameters": {
+                  "type": "boolean"
+                },
+                "manually_authored": {
+                  "type": "boolean"
+                },
+                "remediation_basis": {
+                  "enum": [
+                    "derived_by_deleting_fail_line"
+                  ]
+                },
+                "notes": {
+                  "type": "string"
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "remediation_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "notes"
+                    ],
+                    "properties": {
+                      "rollback_commands": {
+                        "maxItems": 0
+                      }
+                    }
+                  },
+                  "else": {
+                    "required": [
+                      "requires_parameters"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

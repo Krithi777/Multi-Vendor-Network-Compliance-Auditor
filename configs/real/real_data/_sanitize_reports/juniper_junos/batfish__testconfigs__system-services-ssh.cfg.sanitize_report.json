@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__system-services-ssh.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__system-services-ssh.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "9f6494d58b7d640b628de78cf61c35885de350a4eea428854bba4a84335e4a79",
+  "sha256_sanitized": "9f6494d58b7d640b628de78cf61c35885de350a4eea428854bba4a84335e4a79",
+  "redactions": [],
+  "clean": true
+}

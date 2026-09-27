@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-mpls.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-mpls.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "db2928454c2d867eed9738924d8b899cc6e1f679fda82301bf3c66bdcd9ef361",
+  "sha256_sanitized": "db2928454c2d867eed9738924d8b899cc6e1f679fda82301bf3c66bdcd9ef361",
+  "redactions": [],
+  "clean": true
+}

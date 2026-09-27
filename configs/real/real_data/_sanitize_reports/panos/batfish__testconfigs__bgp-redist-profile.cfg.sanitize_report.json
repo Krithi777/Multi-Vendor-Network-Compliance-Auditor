@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__bgp-redist-profile.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__bgp-redist-profile.cfg",
+  "vendor": "panos",
+  "sha256_original": "7f4139b24a1870ad7531c31c80fd445f2247295e8ce9cfccfab562ad75610567",
+  "sha256_sanitized": "47c0c5fafceb47e331c02231b1678cacfe8bd05988527833e8f3b69d46feb721",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

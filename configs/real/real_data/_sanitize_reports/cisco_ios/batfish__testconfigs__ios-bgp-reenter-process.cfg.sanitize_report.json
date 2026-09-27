@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-reenter-process.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-reenter-process.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "fe548079ffbf363ea325b13cd539557e1e620cdabc73c00b53efccf04061ef10",
+  "sha256_sanitized": "a116788f2f61a2cb2ad15c97366b63060ff906b575bff6b48642a9278c59aa61",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

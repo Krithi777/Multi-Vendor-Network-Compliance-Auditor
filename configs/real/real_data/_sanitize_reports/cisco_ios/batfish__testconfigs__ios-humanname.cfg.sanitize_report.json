@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-humanname.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-humanname.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "521c8d82c9dcf0d7a83956dd8ce492f21b43c46f326015edb64b25651da40485",
+  "sha256_sanitized": "521c8d82c9dcf0d7a83956dd8ce492f21b43c46f326015edb64b25651da40485",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__define-structure-from-nested.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__define-structure-from-nested.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "47e418e2d28b52be6ce1b28fa6a8dd5310f0e6f60c98f4b7de1324e96f01ba79",
+  "sha256_sanitized": "47e418e2d28b52be6ce1b28fa6a8dd5310f0e6f60c98f4b7de1324e96f01ba79",
+  "redactions": [],
+  "clean": true
+}

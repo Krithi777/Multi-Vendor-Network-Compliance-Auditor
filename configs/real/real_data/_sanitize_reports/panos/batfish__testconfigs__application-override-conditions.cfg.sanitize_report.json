@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__application-override-conditions.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__application-override-conditions.cfg",
+  "vendor": "panos",
+  "sha256_original": "917e3e1a73213653814d16c00c5c5b475e25c5c626f31b9b2e6890d134736d0f",
+  "sha256_sanitized": "e5949d3273df4630b4dc0f3c8915fd087eb1bfaf69c39e893299c582c7422397",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

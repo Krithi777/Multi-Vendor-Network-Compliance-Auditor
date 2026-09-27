@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-evpn-vrf-target-auto.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-evpn-vrf-target-auto.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "140fd2c0c0aeeb03c742b568c58eeee5cf8a849118347a86b76a707edcfaf2f0",
+  "sha256_sanitized": "140fd2c0c0aeeb03c742b568c58eeee5cf8a849118347a86b76a707edcfaf2f0",
+  "redactions": [],
+  "clean": true
+}

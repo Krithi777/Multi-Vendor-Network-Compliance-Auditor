@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__junos-vrrp-inet6-group.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__junos-vrrp-inet6-group.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "28383f71a305d366197c6ea1b9ce8bddaf629d379fc73928f1ddd82df971ed87",
+  "sha256_sanitized": "4431c865dbb567dc4bbbd1da6ae0995a79135b5c944192f34db51942ca8afaa2",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

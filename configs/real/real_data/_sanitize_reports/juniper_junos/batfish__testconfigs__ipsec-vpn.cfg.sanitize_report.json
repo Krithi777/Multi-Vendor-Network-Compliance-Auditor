@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ipsec-vpn.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ipsec-vpn.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ddb9a459bf10d30cd97d0d9fa94706547fa12b3c2951ebbbb4f2983f6f72ef1e",
+  "sha256_sanitized": "074766d6079b662e90c5a40d8c9f7e95c09a11cbd545565f49703ff94226478d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

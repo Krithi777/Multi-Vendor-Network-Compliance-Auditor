@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-set-interface-damping.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-set-interface-damping.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "bdaa6046fc0e4fd323c934eddb54f4d1029a1c67540f24b6604eddd16bfbcabc",
+  "sha256_sanitized": "bdaa6046fc0e4fd323c934eddb54f4d1029a1c67540f24b6604eddd16bfbcabc",
+  "redactions": [],
+  "clean": true
+}

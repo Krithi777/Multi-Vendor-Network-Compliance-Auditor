@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__ciscoconfparse2__HP_Procurve.conf",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__ciscoconfparse2__HP_Procurve.conf",
+  "vendor": "juniper_junos",
+  "sha256_original": "4bb35aa975becdfc990e0d452769babb9a156ad1754a56eed3b552d945854d0d",
+  "sha256_sanitized": "fa03b67d94dc2ff50d813fd8929a189c3ad38b28e82037298c5170354b4a9d5b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__generated-route-communities.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__generated-route-communities.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "02a9a4fc23bae307beeea1b66ce3254382c60d4071db6aa837ba4863fe7a6aac",
+  "sha256_sanitized": "04706de1218d38a6a7a09f783392c30c4cb8bc8275e88bece2c8984527dc9f91",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

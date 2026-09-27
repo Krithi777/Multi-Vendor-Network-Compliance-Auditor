@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__iosxe-vasi-interface.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__iosxe-vasi-interface.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "137fd480b12296454720839938e25f1b37e449bc58a979b729e2a63d0ea51db9",
+  "sha256_sanitized": "786aabb761527391f26a093d0aca1a513bae2d682a3da1dacd59bba707d58575",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

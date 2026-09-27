@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__nested_config_recovery.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__nested_config_recovery.cfg",
+  "vendor": "fortios",
+  "sha256_original": "88af4564ab5a10f967e69496350a9575a5c54be8f4f5a75e5c07fbe38c2a90c6",
+  "sha256_sanitized": "4f46977cd4b50f2255662ebf434e530e2f4ce12e7dded0e959b42ea268433fef",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

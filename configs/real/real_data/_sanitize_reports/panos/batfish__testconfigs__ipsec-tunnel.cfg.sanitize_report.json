@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__ipsec-tunnel.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__ipsec-tunnel.cfg",
+  "vendor": "panos",
+  "sha256_original": "4986aa4fa3c2e2b0e7f732d964ae3f5416bbed2ffe7ba68c6b1f56cb1a158801",
+  "sha256_sanitized": "064c9629fe77210b867fedede588bbcee5d75717770e0d9ef70e131f55a048b1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 46
+    }
+  ],
+  "clean": false
+}

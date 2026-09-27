@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ip-route-vrf.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ip-route-vrf.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "e6eaa290631f87d13943c3fd58b323c2cf9daae60929e39c3ba9cd235a780fdf",
+  "sha256_sanitized": "ab4cf522f46e93b9dce108a803ae51c8f41667284786d081975671183814db69",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

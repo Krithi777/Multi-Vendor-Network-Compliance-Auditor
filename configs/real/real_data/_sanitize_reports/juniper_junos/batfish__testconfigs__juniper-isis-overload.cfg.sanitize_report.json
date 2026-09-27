@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-isis-overload.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-isis-overload.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "02e18bf26f3a4513d10fa4597185ee855ce9f3f533affb02c05f0302bff16b75",
+  "sha256_sanitized": "02e18bf26f3a4513d10fa4597185ee855ce9f3f533affb02c05f0302bff16b75",
+  "redactions": [],
+  "clean": true
+}

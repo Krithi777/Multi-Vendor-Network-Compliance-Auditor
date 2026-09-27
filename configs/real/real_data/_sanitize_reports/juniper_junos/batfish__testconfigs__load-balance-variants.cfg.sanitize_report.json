@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__load-balance-variants.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__load-balance-variants.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "7b58c9eb4ddcb9ba87efdfc1c835b719f829b3e3409c58981fcea7c3ae9143cf",
+  "sha256_sanitized": "7b58c9eb4ddcb9ba87efdfc1c835b719f829b3e3409c58981fcea7c3ae9143cf",
+  "redactions": [],
+  "clean": true
+}

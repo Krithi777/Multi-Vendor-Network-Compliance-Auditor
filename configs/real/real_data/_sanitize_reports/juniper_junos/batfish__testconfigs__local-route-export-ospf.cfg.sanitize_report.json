@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__local-route-export-ospf.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__local-route-export-ospf.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "a45c6108e4a1929d80b9a133a78abc9c0427873ef39aaa66aa90b81376c9e96e",
+  "sha256_sanitized": "eace7f08de62e767de9233e8a585da24ed8af02adcfe1f170712caf3f88d541d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}

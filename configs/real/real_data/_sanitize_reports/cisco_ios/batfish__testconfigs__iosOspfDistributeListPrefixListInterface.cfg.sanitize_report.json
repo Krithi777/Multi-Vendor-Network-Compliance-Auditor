@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__iosOspfDistributeListPrefixListInterface.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__iosOspfDistributeListPrefixListInterface.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "9e77082fd67b942a04613d07967ad2a619edc42a14627d889b540824232b22d2",
+  "sha256_sanitized": "09daefade4652d292232df917062db4276e1e4044282aab315125af3e281a9e9",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

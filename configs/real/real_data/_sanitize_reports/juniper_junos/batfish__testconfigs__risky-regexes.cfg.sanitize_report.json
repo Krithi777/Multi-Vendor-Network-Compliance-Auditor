@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__risky-regexes.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__risky-regexes.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ff4b638b6aba9012c46a8add98e531cd6bee6a861ebefeb8f9bd61253c0cc831",
+  "sha256_sanitized": "ff4b638b6aba9012c46a8add98e531cd6bee6a861ebefeb8f9bd61253c0cc831",
+  "redactions": [],
+  "clean": true
+}

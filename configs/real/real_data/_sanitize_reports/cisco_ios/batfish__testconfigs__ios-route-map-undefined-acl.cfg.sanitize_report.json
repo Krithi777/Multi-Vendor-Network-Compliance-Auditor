@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-route-map-undefined-acl.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-route-map-undefined-acl.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "757b6fc6b892ecaa861145b13b3e934039c9c2ae8519e06dfd2b46bfba8827f3",
+  "sha256_sanitized": "e125a651be97b52d5d0a5b66bd5f1d984ff53f4936d021f3e55d521e94af742a",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

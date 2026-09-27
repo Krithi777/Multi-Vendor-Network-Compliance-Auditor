@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__nested-config-with-quote-bug.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__nested-config-with-quote-bug.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "279c5d09659c8bd9219005fa1c9d8cc1b34926fc0cc2d46ceda711b01f7de773",
+  "sha256_sanitized": "279c5d09659c8bd9219005fa1c9d8cc1b34926fc0cc2d46ceda711b01f7de773",
+  "redactions": [],
+  "clean": true
+}

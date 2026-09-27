@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__application-override-shadowing.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__application-override-shadowing.cfg",
+  "vendor": "panos",
+  "sha256_original": "21140e1b57288a8c11e3bf2eb3a7ecc9b8a329efebe01dfa97c728fd1b242f9b",
+  "sha256_sanitized": "392bb56253a5bcabc27c8749d05528832694014777060b9ac3feaa3a3c2d9bed",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

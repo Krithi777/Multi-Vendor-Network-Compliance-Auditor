@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__arista-redistribute-default-route__configs__ios_receiver.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__arista-redistribute-default-route__configs__ios_receiver.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "c646e15a41f807cb964c432b73ea3c327708a48cde3add198e5899df70aa24a3",
+  "sha256_sanitized": "76249fd737801b806728e73b4788dc66376f72770916947883f80e9a63d4d882",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

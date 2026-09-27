@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-community-add-delete-overlap.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-community-add-delete-overlap.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "37e4ec9ffdcae1b2d434a4af239fcb5ab9ba3917e88ff3964607e6d3a4b12737",
+  "sha256_sanitized": "37e4ec9ffdcae1b2d434a4af239fcb5ab9ba3917e88ff3964607e6d3a4b12737",
+  "redactions": [],
+  "clean": true
+}

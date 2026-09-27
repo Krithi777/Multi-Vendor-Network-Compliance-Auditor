@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-keyrings.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-keyrings.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "4f514b532efbccf62d1a63fdf7f8ece85f5045022c3d03c123ca83ec6b52992c",
+  "sha256_sanitized": "4f514b532efbccf62d1a63fdf7f8ece85f5045022c3d03c123ca83ec6b52992c",
+  "redactions": [],
+  "clean": true
+}

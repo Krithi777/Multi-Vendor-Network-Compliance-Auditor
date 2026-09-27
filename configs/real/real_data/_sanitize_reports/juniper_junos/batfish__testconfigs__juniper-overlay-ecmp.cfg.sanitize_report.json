@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-overlay-ecmp.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-overlay-ecmp.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "5e74f73386f76edd33556f482a14324020a5958d8b8099d8770229714a022c42",
+  "sha256_sanitized": "5e74f73386f76edd33556f482a14324020a5958d8b8099d8770229714a022c42",
+  "redactions": [],
+  "clean": true
+}

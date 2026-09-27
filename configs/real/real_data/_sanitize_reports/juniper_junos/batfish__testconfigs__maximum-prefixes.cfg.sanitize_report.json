@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__maximum-prefixes.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__maximum-prefixes.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "e344a82b56861d8dbb91ff7a8df56bce0dec6283e3b022b169ee9643d0ee0959",
+  "sha256_sanitized": "e344a82b56861d8dbb91ff7a8df56bce0dec6283e3b022b169ee9643d0ee0959",
+  "redactions": [],
+  "clean": true
+}

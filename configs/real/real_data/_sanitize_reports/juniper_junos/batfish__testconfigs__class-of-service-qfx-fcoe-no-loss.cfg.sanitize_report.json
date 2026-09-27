@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__class-of-service-qfx-fcoe-no-loss.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__class-of-service-qfx-fcoe-no-loss.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "69e2228dfc78dd33b840a968002ee92086d5de31a5495f300f37179d62ee1a6e",
+  "sha256_sanitized": "69e2228dfc78dd33b840a968002ee92086d5de31a5495f300f37179d62ee1a6e",
+  "redactions": [],
+  "clean": true
+}

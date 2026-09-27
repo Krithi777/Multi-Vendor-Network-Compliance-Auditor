@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__drop-inter-vsys-implicit.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__drop-inter-vsys-implicit.cfg",
+  "vendor": "panos",
+  "sha256_original": "ba236e531ccd5be96090dd8f75fe4ad3b5085f00de157bed56e74fa05d1c9dc1",
+  "sha256_sanitized": "f47259fcb078fddd3fd9f0a9da62d90cc348455d65bb102cfec6baffc723a584",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ospf-area-interface-all.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ospf-area-interface-all.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "b122c1b9474ed267f529726b58c137989a94ba604633bef596fec803fa6a4a3c",
+  "sha256_sanitized": "0341977f008c68a50d2ae5c9f12dc4ee92add2c0a4a1c6d66cbb071353b7229e",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 8
+    }
+  ],
+  "clean": false
+}

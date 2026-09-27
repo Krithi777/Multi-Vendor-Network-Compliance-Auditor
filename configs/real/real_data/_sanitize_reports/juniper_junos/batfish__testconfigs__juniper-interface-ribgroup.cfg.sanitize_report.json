@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-interface-ribgroup.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-interface-ribgroup.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "9ffe94c0d10eeae273a300cd601198741a3bdc9f0984c05c878dd951f4b5587d",
+  "sha256_sanitized": "71564e686fd0dcbc1112cba6338e2ea7e9ca18f29448b653441871d0342bfd84",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

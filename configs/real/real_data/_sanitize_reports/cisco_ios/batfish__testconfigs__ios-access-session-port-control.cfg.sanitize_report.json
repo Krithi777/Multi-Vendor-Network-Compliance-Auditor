@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-access-session-port-control.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-access-session-port-control.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "5eee9c46083749cc55a973b762e8dbb59d4c8689f8daedb62c399b0cd5296a6d",
+  "sha256_sanitized": "5eee9c46083749cc55a973b762e8dbb59d4c8689f8daedb62c399b0cd5296a6d",
+  "redactions": [],
+  "clean": true
+}

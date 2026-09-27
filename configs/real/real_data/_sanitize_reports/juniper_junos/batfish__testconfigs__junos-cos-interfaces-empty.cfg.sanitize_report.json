@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__junos-cos-interfaces-empty.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__junos-cos-interfaces-empty.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "c7e92fb7c012a995ecd1c9be6c8f637a9155ee2259960d9b37c28d97b36858fa",
+  "sha256_sanitized": "c7e92fb7c012a995ecd1c9be6c8f637a9155ee2259960d9b37c28d97b36858fa",
+  "redactions": [],
+  "clean": true
+}

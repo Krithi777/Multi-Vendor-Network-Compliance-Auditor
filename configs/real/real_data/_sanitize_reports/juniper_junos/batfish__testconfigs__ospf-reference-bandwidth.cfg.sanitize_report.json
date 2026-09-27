@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ospf-reference-bandwidth.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ospf-reference-bandwidth.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "16e23249da08287fc8f0a9cc68d9d90fa4fca8e0b7cbb03a5b21970baeddd44c",
+  "sha256_sanitized": "14808391260962745a6cd26b17506cf07dbb96320955af7305d3edd6b4f91129",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-tunnel-mode.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-tunnel-mode.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "46fedd7a00cf601834de1e7a1721be42083db5681d3b03d0eaeff9c08cc173a6",
+  "sha256_sanitized": "9576b5eae739f4d55b119ab0851008d3badb161e771902ba2f12480140e33028",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

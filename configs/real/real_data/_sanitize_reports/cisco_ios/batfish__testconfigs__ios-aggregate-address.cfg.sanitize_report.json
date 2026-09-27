@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-aggregate-address.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-aggregate-address.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "3631ce1f68a458110d97b548559fb97cca091fbef43cd032f988dfc11480e74c",
+  "sha256_sanitized": "5153a5f68b561a0051516312aaa8438d8953c84686d887ee4dd7644d92aedf7d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 10
+    }
+  ],
+  "clean": false
+}

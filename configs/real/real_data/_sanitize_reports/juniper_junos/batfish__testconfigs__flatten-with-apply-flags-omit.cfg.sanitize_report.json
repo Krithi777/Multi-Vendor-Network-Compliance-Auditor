@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__flatten-with-apply-flags-omit.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__flatten-with-apply-flags-omit.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "6857b653e3d4fe2a90bfa31fc02af4d43464764da4b9ab2744a41e8c3b55a419",
+  "sha256_sanitized": "6857b653e3d4fe2a90bfa31fc02af4d43464764da4b9ab2744a41e8c3b55a419",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,22 @@
+{
+  "total_files": 195,
+  "counts_by_vendor": {
+    "cisco_ios": 52,
+    "juniper_junos": 45,
+    "panos": 45,
+    "fortios": 53
+  },
+  "counts_by_vendor_state": {
+    "cisco_ios": {"PASS": 20, "FAIL": 12, "MISSING": 20},
+    "juniper_junos": {"PASS": 20, "FAIL": 8, "MISSING": 17},
+    "panos": {"PASS": 20, "FAIL": 8, "MISSING": 17},
+    "fortios": {"PASS": 20, "FAIL": 13, "MISSING": 20}
+  },
+  "naive_target_20x3x4": 240,
+  "actual_achievable": 195,
+  "reason_for_gap": "Not every control is tri-state-capable on every platform. Some controls are 'compliant via absence' (no CLI FAIL form exists, e.g. Junos telnet/http/finger, PAN-OS unused-port zoning) so only PASS+FAIL is meaningful and MISSING is identical to PASS. Others are 'FAIL == MISSING' (no distinct non-compliant VALUE exists, only the line's presence/absence matters, e.g. AAA/password-policy/syslog/NTP/ACL/banner/OSPF-auth-style controls) so only PASS+MISSING is meaningful and FAIL is skipped as a duplicate. Two PAN-OS controls (CTRL-001 SSH version, CTRL-002 telnet) are always_compliant by platform design with no CLI toggle at all, so only PASS exists for those.",
+  "vendors_included": ["cisco_ios", "juniper_junos", "panos", "fortios"],
+  "vendor_excluded": {
+    "arista_eos": "Intentionally not generated -- held out as an unseen vendor for the Phase 11 live demo, per the Phase 4 plan."
+  }
+}

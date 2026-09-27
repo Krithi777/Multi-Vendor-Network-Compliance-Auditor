@@ -1,0 +1,18 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-snmp-community-string.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-snmp-community-string.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "27a1aaf2b9b324f89d1effaecba7bc533b1b30c4dac4ee92d991f3e5bff08643",
+  "sha256_sanitized": "4661d9818a6e1073b50b1db69012b754e5376491b0a9393f93745b6d9b5650ee",
+  "redactions": [
+    {
+      "type": "snmp_community",
+      "count": 2
+    },
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

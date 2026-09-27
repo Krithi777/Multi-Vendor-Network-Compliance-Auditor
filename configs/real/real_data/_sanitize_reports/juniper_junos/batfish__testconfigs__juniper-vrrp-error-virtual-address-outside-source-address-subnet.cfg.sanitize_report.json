@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-vrrp-error-virtual-address-outside-source-address-subnet.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-vrrp-error-virtual-address-outside-source-address-subnet.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "e79a62b4883bfd24431a8f778964bb2bf4d6dfb58e1157075ab9ae8c8f45b12f",
+  "sha256_sanitized": "44a58432bf9f33bcf910204273d04537f17cbacaff5b660efa4404f6ec57ac58",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

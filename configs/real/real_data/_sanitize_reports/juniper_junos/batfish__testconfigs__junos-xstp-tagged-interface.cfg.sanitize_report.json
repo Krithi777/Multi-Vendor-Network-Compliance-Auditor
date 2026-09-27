@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__junos-xstp-tagged-interface.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__junos-xstp-tagged-interface.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ab2b85dd1757f97b1a76502588cd7f34839c33d532e518218097bf84c9063061",
+  "sha256_sanitized": "6ca55732fd5d605b4918f0e0d51b6e28a5e6b3e27877c9c84941e92c1ba5e601",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

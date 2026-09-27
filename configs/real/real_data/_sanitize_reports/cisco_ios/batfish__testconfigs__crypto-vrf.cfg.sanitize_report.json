@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__crypto-vrf.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__crypto-vrf.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "a70e6900a0ebd439bec19445cdf5e9da2838587dc8661d41bce57d4403b62e0d",
+  "sha256_sanitized": "8b5d246d910cbff95e78af3760620ee9096374a38821af119807015fa86edb8d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

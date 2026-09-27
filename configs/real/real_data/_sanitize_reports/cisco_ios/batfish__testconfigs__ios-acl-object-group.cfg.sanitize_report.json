@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-acl-object-group.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-acl-object-group.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "05032b1aa35ac5a77502e402848b5bd4db5b4e1de469ebb405895e6a380eeaf2",
+  "sha256_sanitized": "05032b1aa35ac5a77502e402848b5bd4db5b4e1de469ebb405895e6a380eeaf2",
+  "redactions": [],
+  "clean": true
+}

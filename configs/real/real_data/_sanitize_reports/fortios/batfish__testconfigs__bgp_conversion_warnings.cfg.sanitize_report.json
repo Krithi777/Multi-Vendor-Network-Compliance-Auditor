@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__bgp_conversion_warnings.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__bgp_conversion_warnings.cfg",
+  "vendor": "fortios",
+  "sha256_original": "ecc5f23e22e13eb186e50bf73151605c2b2d4ae476b9705f13d048c33a49a06f",
+  "sha256_sanitized": "bbf6c94ba47b08453bc66a18961cd673e7d22b2e4677b5f5be09e59f493726fa",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

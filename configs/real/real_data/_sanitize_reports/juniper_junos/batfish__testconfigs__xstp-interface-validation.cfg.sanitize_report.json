@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__xstp-interface-validation.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__xstp-interface-validation.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "ab767c5836b057bf4b2a3804752a796ed09e545e9a6a5f06c974751405a328dc",
+  "sha256_sanitized": "d47eaa3d5bf4ede04f228cf051406e17b72d34893c73029f86550ab57a0cc35b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

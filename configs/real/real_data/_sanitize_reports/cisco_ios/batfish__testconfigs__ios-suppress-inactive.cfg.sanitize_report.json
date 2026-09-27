@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-suppress-inactive.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-suppress-inactive.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "9bc06d78235fa2515d5af5f55f4fcf6bf5d679598d47e312dd4037a6957be43a",
+  "sha256_sanitized": "502834f20c4e4feff02f52bfafad4e6b97b4486a64079d06f3b4d49cb5861afd",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

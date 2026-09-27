@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-policy-from-neighbor.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-policy-from-neighbor.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "3dce55f0871cbc3004a5f85a16b7a4dbd2e83b5cd296b4557ddf68092a56da58",
+  "sha256_sanitized": "00c30f2c6d689be953c2d8bf649a30f78b1f47ba7191e39fca415d2d266dc17d",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

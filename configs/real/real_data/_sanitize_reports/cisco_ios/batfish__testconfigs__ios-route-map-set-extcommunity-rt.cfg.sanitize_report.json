@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-route-map-set-extcommunity-rt.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-route-map-set-extcommunity-rt.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "d0a3723f5318e28f0b2ce29aaaf99b966504203faa8f9d459b3aac09202b325a",
+  "sha256_sanitized": "af5ebc7dff6173d741364626a29db622bcbd11820815dd7bd4db0e2a67d1922b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

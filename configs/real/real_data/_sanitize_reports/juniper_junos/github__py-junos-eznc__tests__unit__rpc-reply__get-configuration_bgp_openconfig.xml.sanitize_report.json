@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__py-junos-eznc__tests__unit__rpc-reply__get-configuration_bgp_openconfig.xml",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__py-junos-eznc__tests__unit__rpc-reply__get-configuration_bgp_openconfig.xml",
+  "vendor": "juniper_junos",
+  "sha256_original": "18f9136200453101fc61e8d00e052566b4bcc46efbb904471c31579389800bb2",
+  "sha256_sanitized": "86b5286e4645650ab8c364d3751ff10e9ee84b424eb9220437d2c6acf84207c6",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__bgp_redistribution_with_route_map.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__bgp_redistribution_with_route_map.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "ea7f86270c25838a65ffb1e793942e8132d96d833f9598a62ad4baa90dd94b23",
+  "sha256_sanitized": "df5d0e20079914b94952ab165191321cbb42f59a68ee060325d4f8082292d700",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

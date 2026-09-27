@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ospf-no-redistribution__configs__ios-abr-no-redistribution.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ospf-no-redistribution__configs__ios-abr-no-redistribution.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "fab80c7b9360564a930b1b8e5967bec39684b2c985612a4c2a397625a86822d7",
+  "sha256_sanitized": "10fbd7c1a6f50b2fc4a25f08fc216646d352d3366c5e528261c5f24d4d9640d8",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

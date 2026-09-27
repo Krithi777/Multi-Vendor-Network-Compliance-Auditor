@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__static-routes-warn.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__static-routes-warn.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "0494dbfe6e1f14b38652f878b15ae32ec28562b25daeb1a9494539333141d82f",
+  "sha256_sanitized": "89d22f160241d912833adcd7a3800efb9faaec8e8bbc41442c964e9369b8447b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 8
+    }
+  ],
+  "clean": false
+}

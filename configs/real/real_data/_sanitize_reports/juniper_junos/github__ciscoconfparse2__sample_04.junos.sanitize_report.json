@@ -1,0 +1,18 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__ciscoconfparse2__sample_04.junos",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__ciscoconfparse2__sample_04.junos",
+  "vendor": "juniper_junos",
+  "sha256_original": "216174dd1a08c3fec53c77b594275e44dcc842c51082c0e1d27ce47623df0562",
+  "sha256_sanitized": "23b05b358499753b453d082b790082922dae0351b0cee57d561ff4f5262c0bd7",
+  "redactions": [
+    {
+      "type": "snmp_community",
+      "count": 1
+    },
+    {
+      "type": "ip_address",
+      "count": 35
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-peer-session-inheritance.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-peer-session-inheritance.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "5d5763d99fa7b44f616ad73acc5bad32783dbfe5e56d22143dea4961d8ee9826",
+  "sha256_sanitized": "7021aa2e62e3cf4f179842cedff3c07ac9e2e6a03c6987cf11a7ba393d0125d9",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

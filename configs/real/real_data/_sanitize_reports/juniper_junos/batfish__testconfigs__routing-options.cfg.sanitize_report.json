@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__routing-options.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__routing-options.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "044391de9fa970957dc9a7e47e8e3e485fa0647a32d13d9e26523ccbde0d2820",
+  "sha256_sanitized": "044391de9fa970957dc9a7e47e8e3e485fa0647a32d13d9e26523ccbde0d2820",
+  "redactions": [],
+  "clean": true
+}

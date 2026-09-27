@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__bgp-distribute-list__configs__advertiser.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__bgp-distribute-list__configs__advertiser.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "26630870c37156ebf16aca116d5d7a537c7d47fd02a6cc57a0934e2210ebae76",
+  "sha256_sanitized": "5fd8f7d61d45e981885b5a0b9ea17909d630bbbe369fa648b73ecf2955ffaafe",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

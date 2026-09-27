@@ -1,0 +1,18 @@
+# Phase 9 runtime dependencies (add to the existing environment; do not
+# create a second app -- same convention as requirements-phase7.txt).
+# SQLAlchemy, psycopg2-binary are already in requirements-phase7.txt.
+# jsonschema is required by db/common.py (Phase 5) but was missing from
+# both requirements files -- added here since Phase 9 is what surfaced it.
+jsonschema>=4.0
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pydantic>=2.0
+jinja2>=3.1
+# xhtml2pdf, not weasyprint: pure-Python HTML->PDF, no Pango/Cairo/GDK
+# system libraries to install per-machine before a demo (milestone 12).
+xhtml2pdf>=0.2.16
+# reportlab: second, independent PDF engine for the "dynamic PDF
+# customized by device model/software version" deliverable
+# (phase9/dynamic_report.py), separate from the xhtml2pdf engine above.
+reportlab>=4.0

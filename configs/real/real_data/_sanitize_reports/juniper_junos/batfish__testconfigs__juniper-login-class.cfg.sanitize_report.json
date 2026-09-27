@@ -1,0 +1,18 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-login-class.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-login-class.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "71fb303783a277bb6a4724dd8f5655ae5628cbb004a3ecbfff2a403b950cece2",
+  "sha256_sanitized": "152c50f1c3788097bd8b96bcecf4ed5dac491f067fe51e3659d52c604c5ac596",
+  "redactions": [
+    {
+      "type": "root_auth",
+      "count": 1
+    },
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

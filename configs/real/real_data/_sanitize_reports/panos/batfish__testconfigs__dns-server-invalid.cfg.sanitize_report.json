@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__dns-server-invalid.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__dns-server-invalid.cfg",
+  "vendor": "panos",
+  "sha256_original": "51c469879b83ace3bcd38b8b4b246bd050abb05bc620cfc10857f0b4b5a37f68",
+  "sha256_sanitized": "51c469879b83ace3bcd38b8b4b246bd050abb05bc620cfc10857f0b4b5a37f68",
+  "redactions": [],
+  "clean": true
+}

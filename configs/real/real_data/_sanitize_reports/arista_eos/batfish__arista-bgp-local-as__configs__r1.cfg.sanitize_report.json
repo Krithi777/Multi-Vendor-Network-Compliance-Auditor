@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__arista-bgp-local-as__configs__r1.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__arista-bgp-local-as__configs__r1.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "a5af8dc9bfaabde100ba2904c76a0a569d5c8a0d1323d8f75483fb25ec89fdf3",
+  "sha256_sanitized": "c451ab3d2e749d23ad81f8952cf86ce5aee3437945057483e6e45d4b72daa960",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

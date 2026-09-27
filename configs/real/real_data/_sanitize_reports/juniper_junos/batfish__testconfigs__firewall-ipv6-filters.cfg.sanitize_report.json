@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__firewall-ipv6-filters.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__firewall-ipv6-filters.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "253f7c54b5b4118583ccf8b88ecc36357caeb64b21fbd768ab981633b498dadb",
+  "sha256_sanitized": "253f7c54b5b4118583ccf8b88ecc36357caeb64b21fbd768ab981633b498dadb",
+  "redactions": [],
+  "clean": true
+}

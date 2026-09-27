@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__interface-vni.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__interface-vni.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "9edd0250836c4f123111bfc5ea6240580b08a988c41b296085c4e28ca81660c3",
+  "sha256_sanitized": "9edd0250836c4f123111bfc5ea6240580b08a988c41b296085c4e28ca81660c3",
+  "redactions": [],
+  "clean": true
+}

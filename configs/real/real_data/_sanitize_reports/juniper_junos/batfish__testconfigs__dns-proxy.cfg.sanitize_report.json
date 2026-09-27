@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__dns-proxy.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__dns-proxy.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "746ef95e44fe5fff9e018f3faa1039bfec36c375441aa6e0c250c550c3ec0f9c",
+  "sha256_sanitized": "a746e9848f061bd794b778b10fb99eeddbdbef7eb28c74a2aa7921edba1d2596",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

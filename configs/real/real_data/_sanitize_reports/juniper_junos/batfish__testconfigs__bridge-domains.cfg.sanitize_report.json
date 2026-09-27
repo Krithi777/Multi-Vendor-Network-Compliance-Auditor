@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bridge-domains.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bridge-domains.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "e5bd5e037fd607099dc4fb10e74e1254500058db3be97df5512db12fe77d5e6c",
+  "sha256_sanitized": "f4d491e6fb7eea99910eeb140a5d8d465b9f2b5492dc761a65b81411f4602875",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__quote-mistakes.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__quote-mistakes.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "fb8d7c6ff733b039c99e785c515b4eef1bef1a1cad168bb33335985036647da7",
+  "sha256_sanitized": "51255d72dbbb6bc9158bd08d0741855f6397fdf7817deca9069ab4b938fe6b71",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

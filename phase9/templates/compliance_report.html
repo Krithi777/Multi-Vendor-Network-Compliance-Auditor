@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+  /* xhtml2pdf's CSS 2.1 subset has two specific traps this file used to
+     hit, both fixed below:
+     1. text-transform:uppercase combined with letter-spacing on a
+        narrow <th> clips/garbles the last character(s) instead of
+        wrapping (e.g. "SEVERITY" rendered as "SEVERIT'"). Fix: no
+        letter-spacing anywhere, and headers keep their natural case.
+     2. A solid dark fill (#222222) behind white header text reads as
+        a heavy black block once printed/scanned. Fix: light grey
+        fills with dark text and real cell borders everywhere, so
+        every table reads as a normal ruled table, not a color block. */
+  @page {
+    size: A4;
+    margin: 2cm 1.8cm 2.2cm 1.8cm;
+    @frame footer_frame {
+      -pdf-frame-content: footer_content;
+      bottom: 1cm; margin-left: 1.8cm; margin-right: 1.8cm; height: 1.2cm;
+    }
+  }
+  body { font-family: Helvetica, Arial, sans-serif; font-size: 9.5pt; color: #1a1a1a; line-height: 1.5; }
+  table { width: 100%; border-collapse: collapse; }
+  td, th { font-family: Helvetica, Arial, sans-serif; }
+
+  h1.title { font-size: 20pt; margin: 0 0 4pt 0; color: #111111; font-weight: bold; }
+  p.subtitle { font-size: 10.5pt; color: #555555; margin: 0 0 14pt 0; }
+  hr.rule { border: none; border-top: 0.75pt solid #dddddd; margin: 0 0 14pt 0; }
+
+  h2.section { font-size: 12.5pt; margin: 18pt 0 8pt 0; color: #111111; font-weight: bold; }
+  p.section-note { color: #666666; font-size: 8.5pt; margin: -3pt 0 8pt 0; }
+
+  /* ---------- Meta / device table ---------- */
+  .meta-table td { padding: 3pt 10pt 3pt 0; font-size: 9pt; vertical-align: top; }
+  .meta-table .k { color: #666666; width: 110pt; font-weight: bold; }
+  .meta-table .v { color: #111111; }
+
+  /* ---------- Normal ruled data tables (summary / findings / framework) ----------
+     Light grey header fill + real borders on every cell = a plain table,
+     never a solid color block. No uppercase/letter-spacing on th text. */
+  .data-table, .data-table th, .data-table td { border: 0.75pt solid #cccccc; }
+  .data-table th { background: #eeeeee; color: #111111; text-align: left; font-size: 8.5pt;
+                   font-weight: bold; padding: 6pt 7pt; }
+  .data-table td { padding: 6pt 7pt; font-size: 8.5pt; vertical-align: top; }
+  /* Control IDs: bold + dark, not the near-invisible pale grey the old
+     template used, and given their own block so long descriptions can't
+     crowd them. */
+  .data-table .ctrl-id { font-family: Courier, monospace; font-size: 8.5pt; font-weight: bold;
+                          color: #111111; display: block; margin-bottom: 2pt; }
+  .data-table .mono { font-family: Courier, monospace; font-size: 8pt; color: #444444; }
+  .score-line { font-size: 10.5pt; margin: 6pt 0 0 0; font-weight: bold; }
+
+  .sev-high { color: #a4212b; font-weight: bold; }
+  .sev-medium { color: #9a6300; font-weight: bold; }
+  .sev-low { color: #33691e; font-weight: bold; }
+
+  /* ---------- Remediation ---------- */
+  .note { border: 0.75pt solid #cccccc; padding: 7pt 10pt; font-size: 8.5pt; color: #333333; margin: 2pt 0 12pt 0; }
+
+  .rem-card { border: 0.75pt solid #bbbbbb; margin: 0 0 14pt 0; }
+  .rem-head { background: #eeeeee; border-bottom: 0.75pt solid #bbbbbb; padding: 6pt 9pt; }
+  .rem-head .ctrl-id { font-family: Courier, monospace; font-weight: bold; font-size: 9pt; color: #111111; margin-right: 8pt; }
+  .rem-head .field { font-weight: bold; color: #111111; font-size: 9.5pt; }
+  .rem-body { padding: 8pt 9pt; }
+  .rem-desc { font-size: 8.5pt; color: #333333; margin: 0 0 4pt 0; }
+  .rem-meta { font-size: 7.5pt; color: #666666; margin: 0 0 8pt 0; }
+  .rem-meta .expected { color: #33691e; }
+  .rem-meta .observed { color: #a4212b; }
+
+  /* Commands as a bordered two-column table instead of <pre> blocks --
+     renders as a plain ruled table on every viewer instead of a
+     dark/monospace slab. */
+  .cmd-table { margin: 0 0 6pt 0; }
+  .cmd-table, .cmd-table td { border: 0.5pt solid #dddddd; }
+  .cmd-table .cmd-label-cell { width: 62pt; font-size: 7.5pt; color: #555555; font-weight: bold;
+                                background: #f7f7f7; padding: 5pt 7pt; vertical-align: top; }
+  .cmd-table .cmd-cell { font-family: Courier, monospace; font-size: 8pt; color: #1a1a1a;
+                          padding: 5pt 7pt; vertical-align: top; }
+
+  .param-note { font-size: 7.5pt; color: #7a4a00; border: 0.5pt solid #dfc78a; background: #fdf6e6;
+                padding: 5pt 7pt; margin: 4pt 0 0 0; }
+  .conflict-note { font-size: 7.5pt; color: #555555; margin: 4pt 0 0 0; }
+  .rem-notes { font-size: 7.5pt; color: #555555; font-style: italic; margin: 4pt 0 0 0; }
+
+  #footer_content { font-size: 7.5pt; color: #999999; }
+  #footer_content .fline { border-top: 0.5pt solid #dddddd; padding-top: 4pt; }
+</style>
+</head>
+<body>
+
+  <h1 class="title">Network Compliance Report</h1>
+  <p class="subtitle">{{ vendor_label }} &middot; Scan {{ scan_id }} &middot; Generated {{ generated_at }}</p>
+  <hr class="rule" />
+
+  <table class="meta-table">
+    <tr>
+      <td class="k">File</td><td class="v">{{ filename }}</td>
+      <td class="k">Uploaded</td><td class="v">{{ uploaded_at or "-" }}</td>
+    </tr>
+    <tr>
+      <td class="k">Hostname</td><td class="v">{{ device.hostname or "-" }}</td>
+      <td class="k">Model</td><td class="v">{{ device.model or "-" }}</td>
+    </tr>
+    <tr>
+      <td class="k">OS version</td><td class="v">{{ device.os_version or "-" }}</td>
+      <td class="k">Serial number</td><td class="v">{{ device.serial_number or "-" }}</td>
+    </tr>
+  </table>
+
+  <h2 class="section">Executive summary</h2>
+  <table class="data-table">
+    <tr><th style="width:40%;">Status</th><th style="width:25%;">Count</th><th style="width:35%;">Percent of controls</th></tr>
+    {% set total_all = summary.PASS + summary.FAIL + summary.MISSING + summary.REVIEW + summary.NOT_APPLICABLE %}
+    <tr><td>Pass</td><td>{{ summary.PASS }}</td><td>{{ (summary.PASS / total_all * 100) | round(1) if total_all else 0 }}%</td></tr>
+    <tr><td>Fail</td><td>{{ summary.FAIL }}</td><td>{{ (summary.FAIL / total_all * 100) | round(1) if total_all else 0 }}%</td></tr>
+    <tr><td>Missing</td><td>{{ summary.MISSING }}</td><td>{{ (summary.MISSING / total_all * 100) | round(1) if total_all else 0 }}%</td></tr>
+    <tr><td>Review</td><td>{{ summary.REVIEW }}</td><td>{{ (summary.REVIEW / total_all * 100) | round(1) if total_all else 0 }}%</td></tr>
+    <tr><td>Not applicable</td><td>{{ summary.NOT_APPLICABLE }}</td><td>{{ (summary.NOT_APPLICABLE / total_all * 100) | round(1) if total_all else 0 }}%</td></tr>
+  </table>
+  <p class="score-line">Overall compliance: {{ compliant_pct }}%</p>
+
+  {% set total_open = severity_breakdown.high + severity_breakdown.medium + severity_breakdown.low %}
+  <h2 class="section">Open findings by severity</h2>
+  {% if total_open > 0 %}
+  <p class="section-note">FAIL / MISSING / REVIEW findings only -- passing controls carry no severity weight here.</p>
+  <p><span class="sev-high">{{ severity_breakdown.high }} high</span> &middot; <span class="sev-medium">{{ severity_breakdown.medium }} medium</span> &middot; <span class="sev-low">{{ severity_breakdown.low }} low</span></p>
+  {% else %}
+  <p class="section-note">No open findings -- every control that isn't N/A currently passes.</p>
+  {% endif %}
+
+  {% if framework_coverage %}
+  <h2 class="section">Framework coverage</h2>
+  <p class="section-note">Only frameworks actually cited by a control in this scan are shown -- nothing here is a fabricated "covered" flag.</p>
+  <table class="data-table">
+    <tr><th style="width:34%;">Framework</th><th style="width:18%;">Controls cited</th><th style="width:16%;">Fail</th><th style="width:16%;">Missing</th><th style="width:16%;">Review</th></tr>
+    {% for fw in framework_coverage %}
+    <tr>
+      <td>{{ fw.label }}</td>
+      <td>{{ fw.control_count }}</td>
+      <td>{{ fw.counts.FAIL }}</td>
+      <td>{{ fw.counts.MISSING }}</td>
+      <td>{{ fw.counts.REVIEW }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+
+  <h2 class="section">Findings</h2>
+  <table class="data-table">
+    <tr>
+      <th style="width:28%;">Control</th><th style="width:11%;">State</th><th style="width:10%;">Severity</th>
+      <th style="width:14%;">Expected</th><th style="width:14%;">Observed</th><th style="width:23%;">Evidence</th>
+    </tr>
+    {% for r in results %}
+    <tr>
+      <td><span class="ctrl-id">{{ r.control_id }}</span>{{ r.description or r.canonical_field }}</td>
+      <td>{{ r.state }}</td>
+      <td>{{ r.severity }}</td>
+      <td>{{ r.expected_value }}</td>
+      <td>{{ r.observed_value or "-" }}</td>
+      <td>
+        {% if r.evidence_line %}
+          <span class="mono">L{{ r.evidence_line_number }}</span> {{ r.evidence_line }}
+        {% else %}
+          -
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  <h2 class="section">Remediation preview</h2>
+  <div class="note">
+    Proposed fixes only. Review each command, its verification step and its rollback below before applying
+    any change to a live device.
+  </div>
+
+  {% if remediations %}
+    {% for rem in remediations %}
+    <div class="rem-card">
+      <div class="rem-head">
+        <span class="ctrl-id">{{ rem.control_id }}</span><span class="field">{{ rem.canonical_field }}</span>
+        {% if rem.severity %}
+          &middot; <span class="sev-{{ rem.severity | lower }}">{{ rem.severity | upper }}</span>
+        {% endif %}
+      </div>
+      <div class="rem-body">
+        {% if rem.description %}<p class="rem-desc">{{ rem.description }}</p>{% endif %}
+        {% if rem.expected_value or rem.observed_value %}
+        <p class="rem-meta">Expected <span class="expected">{{ rem.expected_value or "-" }}</span> &middot; Observed <span class="observed">{{ rem.observed_value or "-" }}</span></p>
+        {% endif %}
+
+        <table class="cmd-table">
+          <tr><td class="cmd-label-cell">Apply</td><td class="cmd-cell">{{ rem.commands | join('<br/>') | safe }}</td></tr>
+          {% if rem.verification_command %}
+          <tr><td class="cmd-label-cell">Verify</td><td class="cmd-cell">{{ rem.verification_command }}</td></tr>
+          {% endif %}
+          {% if rem.rollback_commands %}
+          <tr><td class="cmd-label-cell">Rollback</td><td class="cmd-cell">{{ rem.rollback_commands | join('<br/>') | safe }}</td></tr>
+          {% endif %}
+        </table>
+
+        {% if rem.requires_parameters and rem.required_parameters %}
+        <div class="param-note">Requires values before applying: {{ rem.required_parameters | join(', ') }}</div>
+        {% endif %}
+
+        <div class="conflict-note">
+          {% if rem.syntax_confidence %}Syntax confidence: {{ rem.syntax_confidence }}{% endif %}
+          {% if rem.rollback_confidence %} &middot; Rollback confidence: {{ rem.rollback_confidence }}{% endif %}
+          {% if rem.manually_authored %} &middot; Manually authored{% endif %}
+          &middot; Conflict check:
+          {% if rem.conflict_check == "not_available" %}not yet available{% else %}{{ rem.conflict_check }}{% endif %}
+        </div>
+        {% if rem.notes %}<p class="rem-notes">{{ rem.notes }}</p>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p style="color:#555555;">No remediable FAIL/MISSING findings, or no remediation rules defined for this vendor.</p>
+  {% endif %}
+
+  <div id="footer_content">
+    <div class="fline">
+      Multi-Vendor Network Compliance Auditor &middot; Scan {{ scan_id }} &middot; Page <pdf:pagenumber /> of <pdf:pagecount />
+    </div>
+  </div>
+
+</body>
+</html>

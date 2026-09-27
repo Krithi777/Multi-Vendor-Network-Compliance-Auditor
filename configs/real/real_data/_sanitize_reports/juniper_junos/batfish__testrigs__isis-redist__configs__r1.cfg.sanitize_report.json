@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testrigs__isis-redist__configs__r1.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testrigs__isis-redist__configs__r1.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "719a27cad84be9ca302ffe05fcad59a2107d8538bc210d23da691603b00e656d",
+  "sha256_sanitized": "bd86cf6f0fc76a4308eed6e6e0439993156a4fd3a515208e1f044be09d147a50",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

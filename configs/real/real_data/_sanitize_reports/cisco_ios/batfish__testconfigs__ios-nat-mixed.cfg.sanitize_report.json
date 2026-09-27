@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-nat-mixed.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-nat-mixed.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "1835b601b4d2a14b5a36696a6275a128226075dfe033db2042160a344fbd3dc9",
+  "sha256_sanitized": "3b34753d2cee5b3f290d9bbf318911278c1f4b4bbf7e523af35f2c1e299c48af",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

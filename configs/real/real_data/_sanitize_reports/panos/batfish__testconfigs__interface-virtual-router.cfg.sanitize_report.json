@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__interface-virtual-router.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__interface-virtual-router.cfg",
+  "vendor": "panos",
+  "sha256_original": "c7efc08cd958de344331b36c4b107004bbee94b59451bd6b413decd303b39f7b",
+  "sha256_sanitized": "9be30eff51291e40d8584d66387ef01e7fe6f2126207e6a34925dbea8d23004b",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

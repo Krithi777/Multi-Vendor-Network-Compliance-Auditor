@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ospf-prefix-priority.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ospf-prefix-priority.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "0dc2a9d20785ca10cc102c1e01a5018238fa15e0f3e8922c8f6e6fc054f919c2",
+  "sha256_sanitized": "f9531543a22f0d16a2d41b2c960eb578964a2f6861fc1a8c437e1fc81e4d0049",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

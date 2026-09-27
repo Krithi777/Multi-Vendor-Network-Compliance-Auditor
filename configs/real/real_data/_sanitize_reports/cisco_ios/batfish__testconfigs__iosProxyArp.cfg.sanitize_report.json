@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__iosProxyArp.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__iosProxyArp.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "59d3fe49fd03d124d9b7c2cac95f0bba550919ef664fa27ec27bbad3dc3ac205",
+  "sha256_sanitized": "59d3fe49fd03d124d9b7c2cac95f0bba550919ef664fa27ec27bbad3dc3ac205",
+  "redactions": [],
+  "clean": true
+}

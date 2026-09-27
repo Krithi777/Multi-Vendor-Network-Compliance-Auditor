@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-rip-passive.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-rip-passive.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "b5469d9002cdfa13182720c429ead8112f8ee35904300e7410e125872ca111d9",
+  "sha256_sanitized": "b78aecb5d615451bae0286d94485c5c9818ff8b6494354acd2649d4720c5666a",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\arista_eos\\batfish__arista-bgp-remove-private-as__configs__r3.cfg",
+  "sanitized_file": "configs\\sanitized\\arista_eos\\batfish__arista-bgp-remove-private-as__configs__r3.cfg",
+  "vendor": "arista_eos",
+  "sha256_original": "fa66c846598c13683e7deb834bf61083d5cc6ccd9bf0cb2ad9a62cf03a50aefc",
+  "sha256_sanitized": "7114a2c5fbc00d627d5d5990ceae94c63a9a76ea6d4e28658decd5899ea5aeb1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

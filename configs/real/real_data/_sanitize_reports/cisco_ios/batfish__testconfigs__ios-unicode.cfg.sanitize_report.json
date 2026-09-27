@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-unicode.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-unicode.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "f54a7b23e02701f30f6b4141b255d860b883cd9bb92d666583fa4b329fafd790",
+  "sha256_sanitized": "f54a7b23e02701f30f6b4141b255d860b883cd9bb92d666583fa4b329fafd790",
+  "redactions": [],
+  "clean": true
+}

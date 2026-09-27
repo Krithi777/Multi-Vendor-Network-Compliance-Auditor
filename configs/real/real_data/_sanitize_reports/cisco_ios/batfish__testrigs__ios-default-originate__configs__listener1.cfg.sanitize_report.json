@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ios-default-originate__configs__listener1.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ios-default-originate__configs__listener1.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "4dfdb66486a76ea059e6a293881234e103220d2498d8639d35e955a54681e26b",
+  "sha256_sanitized": "83c25e4dcddc0c4ef8b1d746e59523e83eb6c502237b4a887c666cbef515b473",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

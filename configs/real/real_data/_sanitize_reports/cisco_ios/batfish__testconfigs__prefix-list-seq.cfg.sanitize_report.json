@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__prefix-list-seq.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__prefix-list-seq.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "7f410835ed9bda99045e77348d8280fe2ca3e3054df73f876854873139f21d76",
+  "sha256_sanitized": "43327a790c643ee3fa419f2fed8df9808b318556550cea630e0ec51eed59bc3a",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

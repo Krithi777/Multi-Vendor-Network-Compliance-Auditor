@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ospf-area-interface-all-duplicate-error.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ospf-area-interface-all-duplicate-error.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "62529bf94fb1e89d517effbf5ec73ce6d894a0754ba1ba9c14a240fbd83fb855",
+  "sha256_sanitized": "62529bf94fb1e89d517effbf5ec73ce6d894a0754ba1ba9c14a240fbd83fb855",
+  "redactions": [],
+  "clean": true
+}

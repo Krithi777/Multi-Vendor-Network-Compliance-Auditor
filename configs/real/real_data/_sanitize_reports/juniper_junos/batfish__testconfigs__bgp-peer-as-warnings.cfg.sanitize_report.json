@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-peer-as-warnings.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-peer-as-warnings.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "e4880c5adf255db7c9d22a9d9cb5724e26bed4ff7b2beb3179b104d8a6c269b3",
+  "sha256_sanitized": "e4880c5adf255db7c9d22a9d9cb5724e26bed4ff7b2beb3179b104d8a6c269b3",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 9
+    }
+  ],
+  "clean": false
+}

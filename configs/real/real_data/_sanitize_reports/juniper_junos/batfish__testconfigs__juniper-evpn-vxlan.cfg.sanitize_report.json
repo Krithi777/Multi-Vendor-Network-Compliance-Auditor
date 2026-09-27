@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-evpn-vxlan.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-evpn-vxlan.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "f1e62d346100a4e3b21293a4a773df8d9327a89596dd6125460386027e2db4a0",
+  "sha256_sanitized": "42f9bd95e501a6bae778931561489cebcb2a0a7de1d1db3994306149f247176a",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 10
+    }
+  ],
+  "clean": false
+}

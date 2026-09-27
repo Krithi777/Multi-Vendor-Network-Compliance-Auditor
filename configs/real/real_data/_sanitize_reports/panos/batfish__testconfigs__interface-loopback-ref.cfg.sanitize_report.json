@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__interface-loopback-ref.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__interface-loopback-ref.cfg",
+  "vendor": "panos",
+  "sha256_original": "8cf5a3b235a47cf1498981e5d241490d698273d9786d4bf9d77455a44ed53316",
+  "sha256_sanitized": "b75b1d865c522e61adc6dd41e1ba302d8da57c42c9fa865d795342be183f4b1f",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

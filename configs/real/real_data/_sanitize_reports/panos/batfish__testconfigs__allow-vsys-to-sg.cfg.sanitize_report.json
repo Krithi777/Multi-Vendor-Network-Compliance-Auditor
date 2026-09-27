@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__allow-vsys-to-sg.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__allow-vsys-to-sg.cfg",
+  "vendor": "panos",
+  "sha256_original": "3c58e66355b777bcbecea4a59f6eb3e438cbcff4b65a5230e26dc319384f6931",
+  "sha256_sanitized": "bef3d35f0ead413401b1ec3a01323b40771762c3477448f8ff04348019461a8c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

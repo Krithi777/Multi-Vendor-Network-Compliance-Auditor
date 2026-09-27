@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__bgp-agg-learned-contributors__configs__c3.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__bgp-agg-learned-contributors__configs__c3.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "db056d2ac69d716f31bcced61c0d68469b2ed295b73d050d5dca0ca8c028c617",
+  "sha256_sanitized": "7809f36551e155f9fc672eb5de73ab0531edeb017700de6eb9089ec1a33a9001",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 3
+    }
+  ],
+  "clean": false
+}

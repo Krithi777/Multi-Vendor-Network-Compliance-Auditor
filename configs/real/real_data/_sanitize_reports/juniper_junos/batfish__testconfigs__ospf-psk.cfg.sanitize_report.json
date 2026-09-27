@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__ospf-psk.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__ospf-psk.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "2e0b6478250ab531344f385d408d1a2edff46ca5427f21ee8c16b0b26a1ab071",
+  "sha256_sanitized": "2e0b6478250ab531344f385d408d1a2edff46ca5427f21ee8c16b0b26a1ab071",
+  "redactions": [],
+  "clean": true
+}

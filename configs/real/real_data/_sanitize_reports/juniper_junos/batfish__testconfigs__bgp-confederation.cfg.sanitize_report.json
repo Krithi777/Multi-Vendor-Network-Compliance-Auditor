@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-confederation.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-confederation.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "c13f512d8da3c813c30ab371eebf926c29c1eeb41ba9b72e19fdd76732c0c77c",
+  "sha256_sanitized": "f4091952cda2938e56015a5b4f090657e3d27fa06ffd7455a2b229c97eedd4fe",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__fortios_bad_hostname.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__fortios_bad_hostname.cfg",
+  "vendor": "fortios",
+  "sha256_original": "0ce0d75912d29c08d99936c9eb6ededdc16d9dcc1676a7c1db79720ca8e4bc24",
+  "sha256_sanitized": "0ce0d75912d29c08d99936c9eb6ededdc16d9dcc1676a7c1db79720ca8e4bc24",
+  "redactions": [],
+  "clean": true
+}

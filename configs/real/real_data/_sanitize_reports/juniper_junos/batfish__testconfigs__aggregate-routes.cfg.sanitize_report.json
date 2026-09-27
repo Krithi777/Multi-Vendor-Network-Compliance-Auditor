@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__aggregate-routes.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__aggregate-routes.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "c2313b86640c96b3825d3e2ddf9c7337015c4af09da0bf359f00195c3a2b5d6a",
+  "sha256_sanitized": "a6ebb9a39faee3a89d4397b8bcf22f62857b161c81a1f9592535bd5f93aea987",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

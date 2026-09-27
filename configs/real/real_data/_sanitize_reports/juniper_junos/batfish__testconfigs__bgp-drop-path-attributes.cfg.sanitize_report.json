@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__bgp-drop-path-attributes.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__bgp-drop-path-attributes.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "86756d026639ea7b6b57b27aa42c6d8d8d41dc81b74bc76ee560834f6e3975f6",
+  "sha256_sanitized": "86756d026639ea7b6b57b27aa42c6d8d8d41dc81b74bc76ee560834f6e3975f6",
+  "redactions": [],
+  "clean": true
+}

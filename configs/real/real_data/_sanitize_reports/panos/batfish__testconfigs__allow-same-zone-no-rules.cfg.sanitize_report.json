@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__allow-same-zone-no-rules.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__allow-same-zone-no-rules.cfg",
+  "vendor": "panos",
+  "sha256_original": "2a6951d4b53695f754481b242bd09c3a289172499e3f156fc829f50d1a6c2d79",
+  "sha256_sanitized": "a70a6e1e57a254f421ec41a93aa4ab7f2e8fa18b3791b1144add9db26ebca1eb",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

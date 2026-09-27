@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__static_route_warnings.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__static_route_warnings.cfg",
+  "vendor": "fortios",
+  "sha256_original": "12e60c1efbf43f5eeae122ebb7d9b90d8ed31a9196f86df6099d3a37b4aac016",
+  "sha256_sanitized": "12e60c1efbf43f5eeae122ebb7d9b90d8ed31a9196f86df6099d3a37b4aac016",
+  "redactions": [],
+  "clean": true
+}

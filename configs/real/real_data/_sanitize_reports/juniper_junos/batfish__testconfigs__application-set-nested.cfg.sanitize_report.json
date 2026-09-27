@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__application-set-nested.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__application-set-nested.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "d51256c5fa5e326a06c395a52f4b196cb3cb29779c931cab678220310ceccc9b",
+  "sha256_sanitized": "d51256c5fa5e326a06c395a52f4b196cb3cb29779c931cab678220310ceccc9b",
+  "redactions": [],
+  "clean": true
+}

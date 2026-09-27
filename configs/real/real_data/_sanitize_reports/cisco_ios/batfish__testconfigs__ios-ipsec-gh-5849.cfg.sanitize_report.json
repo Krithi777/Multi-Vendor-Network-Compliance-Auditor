@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ipsec-gh-5849.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ipsec-gh-5849.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "67e50e3d20f812864e0a3896b352e32106751997df89136efe1985e8d3539d3f",
+  "sha256_sanitized": "48860be0eb06fe55b44fd7f7b5bc50aea19d4dab2c784de08162c0153ab30f34",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

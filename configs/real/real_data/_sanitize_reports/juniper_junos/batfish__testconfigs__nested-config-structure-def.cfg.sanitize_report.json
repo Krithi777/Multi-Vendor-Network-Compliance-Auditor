@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__nested-config-structure-def.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__nested-config-structure-def.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "6117445dc58841515079b100b124505a4d8c098b73c056334681bc5fdbf8fac9",
+  "sha256_sanitized": "de82938e49c713ec846b6d1d0cbc0deb9826492ea487c20cd1c8e3ef58f80773",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

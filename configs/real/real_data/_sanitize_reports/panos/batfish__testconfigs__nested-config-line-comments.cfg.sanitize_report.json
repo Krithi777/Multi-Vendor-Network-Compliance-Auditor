@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__nested-config-line-comments.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__nested-config-line-comments.cfg",
+  "vendor": "panos",
+  "sha256_original": "79ff2b447230e52a3c13a40ac5c071bdf7e6cd8988fba8937dd5cdc56b0661ce",
+  "sha256_sanitized": "79ff2b447230e52a3c13a40ac5c071bdf7e6cd8988fba8937dd5cdc56b0661ce",
+  "redactions": [],
+  "clean": true
+}

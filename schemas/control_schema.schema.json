@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "control_schema",
+  "type": "array",
+  "minItems": 20,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "required": [
+      "control_id",
+      "canonical_field",
+      "description",
+      "operator",
+      "expected_value",
+      "severity",
+      "nist_800_53",
+      "cis",
+      "stig",
+      "iso_27001"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "control_id": {
+        "type": "string",
+        "pattern": "^CTRL-\\d{3}$"
+      },
+      "canonical_field": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+(\\.[a-z0-9_]+)+$"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1
+      },
+      "operator": {
+        "enum": [
+          "eq",
+          "ne",
+          "lte",
+          "gte"
+        ]
+      },
+      "expected_value": {
+        "type": [
+          "boolean",
+          "integer"
+        ]
+      },
+      "severity": {
+        "enum": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      "nist_800_53": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}-\\d+(\\(\\d+\\))?$"
+        },
+        "uniqueItems": true
+      },
+      "cis": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "vendor",
+            "benchmark",
+            "rec_id"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "vendor": {
+              "type": "string"
+            },
+            "benchmark": {
+              "type": "string"
+            },
+            "rec_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "stig": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "vendor",
+            "stig_id"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "vendor": {
+              "type": "string"
+            },
+            "stig_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "iso_27001": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+$"
+        },
+        "uniqueItems": true
+      },
+      "is_mgmt_path": {
+        "type": "boolean"
+      }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "operator": {
+              "enum": [
+                "lte",
+                "gte"
+              ]
+            }
+          },
+          "required": [
+            "operator"
+          ]
+        },
+        "then": {
+          "properties": {
+            "expected_value": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

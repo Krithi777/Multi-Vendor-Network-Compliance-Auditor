@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__policy_delete.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__policy_delete.cfg",
+  "vendor": "fortios",
+  "sha256_original": "8e53dc47cb727031d9865302e802e11af99f7ce0e312ebae8d278e564460073a",
+  "sha256_sanitized": "8e53dc47cb727031d9865302e802e11af99f7ce0e312ebae8d278e564460073a",
+  "redactions": [],
+  "clean": true
+}

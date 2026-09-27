@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-vpn.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-vpn.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "4c3a45eb2393a7ee102c3ebb1d3c9b9c1db9f624aeee7207911b35890f88bafb",
+  "sha256_sanitized": "4c3a45eb2393a7ee102c3ebb1d3c9b9c1db9f624aeee7207911b35890f88bafb",
+  "redactions": [],
+  "clean": true
+}

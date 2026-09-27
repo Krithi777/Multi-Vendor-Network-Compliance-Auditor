@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__isis-import.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__isis-import.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "b85e0e046dc7fb6cc5288272a99212baab4692ecf0d3daa6ba0c5fa5e6bc245b",
+  "sha256_sanitized": "b85e0e046dc7fb6cc5288272a99212baab4692ecf0d3daa6ba0c5fa5e6bc245b",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios_switchport_mode.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios_switchport_mode.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "135be37bb6cc40350a77bea72063174bc8c9404e513f8fd4099f0ddf2d4950d2",
+  "sha256_sanitized": "135be37bb6cc40350a77bea72063174bc8c9404e513f8fd4099f0ddf2d4950d2",
+  "redactions": [],
+  "clean": true
+}

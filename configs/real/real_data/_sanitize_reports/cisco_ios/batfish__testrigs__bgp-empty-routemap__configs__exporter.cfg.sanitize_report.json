@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__bgp-empty-routemap__configs__exporter.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__bgp-empty-routemap__configs__exporter.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "b22c7e1543d6de42d1a89a98b80048f10242e7591f702fbbc613e1d8103008fb",
+  "sha256_sanitized": "01c39f73e5208b825dcb2026de2a84136d77b55d65ac52ae16967b77ae11cb62",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__panorama-rulebase-tracing.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__panorama-rulebase-tracing.cfg",
+  "vendor": "panos",
+  "sha256_original": "e30e9a6ad3f9a4621c2e844d9e0f1ce0c89121cbad510744b473ad9a35d2fed4",
+  "sha256_sanitized": "b1fe9b61a445b14e86be7dfff00901abe01fe9f12b17326e203a88a0fa0320ed",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

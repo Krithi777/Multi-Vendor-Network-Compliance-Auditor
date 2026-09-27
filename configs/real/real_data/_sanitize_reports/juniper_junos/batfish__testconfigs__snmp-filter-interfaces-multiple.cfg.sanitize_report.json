@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__snmp-filter-interfaces-multiple.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__snmp-filter-interfaces-multiple.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "c204418fbbe6d2e20b78a2a728b81c76e5c4ba424584b1d2daa1617534fb05b5",
+  "sha256_sanitized": "c204418fbbe6d2e20b78a2a728b81c76e5c4ba424584b1d2daa1617534fb05b5",
+  "redactions": [],
+  "clean": true
+}

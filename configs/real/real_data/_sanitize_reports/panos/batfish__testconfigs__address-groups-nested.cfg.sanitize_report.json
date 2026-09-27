@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__address-groups-nested.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__address-groups-nested.cfg",
+  "vendor": "panos",
+  "sha256_original": "9ef93ecb41b4a8f9d397b125153228ff553d57ed9ae7537dc7213693afcd84db",
+  "sha256_sanitized": "9ef93ecb41b4a8f9d397b125153228ff553d57ed9ae7537dc7213693afcd84db",
+  "redactions": [],
+  "clean": true
+}

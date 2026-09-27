@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ospf-process-inference.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ospf-process-inference.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "b3525b3e2916128cf6755f27084400d16949ea6783806666b5e66e966127611e",
+  "sha256_sanitized": "68fe31ff44801466536d26f85d9307271813d4b1eb67b5a48cc8ef896b15ecb0",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 7
+    }
+  ],
+  "clean": false
+}

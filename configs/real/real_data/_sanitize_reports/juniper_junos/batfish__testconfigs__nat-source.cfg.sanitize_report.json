@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__nat-source.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__nat-source.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "b536b602fab70f7a40cda482bda6ccf6320d7983cbc353939717c6f3b4da8f2e",
+  "sha256_sanitized": "373785fdd25c34052f8631b699791c5e46c5c9e53efca185346fcb1711c06e16",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

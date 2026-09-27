@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__firewall-filter-hop-limit.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__firewall-filter-hop-limit.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "23f5159b806421e4b9865347366d163a15b0783107e545598a6823d7ad757c52",
+  "sha256_sanitized": "23f5159b806421e4b9865347366d163a15b0783107e545598a6823d7ad757c52",
+  "redactions": [],
+  "clean": true
+}

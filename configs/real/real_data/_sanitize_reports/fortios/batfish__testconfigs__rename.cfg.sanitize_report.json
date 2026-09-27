@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__rename.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__rename.cfg",
+  "vendor": "fortios",
+  "sha256_original": "d494ec9b8bbf11f93be9677b7eb9de7a3e13017fb3f2e01224201ef87a6a0484",
+  "sha256_sanitized": "add16c39648167634dbfba11bb09b302aece98a38d70ddb9dbfef8e59e874b7f",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 4
+    }
+  ],
+  "clean": false
+}

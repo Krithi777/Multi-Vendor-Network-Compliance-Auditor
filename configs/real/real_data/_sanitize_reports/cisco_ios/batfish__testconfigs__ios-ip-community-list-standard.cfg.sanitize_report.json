@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ip-community-list-standard.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ip-community-list-standard.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "c4d6197d0ef9627fc2a6dc0a0033f0e7ee1c0c0e2664b3b06af84da17ac6c19c",
+  "sha256_sanitized": "c4d6197d0ef9627fc2a6dc0a0033f0e7ee1c0c0e2664b3b06af84da17ac6c19c",
+  "redactions": [],
+  "clean": true
+}

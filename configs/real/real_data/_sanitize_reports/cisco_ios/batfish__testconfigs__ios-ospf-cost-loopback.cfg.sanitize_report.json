@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ospf-cost-loopback.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ospf-cost-loopback.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "696a7ddd35644043c677d98d5a34451c923bec551383ff6396c6c702b702e6c5",
+  "sha256_sanitized": "f84a6a70d490011e6544ffa5418bfd556dc4b6a678ab69e2080fb8cbc762a37c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

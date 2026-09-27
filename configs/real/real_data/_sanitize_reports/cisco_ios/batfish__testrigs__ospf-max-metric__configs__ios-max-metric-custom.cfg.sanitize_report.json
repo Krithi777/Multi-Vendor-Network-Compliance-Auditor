@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ospf-max-metric__configs__ios-max-metric-custom.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ospf-max-metric__configs__ios-max-metric-custom.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "debe67b9abf91f2e99b1278306ae10ba4df3295cccce496a223520ef00b6446f",
+  "sha256_sanitized": "a1aef75e8d7b89def5dd8a147535a3942bfdc26353b39e1aa44ea1872fc26366",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

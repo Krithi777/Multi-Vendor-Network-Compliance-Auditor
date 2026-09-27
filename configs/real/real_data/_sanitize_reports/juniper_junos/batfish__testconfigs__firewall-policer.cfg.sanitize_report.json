@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__firewall-policer.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__firewall-policer.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "1c920e242cd27b0750299c93a57758bb1a998b77f0d4846382e965d7f41b6d68",
+  "sha256_sanitized": "1c920e242cd27b0750299c93a57758bb1a998b77f0d4846382e965d7f41b6d68",
+  "redactions": [],
+  "clean": true
+}

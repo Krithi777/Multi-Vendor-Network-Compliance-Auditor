@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-nat-dynamic.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-nat-dynamic.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "735344584d2cbdd28590597d80357cbae60421adc4fe43cc6aa1addf766d7f24",
+  "sha256_sanitized": "457cdab0e8d3e877dcbc170b8b8f2d8943917734d37ee88bdcfae2272dc3ec9c",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 17
+    }
+  ],
+  "clean": false
+}

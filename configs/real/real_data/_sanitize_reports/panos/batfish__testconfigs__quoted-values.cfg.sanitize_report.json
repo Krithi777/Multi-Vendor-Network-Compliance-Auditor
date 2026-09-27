@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__quoted-values.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__quoted-values.cfg",
+  "vendor": "panos",
+  "sha256_original": "5d2b79fd322efed8582e717de81722170dd24e6c9a809ed687b8370d77d8fce9",
+  "sha256_sanitized": "5d2b79fd322efed8582e717de81722170dd24e6c9a809ed687b8370d77d8fce9",
+  "redactions": [],
+  "clean": true
+}

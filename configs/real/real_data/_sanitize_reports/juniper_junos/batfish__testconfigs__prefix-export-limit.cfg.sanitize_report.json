@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__prefix-export-limit.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__prefix-export-limit.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "b81f94d3cafd7658c24ac356c1ae60a1f80cd1698e8b73dfcad20dcb03161ca7",
+  "sha256_sanitized": "b81f94d3cafd7658c24ac356c1ae60a1f80cd1698e8b73dfcad20dcb03161ca7",
+  "redactions": [],
+  "clean": true
+}

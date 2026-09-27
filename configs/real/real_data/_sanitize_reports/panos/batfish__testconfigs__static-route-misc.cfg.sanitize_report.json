@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__static-route-misc.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__static-route-misc.cfg",
+  "vendor": "panos",
+  "sha256_original": "c829d918e65fa9c39d6ea88106a34a4a37cc892211e02f6d9c6d4955917a7c09",
+  "sha256_sanitized": "c829d918e65fa9c39d6ea88106a34a4a37cc892211e02f6d9c6d4955917a7c09",
+  "redactions": [],
+  "clean": true
+}

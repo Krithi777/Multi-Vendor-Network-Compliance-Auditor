@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__authentication-key-chain.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__authentication-key-chain.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "7284603b0b80a64bbd394b7d65fe2cfdbf796a4b779c3d82a82b046c629d7166",
+  "sha256_sanitized": "7284603b0b80a64bbd394b7d65fe2cfdbf796a4b779c3d82a82b046c629d7166",
+  "redactions": [],
+  "clean": true
+}

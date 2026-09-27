@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__virtual-router.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__virtual-router.cfg",
+  "vendor": "panos",
+  "sha256_original": "6864298308fc5f82b7f54b933bf94980e4dc75a23206b245893c4224eac8fba4",
+  "sha256_sanitized": "6864298308fc5f82b7f54b933bf94980e4dc75a23206b245893c4224eac8fba4",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__route-map-set-as-path-replace.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__route-map-set-as-path-replace.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "bb57979266c2a0b4b96084c59123119923082e5c236deaaf7f1f9827f1d6ecb0",
+  "sha256_sanitized": "bb57979266c2a0b4b96084c59123119923082e5c236deaaf7f1f9827f1d6ecb0",
+  "redactions": [],
+  "clean": true
+}

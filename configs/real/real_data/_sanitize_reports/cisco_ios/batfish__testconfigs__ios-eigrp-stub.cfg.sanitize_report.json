@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-eigrp-stub.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-eigrp-stub.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "feb4fc94754348b3513b3c4d90c43d554766504c69824bda435e4fc654848a16",
+  "sha256_sanitized": "feb4fc94754348b3513b3c4d90c43d554766504c69824bda435e4fc654848a16",
+  "redactions": [],
+  "clean": true
+}

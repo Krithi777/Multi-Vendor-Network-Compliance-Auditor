@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__bgp-multihop.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__bgp-multihop.cfg",
+  "vendor": "panos",
+  "sha256_original": "6f1fa53541f6f4a1c713afde883d37e51bebd69d88a849e7393c6afc5371ed83",
+  "sha256_sanitized": "788cedada6dc8e4b3fc3e3d1a24cc91bea1f75c59489398183a0611eb3ca0da1",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 5
+    }
+  ],
+  "clean": false
+}

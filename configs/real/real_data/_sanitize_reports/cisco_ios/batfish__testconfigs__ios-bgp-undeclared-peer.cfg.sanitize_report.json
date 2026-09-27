@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-bgp-undeclared-peer.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-bgp-undeclared-peer.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "ff058ff3c6283535f37e82774c80bbb4e8b77a1a651f0893aea52846e5b8e743",
+  "sha256_sanitized": "ff058ff3c6283535f37e82774c80bbb4e8b77a1a651f0893aea52846e5b8e743",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__community-literals-warnings.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__community-literals-warnings.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "44c2a98646640e9e6d810de1c31fd342260a0d12c76065af65a4e6b919911df1",
+  "sha256_sanitized": "44c2a98646640e9e6d810de1c31fd342260a0d12c76065af65a4e6b919911df1",
+  "redactions": [],
+  "clean": true
+}

@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__zone-external.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__zone-external.cfg",
+  "vendor": "panos",
+  "sha256_original": "96daa6ed02050f374c5e6cdc73ec0cbd535100d7a4c3981f830eaf8fcad78604",
+  "sha256_sanitized": "96daa6ed02050f374c5e6cdc73ec0cbd535100d7a4c3981f830eaf8fcad78604",
+  "redactions": [],
+  "clean": true
+}

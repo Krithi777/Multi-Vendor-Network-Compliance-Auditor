@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-track.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-track.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "40f526d587ad86042deef2043e56b620fa3d6486941d18819d8ac0ea37d5a422",
+  "sha256_sanitized": "40f526d587ad86042deef2043e56b620fa3d6486941d18819d8ac0ea37d5a422",
+  "redactions": [],
+  "clean": true
+}

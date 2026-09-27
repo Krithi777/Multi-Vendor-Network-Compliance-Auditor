@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ntp-no-authenticate.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ntp-no-authenticate.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "1948f5d92d0364aeeb6601ebefd0d0b283ba855bb2e087c23ecddd7f39adb493",
+  "sha256_sanitized": "f23734bc6a08e608c457ccaf8f0e7bc391fdabea4fbcc0d3715dedf016eaf493",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

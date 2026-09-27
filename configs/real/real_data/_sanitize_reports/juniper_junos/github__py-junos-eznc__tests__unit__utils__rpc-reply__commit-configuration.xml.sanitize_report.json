@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\github__py-junos-eznc__tests__unit__utils__rpc-reply__commit-configuration.xml",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\github__py-junos-eznc__tests__unit__utils__rpc-reply__commit-configuration.xml",
+  "vendor": "juniper_junos",
+  "sha256_original": "13d5477d37b1345f46b248aa243a32748c89c3364cb6419b4507135425cd88bd",
+  "sha256_sanitized": "13d5477d37b1345f46b248aa243a32748c89c3364cb6419b4507135425cd88bd",
+  "redactions": [],
+  "clean": true
+}

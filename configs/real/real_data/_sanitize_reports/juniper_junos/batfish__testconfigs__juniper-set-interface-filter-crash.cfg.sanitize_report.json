@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__juniper-set-interface-filter-crash.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__juniper-set-interface-filter-crash.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "9528098fd2d9a7abf06b31f1e09234936d825c033d3bd8fe0498474449dc258b",
+  "sha256_sanitized": "9528098fd2d9a7abf06b31f1e09234936d825c033d3bd8fe0498474449dc258b",
+  "redactions": [],
+  "clean": true
+}

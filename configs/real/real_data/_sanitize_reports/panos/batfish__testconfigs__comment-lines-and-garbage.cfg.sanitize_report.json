@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\panos\\batfish__testconfigs__comment-lines-and-garbage.cfg",
+  "sanitized_file": "configs\\sanitized\\panos\\batfish__testconfigs__comment-lines-and-garbage.cfg",
+  "vendor": "panos",
+  "sha256_original": "5c9cb38b62a4598b2c3673928303eede2059c1b3e3e79217139f32a8bc16b02d",
+  "sha256_sanitized": "cbe4fcc15c55f00fb585184b1c00681726e146ee26ac3a55b46cc10798b79d22",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 1
+    }
+  ],
+  "clean": false
+}

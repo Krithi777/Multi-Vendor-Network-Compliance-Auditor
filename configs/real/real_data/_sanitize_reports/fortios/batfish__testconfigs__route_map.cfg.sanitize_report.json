@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\fortios\\batfish__testconfigs__route_map.cfg",
+  "sanitized_file": "configs\\sanitized\\fortios\\batfish__testconfigs__route_map.cfg",
+  "vendor": "fortios",
+  "sha256_original": "9a0f440657f02ea7c8cebb0f16278088fe1697ebf923e0e0f1018af9fb5638c0",
+  "sha256_sanitized": "0af384fb5ef6545b44127e9b3edc5a0266a5165e2b7b8c3b248ede58d52e5c6e",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 2
+    }
+  ],
+  "clean": false
+}

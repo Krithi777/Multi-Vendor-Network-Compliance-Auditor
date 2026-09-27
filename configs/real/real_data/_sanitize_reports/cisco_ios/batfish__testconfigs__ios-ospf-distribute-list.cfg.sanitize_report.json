@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testconfigs__ios-ospf-distribute-list.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testconfigs__ios-ospf-distribute-list.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "0ca9af60a2614825dfe2b291dd508e0b4015518bc472e8eeaeda3ae0c969f35c",
+  "sha256_sanitized": "0ca9af60a2614825dfe2b291dd508e0b4015518bc472e8eeaeda3ae0c969f35c",
+  "redactions": [],
+  "clean": true
+}

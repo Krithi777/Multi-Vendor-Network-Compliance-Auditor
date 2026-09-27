@@ -1,0 +1,9 @@
+{
+  "source_file": "configs\\raw\\juniper_junos\\batfish__testconfigs__junos-vlans-forwarding-options-filter.cfg",
+  "sanitized_file": "configs\\sanitized\\juniper_junos\\batfish__testconfigs__junos-vlans-forwarding-options-filter.cfg",
+  "vendor": "juniper_junos",
+  "sha256_original": "12e94cab98ec0d5c8a1d085895e5431a4685bdcff5e11ff2095030f5e6798dfa",
+  "sha256_sanitized": "12e94cab98ec0d5c8a1d085895e5431a4685bdcff5e11ff2095030f5e6798dfa",
+  "redactions": [],
+  "clean": true
+}

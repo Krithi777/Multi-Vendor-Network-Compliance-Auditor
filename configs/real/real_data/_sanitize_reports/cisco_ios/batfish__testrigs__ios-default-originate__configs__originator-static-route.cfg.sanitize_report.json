@@ -1,0 +1,14 @@
+{
+  "source_file": "configs\\raw\\cisco_ios\\batfish__testrigs__ios-default-originate__configs__originator-static-route.cfg",
+  "sanitized_file": "configs\\sanitized\\cisco_ios\\batfish__testrigs__ios-default-originate__configs__originator-static-route.cfg",
+  "vendor": "cisco_ios",
+  "sha256_original": "a42c4b7a049424bafbeb56bea0608079debcda8b952ed15b57cdbdd8eb512050",
+  "sha256_sanitized": "08a024a20fb35b0031ea36805e931bf2ab3ab44c7c60885170f3c55047ca57ae",
+  "redactions": [
+    {
+      "type": "ip_address",
+      "count": 6
+    }
+  ],
+  "clean": false
+}
