@@ -451,7 +451,7 @@ The database provides a persistent knowledge layer for deterministic compliance 
 
 ### Prerequisites
 
-- Python 3.10+ (Python 3.13 recommended)
+- Python 3.13+
 - Node.js 18+
 - npm 9+
 - PostgreSQL 17 with pgvector, or a Supabase PostgreSQL project
