@@ -636,7 +636,7 @@ report.pdf
 
 ## Screenshots
 
-### Dashboard
+### Bulk Configuration Upload
 
 <p align="center">
   <img src="docs/screenshots/dashboard.png" alt="Compliance Auditor Dashboard" width="100%">
