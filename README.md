@@ -144,8 +144,7 @@ flowchart LR
 
 The diagram below is the **proposed end-to-end architecture** prepared for the SIH submission.
 
-<!-- Image path placeholder: save the architecture diagram to docs/architecture.png in the repository. -->
-![Proposed end-to-end architecture](docs/architecture.png)
+![System Architecture](docs/assets/architecture.png)
 
 > **Important:** the diagram shows the *intended* design. Not every block in it is implemented in the repository. The table after the diagram states, block by block, what exists today.
 
@@ -703,6 +702,10 @@ python vendor_matrix_test.py        # end-to-end acceptance test across the five
 4. Click **Remediate** to see commands with placeholder substitution.
 5. Open the **Training Studio** (`/training/{scan_id}`), confirm 3 sample lines from a cluster and watch template induction and generalisation.
 6. Download the PDF report from the Report Center.
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+![Compliance Results](docs/screenshots/compliance-results.png)
 
 **Sample input files** are provided for every vendor under `configs/real/real_data/` (`cisco_ios`, `juniper_junos`, `fortios`, `panos`, `arista_eos`).
 
