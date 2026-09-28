@@ -699,7 +699,7 @@ report.pdf
 |---|
 | Sahana |
 | Krithika |
-| Dharsheni Shree |
+| Darshinisree |
 | Ruvanthika |
 | Abdul Wahith |
 | Keerthivasan |
