@@ -8,7 +8,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Next.js](https://img.shields.io/badge/Next.js-14.2-black?logo=next.js&logoColor=white)](https://nextjs.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL_+_pgvector-17.6_/_0.8.2-336791?logo=postgresql&logoColor=white)](https://github.com/pgvector/pgvector)
-[![Status](https://img.shields.io/badge/Status-Phases%201--7%20%26%209%20Verified-brightgreen)](#development-phases)
+[![Status](https://img.shields.io/badge/Status-Phases%201--7%20%26%209%20Verified%20%7C%20Phase%208%20Planned-brightgreen)](#development-phases)
 
 </div>
 
@@ -32,8 +32,6 @@ The system follows a **"deterministic first, adaptive second"** design. A rule-b
 | Team ID | 159596 |
 | Team Name | Van_guard |
 
-<!-- TODO: add team members and their contributions here from the final SIH PPT. They were not present in the material used to generate this README, so none are listed. -->
-
 ---
 
 ## Table of Contents
@@ -50,6 +48,7 @@ The system follows a **"deterministic first, adaptive second"** design. A rule-b
 - [Compliance Engine](#compliance-engine)
 - [Dataset](#dataset)
 - [Development Phases](#development-phases)
+- [Phase 9 / Frontend Integration](#phase-9--frontend-integration)
 - [Database Architecture](#database-architecture)
 - [Technology Stack](#technology-stack)
 - [Project Structure](#project-structure)
@@ -58,11 +57,14 @@ The system follows a **"deterministic first, adaptive second"** design. A rule-b
 - [Running the Application](#running-the-application)
 - [Running Tests](#running-tests)
 - [Demo and Sample Outputs](#demo-and-sample-outputs)
+- [Screenshots](#screenshots)
 - [API Reference](#api-reference)
 - [Implemented vs Planned](#implemented-vs-planned)
-- [Security Considerations](#security-considerations)
+- [Security and Privacy](#security-and-privacy)
 - [Known Limitations](#known-limitations)
 - [Future Roadmap](#future-roadmap)
+- [Contributors](#contributors)
+- [SIH Project Information](#sih-project-information)
 
 ---
 
@@ -142,9 +144,11 @@ flowchart LR
 
 ## System Architecture
 
-The diagram below is the **proposed end-to-end architecture** prepared for the SIH submission.
+The architecture diagram below presents the overall SIH solution and its major processing layers. It combines the implemented pipeline with planned extensibility; the implementation-status table immediately below distinguishes what is currently implemented from what remains planned.
 
 ![System Architecture](docs/assets/architecture.png)
+
+*Figure: End-to-end architecture of the Multi-Vendor Network Security Compliance Auditor.*
 
 > **Important:** the diagram shows the *intended* design. Not every block in it is implemented in the repository. The table after the diagram states, block by block, what exists today.
 
@@ -488,6 +492,31 @@ Arista EOS is intentionally excluded from the splits and reserved for live demon
 
 ---
 
+## Phase 9 / Frontend Integration
+
+Phase 9 integrates the compliance engine and adaptive matching capabilities into the usable application layer.
+
+### Implemented Components
+
+- **FastAPI backend** with REST endpoints for vendor detection, single/bulk ingestion, scans, findings, remediation, unmatched lines, training decisions and PDF reports.
+- **Vendor detection and manual override** with confidence and candidate reporting.
+- **Credential sanitisation** before configuration persistence, with SHA-256 provenance hashes.
+- **Device metadata extraction** for hostname, model, serial number and OS version where present.
+- **Deterministic normalisation and compliance diff** across the 20 canonical controls.
+- **Unmatched-line clustering** for the Phase 7 Training Studio.
+- **Remediation proposals** containing vendor-specific commands, verification commands, rollback commands and parameter placeholders.
+- **Dual PDF reporting** using the audit-report and device-tailored report pipelines.
+- **Bulk multi-device ingestion** with batch tracking.
+- **Next.js 14 frontend** providing the dashboard, findings/evidence view, remediation viewer, report centre and Training Studio.
+
+### Phase 9 Verification
+
+The audit verifies the Phase 9 implementation through source inspection and the associated unit/integration test suites. The repository also contains the five-vendor demonstration workflow under `demo/`.
+
+> **Current boundary:** Phase 9 exposes remediation proposals but does not execute changes on network devices. Pre-remediation dependency conflict checking remains a Phase 8 roadmap item.
+
+---
+
 ## Database Architecture
 
 PostgreSQL 17.6 hosted on **Supabase**, with the **pgvector** extension (0.8.2) for embedding storage and similarity search. Access is through SQLAlchemy 2.0 Core with the `psycopg2` driver.
@@ -562,6 +591,12 @@ Template induction (`difflib`) and IP/CIDR value inference (`ipaddress`) use the
 ├── phase9/                   # FastAPI app, vendor detection, sanitiser, normaliser,
 │                             #   compliance diff, remediation, clustering, PDF reports (+ tests)
 ├── frontend/                 # Next.js 14 web application (app/, lib/api.ts)
+├── docs/
+│   ├── assets/
+│   │   └── architecture.png # SIH system architecture diagram
+│   └── screenshots/
+│       ├── dashboard.png
+│       └── compliance-results.png
 ├── demo/                     # run_5vendor_demo.sh
 ├── tests/                    # Phase 5 integrity and report tests
 ├── vendor_matrix_test.py     # End-to-end acceptance test across 5 vendors
@@ -584,33 +619,43 @@ Template induction (`difflib`) and IP/CIDR value inference (`ipaddress`) use the
 | PostgreSQL with pgvector | PostgreSQL 17 (or a Supabase project) |
 | Git | any recent version |
 
-### Setup
+### Clone and Python Environment
 
 ```bash
-# 1. Clone
 git clone https://github.com/Krithi777/Multi-Vendor-Network-Compliance-Auditor.git
 cd Multi-Vendor-Network-Compliance-Auditor
 
-# 2. Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate          # Linux / macOS
-# .\venv\Scripts\Activate.ps1     # Windows PowerShell
 
-# 3. Install Python dependencies
+## Linux / macOS
+source venv/bin/activate
+
+## Windows PowerShell
+## .\venv\Scripts\Activate.ps1
+
 python -m pip install --upgrade pip
 python -m pip install -r requirements-phase7.txt
 python -m pip install -r requirements-phase9.txt
 python -m pip install pandas python-dotenv
-
-# 4. Configure environment
-cp .env.example .env
-# edit .env and set DATABASE_URL
-
-# 5. Install frontend dependencies
-cd frontend && npm install && cd ..
 ```
 
-> **Windows tip:** one Phase 6 test compares file hashes with the manifest and fails if Git converts LF to CRLF. Configure Git to preserve LF line endings (for example `git config core.autocrlf false` before cloning) to avoid this.
+> **Windows tip:** one Phase 6 test compares file hashes with the manifest and can fail if Git converts LF to CRLF. Configure Git to preserve LF line endings before cloning if you need to reproduce the dataset hash checks exactly.
+
+## Environment Configuration
+
+Create the local environment file from the supplied template:
+
+```bash
+cp .env.example .env
+```
+
+On Windows PowerShell, copy the file with:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Set `DATABASE_URL` and any optional Phase 7/frontend variables listed in the [environment variable table](#environment-variables). **Never commit `.env` or real credentials to Git.**
 
 ### Environment variables
 
@@ -632,37 +677,68 @@ cd frontend && npm install && cd ..
 Apply the migrations **in this order** (with `psql` or the Supabase SQL editor), then load the data:
 
 ```bash
-# a. db/ddl.sql                    Phase 5 tables
-# b. db/phase7_migration.sql       Phase 7 tables + pgvector
-# c. db/phase9_migration.sql       scans, device_configs, findings
-# d. db/phase9_migration_v2.sql    device metadata columns, batches table
-# e. db/phase9_migration_v3.sql    frameworks_scanned column
+## a. db/ddl.sql                    Phase 5 tables
+## b. db/phase7_migration.sql       Phase 7 tables + pgvector
+## c. db/phase9_migration.sql       scans, device_configs, findings
+## d. db/phase9_migration_v2.sql    device metadata columns, batches table
+## e. db/phase9_migration_v3.sql    frameworks_scanned column
 
-# Load data (from the repository root)
+## Load data (from the repository root)
 python db/load_controls.py
 python db/load_vendor_mappings.py
 python db/load_remediation_rules.py
 python db/load_dependency_rules.py
 python db/load_config_corpus.py
 
-# Verify referential integrity
+## Verify referential integrity
 python db/integrity_check.py
 ```
 
 ---
 
-## Running the Application
+## Backend Setup
 
-**Backend** (repository root, virtual environment active):
+From the repository root with the virtual environment active:
 
 ```bash
 python -m uvicorn phase9.api:app --reload --host 0.0.0.0 --port 8000
-curl http://localhost:8000/api/health      # {"status": "ok"}
 ```
 
-Interactive API docs: `http://localhost:8000/docs` (Swagger UI) and `/redoc`.
+Verify the backend:
 
-**Frontend** (second terminal):
+```bash
+curl http://localhost:8000/api/health
+```
+
+Expected response:
+
+```json
+{"status": "ok"}
+```
+
+Swagger UI: `http://localhost:8000/docs`  
+ReDoc: `http://localhost:8000/redoc`
+
+## Frontend Setup
+
+Install the frontend dependencies once from the repository root:
+
+```bash
+cd frontend
+npm install
+```
+
+## Running the Application
+
+### Terminal 1 — Backend
+
+From the repository root with the virtual environment active:
+
+```bash
+python -m uvicorn phase9.api:app --reload --host 0.0.0.0 --port 8000
+```
+
+### Terminal 2 — Frontend
 
 ```bash
 cd frontend
@@ -702,10 +778,6 @@ python vendor_matrix_test.py        # end-to-end acceptance test across the five
 4. Click **Remediate** to see commands with placeholder substitution.
 5. Open the **Training Studio** (`/training/{scan_id}`), confirm 3 sample lines from a cluster and watch template induction and generalisation.
 6. Download the PDF report from the Report Center.
-
-![Dashboard](docs/screenshots/dashboard.png)
-
-![Compliance Results](docs/screenshots/compliance-results.png)
 
 **Sample input files** are provided for every vendor under `configs/real/real_data/` (`cisco_ios`, `juniper_junos`, `fortios`, `panos`, `arista_eos`).
 
@@ -747,6 +819,23 @@ A sample generated report is included as `report.pdf`.
 
 ---
 
+## Screenshots
+
+The following screenshots show the implemented web application workflow.
+
+### Dashboard
+
+![Compliance Dashboard](docs/screenshots/dashboard.png)
+
+*Figure: Dashboard showing bulk configuration ingestion and multi-device scan status.*
+
+### Compliance Results
+
+![Compliance Results](docs/screenshots/compliance-results.png)
+
+*Figure: Compliance findings with the 20-control breakdown and scan results.*
+
+
 ## Implemented vs Planned
 
 Status reflects the repository audit dated 2026-09-28.
@@ -770,7 +859,7 @@ Status reflects the repository audit dated 2026-09-28.
 
 ---
 
-## Security Considerations
+## Security and Privacy
 
 - **Secrets in the repository.** `.env` is git-ignored; `.env.example` contains placeholders only.
 - **At-rest sanitisation.** Configurations are redacted before being stored in `device_configs`; the raw text is not persisted. Evidence lines that contain sensitive tokens (for example TACACS+ keys or SNMP communities) are redacted before being stored or rendered in reports.
@@ -800,6 +889,36 @@ Status reflects the repository audit dated 2026-09-28.
 5. **Air-gapped offline distribution.**
 
 ---
+
+<div align="center">
+
+**Smart India Hackathon 2026 · SIH26155 · Team Van_guard (ID 159596)**
+
+</div>
+
+---
+
+## Contributors
+
+**Team Van_guard · Smart India Hackathon 2026**
+
+The project was developed collaboratively by Team Van_guard for Smart India Hackathon 2026.
+
+> Add the official SIH team-member names and contribution areas here before final submission, using the exact details from the team's official SIH record.
+
+---
+
+## SIH Project Information
+
+| Field | Details |
+|---|---|
+| Smart India Hackathon | 2026 |
+| Problem Statement ID | SIH26155 |
+| Problem Statement | AI-Driven Multi-Vendor Network Security Compliance Auditor |
+| Theme | Blockchain & Cybersecurity |
+| Category | Software |
+| Team ID | 159596 |
+| Team Name | Van_guard |
 
 <div align="center">
 
